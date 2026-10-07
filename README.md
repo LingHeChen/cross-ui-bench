@@ -123,4 +123,4 @@ BENCH_QUERY='benchmark=skeletal-3d&asset=generated/character-100k-50bones&charac
 
 四类测试及本机运行约束见 [全量 benchmark](docs/full-benchmark.md)。HTML 入口为 `results/full-benchmark/report.html`，报告按完整组结束更新并提供原始数据链接、参数筛选和截图叠加。`npm run bench:all` 执行完整 60Hz 本机矩阵；`npm run report:html` 重建报告。全量正式动态矩阵本身约十小时，另加存储 IO 及载入。失败和未支持项在报告中单独列出。
 
-源码仓库：https://github.com/LingHeChen/cross-ui-bench 。本地运行结果、HTML 报告、构建产物和多 GB 生成模型不纳入源码仓库；公开报告会单独发布。
+源码仓库：https://github.com/LingHeChen/cross-ui-bench 。本地运行结果、HTML 报告、构建产物和多 GB 生成模型不纳入源码仓库；公开报告发布于 [GitHub Pages](https://linghechen.github.io/cross-ui-bench/)，当前为采集中的成绩快照。更新方式见 [发布说明](docs/publishing.md)。
