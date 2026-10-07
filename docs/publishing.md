@@ -19,3 +19,13 @@ git -C artifacts/pages push origin gh-pages
 ```
 
 在另一台机器更新时，先 clone `gh-pages` 分支作为导出目录。`publication.json` 记录报告采集时间和导出时的源码 commit。页面正文的成绩覆盖和未完成说明以报告内嵌数据为准。
+
+## 存储完成后自动发布一次
+
+在本机矩阵运行时，可启动：
+
+```sh
+node tools/watch-storage-publication.mjs results/full-benchmark
+```
+
+每 30 秒检查进度，三个框架各 124 组完成且本地 HTML 收录 372 组后，导出、校验五轮及验证标记、推送 `gh-pages`，并确认线上快照。监看不会重复跑分或在测量期间重建本地报告。状态保存在 `artifacts/storage-publication-status.json`；批次失败时记录错误，不发布为全部成功。需要保留已经配置好 origin 的 `artifacts/pages` Git 仓库。此监看只发布存储完成后的快照，后续 CSS/3D 仍需单独更新。
