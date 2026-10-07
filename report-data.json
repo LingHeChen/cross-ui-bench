@@ -1,0 +1,5563 @@
+{
+  "updated": "2026-10-07T12:02:09.447Z",
+  "jobs": [
+    {
+      "key": "electron-benchmark=css-animation&case=translate&nodes=100",
+      "runtime": "electron",
+      "parameters": {
+        "benchmark": "css-animation",
+        "case": "translate",
+        "nodes": 100
+      },
+      "categories": [
+        "css"
+      ],
+      "status": "pending"
+    },
+    {
+      "key": "tauri-benchmark=css-animation&case=translate&nodes=100",
+      "runtime": "tauri",
+      "parameters": {
+        "benchmark": "css-animation",
+        "case": "translate",
+        "nodes": 100
+      },
+      "categories": [
+        "css"
+      ],
+      "status": "pending"
+    },
+    {
+      "key": "flutter-benchmark=css-animation&case=translate&nodes=100",
+      "runtime": "flutter",
+      "parameters": {
+        "benchmark": "css-animation",
+        "case": "translate",
+        "nodes": 100
+      },
+      "categories": [
+        "css"
+      ],
+      "status": "pending"
+    },
+    {
+      "key": "electron-benchmark=css-animation&case=translate&nodes=500",
+      "runtime": "electron",
+      "parameters": {
+        "benchmark": "css-animation",
+        "case": "translate",
+        "nodes": 500
+      },
+      "categories": [
+        "css"
+      ],
+      "status": "pending"
+    },
+    {
+      "key": "tauri-benchmark=css-animation&case=translate&nodes=500",
+      "runtime": "tauri",
+      "parameters": {
+        "benchmark": "css-animation",
+        "case": "translate",
+        "nodes": 500
+      },
+      "categories": [
+        "css"
+      ],
+      "status": "pending"
+    },
+    {
+      "key": "flutter-benchmark=css-animation&case=translate&nodes=500",
+      "runtime": "flutter",
+      "parameters": {
+        "benchmark": "css-animation",
+        "case": "translate",
+        "nodes": 500
+      },
+      "categories": [
+        "css"
+      ],
+      "status": "pending"
+    },
+    {
+      "key": "electron-benchmark=css-animation&case=translate&nodes=1000",
+      "runtime": "electron",
+      "parameters": {
+        "benchmark": "css-animation",
+        "case": "translate",
+        "nodes": 1000
+      },
+      "categories": [
+        "css"
+      ],
+      "status": "pending"
+    },
+    {
+      "key": "tauri-benchmark=css-animation&case=translate&nodes=1000",
+      "runtime": "tauri",
+      "parameters": {
+        "benchmark": "css-animation",
+        "case": "translate",
+        "nodes": 1000
+      },
+      "categories": [
+        "css"
+      ],
+      "status": "pending"
+    },
+    {
+      "key": "flutter-benchmark=css-animation&case=translate&nodes=1000",
+      "runtime": "flutter",
+      "parameters": {
+        "benchmark": "css-animation",
+        "case": "translate",
+        "nodes": 1000
+      },
+      "categories": [
+        "css"
+      ],
+      "status": "pending"
+    },
+    {
+      "key": "electron-benchmark=css-animation&case=translate&nodes=5000",
+      "runtime": "electron",
+      "parameters": {
+        "benchmark": "css-animation",
+        "case": "translate",
+        "nodes": 5000
+      },
+      "categories": [
+        "css"
+      ],
+      "status": "pending"
+    },
+    {
+      "key": "tauri-benchmark=css-animation&case=translate&nodes=5000",
+      "runtime": "tauri",
+      "parameters": {
+        "benchmark": "css-animation",
+        "case": "translate",
+        "nodes": 5000
+      },
+      "categories": [
+        "css"
+      ],
+      "status": "pending"
+    },
+    {
+      "key": "flutter-benchmark=css-animation&case=translate&nodes=5000",
+      "runtime": "flutter",
+      "parameters": {
+        "benchmark": "css-animation",
+        "case": "translate",
+        "nodes": 5000
+      },
+      "categories": [
+        "css"
+      ],
+      "status": "pending"
+    },
+    {
+      "key": "electron-benchmark=css-animation&case=scale-rotate&nodes=100",
+      "runtime": "electron",
+      "parameters": {
+        "benchmark": "css-animation",
+        "case": "scale-rotate",
+        "nodes": 100
+      },
+      "categories": [
+        "css"
+      ],
+      "status": "pending"
+    },
+    {
+      "key": "tauri-benchmark=css-animation&case=scale-rotate&nodes=100",
+      "runtime": "tauri",
+      "parameters": {
+        "benchmark": "css-animation",
+        "case": "scale-rotate",
+        "nodes": 100
+      },
+      "categories": [
+        "css"
+      ],
+      "status": "pending"
+    },
+    {
+      "key": "flutter-benchmark=css-animation&case=scale-rotate&nodes=100",
+      "runtime": "flutter",
+      "parameters": {
+        "benchmark": "css-animation",
+        "case": "scale-rotate",
+        "nodes": 100
+      },
+      "categories": [
+        "css"
+      ],
+      "status": "pending"
+    },
+    {
+      "key": "electron-benchmark=css-animation&case=scale-rotate&nodes=500",
+      "runtime": "electron",
+      "parameters": {
+        "benchmark": "css-animation",
+        "case": "scale-rotate",
+        "nodes": 500
+      },
+      "categories": [
+        "css"
+      ],
+      "status": "pending"
+    },
+    {
+      "key": "tauri-benchmark=css-animation&case=scale-rotate&nodes=500",
+      "runtime": "tauri",
+      "parameters": {
+        "benchmark": "css-animation",
+        "case": "scale-rotate",
+        "nodes": 500
+      },
+      "categories": [
+        "css"
+      ],
+      "status": "pending"
+    },
+    {
+      "key": "flutter-benchmark=css-animation&case=scale-rotate&nodes=500",
+      "runtime": "flutter",
+      "parameters": {
+        "benchmark": "css-animation",
+        "case": "scale-rotate",
+        "nodes": 500
+      },
+      "categories": [
+        "css"
+      ],
+      "status": "pending"
+    },
+    {
+      "key": "electron-benchmark=css-animation&case=scale-rotate&nodes=1000",
+      "runtime": "electron",
+      "parameters": {
+        "benchmark": "css-animation",
+        "case": "scale-rotate",
+        "nodes": 1000
+      },
+      "categories": [
+        "css"
+      ],
+      "status": "pending"
+    },
+    {
+      "key": "tauri-benchmark=css-animation&case=scale-rotate&nodes=1000",
+      "runtime": "tauri",
+      "parameters": {
+        "benchmark": "css-animation",
+        "case": "scale-rotate",
+        "nodes": 1000
+      },
+      "categories": [
+        "css"
+      ],
+      "status": "pending"
+    },
+    {
+      "key": "flutter-benchmark=css-animation&case=scale-rotate&nodes=1000",
+      "runtime": "flutter",
+      "parameters": {
+        "benchmark": "css-animation",
+        "case": "scale-rotate",
+        "nodes": 1000
+      },
+      "categories": [
+        "css"
+      ],
+      "status": "pending"
+    },
+    {
+      "key": "electron-benchmark=css-animation&case=scale-rotate&nodes=5000",
+      "runtime": "electron",
+      "parameters": {
+        "benchmark": "css-animation",
+        "case": "scale-rotate",
+        "nodes": 5000
+      },
+      "categories": [
+        "css"
+      ],
+      "status": "pending"
+    },
+    {
+      "key": "tauri-benchmark=css-animation&case=scale-rotate&nodes=5000",
+      "runtime": "tauri",
+      "parameters": {
+        "benchmark": "css-animation",
+        "case": "scale-rotate",
+        "nodes": 5000
+      },
+      "categories": [
+        "css"
+      ],
+      "status": "pending"
+    },
+    {
+      "key": "flutter-benchmark=css-animation&case=scale-rotate&nodes=5000",
+      "runtime": "flutter",
+      "parameters": {
+        "benchmark": "css-animation",
+        "case": "scale-rotate",
+        "nodes": 5000
+      },
+      "categories": [
+        "css"
+      ],
+      "status": "pending"
+    },
+    {
+      "key": "electron-benchmark=css-animation&case=opacity&nodes=100",
+      "runtime": "electron",
+      "parameters": {
+        "benchmark": "css-animation",
+        "case": "opacity",
+        "nodes": 100
+      },
+      "categories": [
+        "css"
+      ],
+      "status": "pending"
+    },
+    {
+      "key": "tauri-benchmark=css-animation&case=opacity&nodes=100",
+      "runtime": "tauri",
+      "parameters": {
+        "benchmark": "css-animation",
+        "case": "opacity",
+        "nodes": 100
+      },
+      "categories": [
+        "css"
+      ],
+      "status": "pending"
+    },
+    {
+      "key": "flutter-benchmark=css-animation&case=opacity&nodes=100",
+      "runtime": "flutter",
+      "parameters": {
+        "benchmark": "css-animation",
+        "case": "opacity",
+        "nodes": 100
+      },
+      "categories": [
+        "css"
+      ],
+      "status": "pending"
+    },
+    {
+      "key": "electron-benchmark=css-animation&case=opacity&nodes=500",
+      "runtime": "electron",
+      "parameters": {
+        "benchmark": "css-animation",
+        "case": "opacity",
+        "nodes": 500
+      },
+      "categories": [
+        "css"
+      ],
+      "status": "pending"
+    },
+    {
+      "key": "tauri-benchmark=css-animation&case=opacity&nodes=500",
+      "runtime": "tauri",
+      "parameters": {
+        "benchmark": "css-animation",
+        "case": "opacity",
+        "nodes": 500
+      },
+      "categories": [
+        "css"
+      ],
+      "status": "pending"
+    },
+    {
+      "key": "flutter-benchmark=css-animation&case=opacity&nodes=500",
+      "runtime": "flutter",
+      "parameters": {
+        "benchmark": "css-animation",
+        "case": "opacity",
+        "nodes": 500
+      },
+      "categories": [
+        "css"
+      ],
+      "status": "pending"
+    },
+    {
+      "key": "electron-benchmark=css-animation&case=opacity&nodes=1000",
+      "runtime": "electron",
+      "parameters": {
+        "benchmark": "css-animation",
+        "case": "opacity",
+        "nodes": 1000
+      },
+      "categories": [
+        "css"
+      ],
+      "status": "pending"
+    },
+    {
+      "key": "tauri-benchmark=css-animation&case=opacity&nodes=1000",
+      "runtime": "tauri",
+      "parameters": {
+        "benchmark": "css-animation",
+        "case": "opacity",
+        "nodes": 1000
+      },
+      "categories": [
+        "css"
+      ],
+      "status": "pending"
+    },
+    {
+      "key": "flutter-benchmark=css-animation&case=opacity&nodes=1000",
+      "runtime": "flutter",
+      "parameters": {
+        "benchmark": "css-animation",
+        "case": "opacity",
+        "nodes": 1000
+      },
+      "categories": [
+        "css"
+      ],
+      "status": "pending"
+    },
+    {
+      "key": "electron-benchmark=css-animation&case=opacity&nodes=5000",
+      "runtime": "electron",
+      "parameters": {
+        "benchmark": "css-animation",
+        "case": "opacity",
+        "nodes": 5000
+      },
+      "categories": [
+        "css"
+      ],
+      "status": "pending"
+    },
+    {
+      "key": "tauri-benchmark=css-animation&case=opacity&nodes=5000",
+      "runtime": "tauri",
+      "parameters": {
+        "benchmark": "css-animation",
+        "case": "opacity",
+        "nodes": 5000
+      },
+      "categories": [
+        "css"
+      ],
+      "status": "pending"
+    },
+    {
+      "key": "flutter-benchmark=css-animation&case=opacity&nodes=5000",
+      "runtime": "flutter",
+      "parameters": {
+        "benchmark": "css-animation",
+        "case": "opacity",
+        "nodes": 5000
+      },
+      "categories": [
+        "css"
+      ],
+      "status": "pending"
+    },
+    {
+      "key": "electron-benchmark=css-animation&case=blur&nodes=100",
+      "runtime": "electron",
+      "parameters": {
+        "benchmark": "css-animation",
+        "case": "blur",
+        "nodes": 100
+      },
+      "categories": [
+        "css"
+      ],
+      "status": "pending"
+    },
+    {
+      "key": "tauri-benchmark=css-animation&case=blur&nodes=100",
+      "runtime": "tauri",
+      "parameters": {
+        "benchmark": "css-animation",
+        "case": "blur",
+        "nodes": 100
+      },
+      "categories": [
+        "css"
+      ],
+      "status": "pending"
+    },
+    {
+      "key": "flutter-benchmark=css-animation&case=blur&nodes=100",
+      "runtime": "flutter",
+      "parameters": {
+        "benchmark": "css-animation",
+        "case": "blur",
+        "nodes": 100
+      },
+      "categories": [
+        "css"
+      ],
+      "status": "pending"
+    },
+    {
+      "key": "electron-benchmark=css-animation&case=blur&nodes=500",
+      "runtime": "electron",
+      "parameters": {
+        "benchmark": "css-animation",
+        "case": "blur",
+        "nodes": 500
+      },
+      "categories": [
+        "css"
+      ],
+      "status": "pending"
+    },
+    {
+      "key": "tauri-benchmark=css-animation&case=blur&nodes=500",
+      "runtime": "tauri",
+      "parameters": {
+        "benchmark": "css-animation",
+        "case": "blur",
+        "nodes": 500
+      },
+      "categories": [
+        "css"
+      ],
+      "status": "pending"
+    },
+    {
+      "key": "flutter-benchmark=css-animation&case=blur&nodes=500",
+      "runtime": "flutter",
+      "parameters": {
+        "benchmark": "css-animation",
+        "case": "blur",
+        "nodes": 500
+      },
+      "categories": [
+        "css"
+      ],
+      "status": "pending"
+    },
+    {
+      "key": "electron-benchmark=css-animation&case=blur&nodes=1000",
+      "runtime": "electron",
+      "parameters": {
+        "benchmark": "css-animation",
+        "case": "blur",
+        "nodes": 1000
+      },
+      "categories": [
+        "css"
+      ],
+      "status": "pending"
+    },
+    {
+      "key": "tauri-benchmark=css-animation&case=blur&nodes=1000",
+      "runtime": "tauri",
+      "parameters": {
+        "benchmark": "css-animation",
+        "case": "blur",
+        "nodes": 1000
+      },
+      "categories": [
+        "css"
+      ],
+      "status": "pending"
+    },
+    {
+      "key": "flutter-benchmark=css-animation&case=blur&nodes=1000",
+      "runtime": "flutter",
+      "parameters": {
+        "benchmark": "css-animation",
+        "case": "blur",
+        "nodes": 1000
+      },
+      "categories": [
+        "css"
+      ],
+      "status": "pending"
+    },
+    {
+      "key": "electron-benchmark=css-animation&case=blur&nodes=5000",
+      "runtime": "electron",
+      "parameters": {
+        "benchmark": "css-animation",
+        "case": "blur",
+        "nodes": 5000
+      },
+      "categories": [
+        "css"
+      ],
+      "status": "pending"
+    },
+    {
+      "key": "tauri-benchmark=css-animation&case=blur&nodes=5000",
+      "runtime": "tauri",
+      "parameters": {
+        "benchmark": "css-animation",
+        "case": "blur",
+        "nodes": 5000
+      },
+      "categories": [
+        "css"
+      ],
+      "status": "pending"
+    },
+    {
+      "key": "flutter-benchmark=css-animation&case=blur&nodes=5000",
+      "runtime": "flutter",
+      "parameters": {
+        "benchmark": "css-animation",
+        "case": "blur",
+        "nodes": 5000
+      },
+      "categories": [
+        "css"
+      ],
+      "status": "pending"
+    },
+    {
+      "key": "electron-benchmark=css-animation&case=backdrop-blur&nodes=100",
+      "runtime": "electron",
+      "parameters": {
+        "benchmark": "css-animation",
+        "case": "backdrop-blur",
+        "nodes": 100
+      },
+      "categories": [
+        "css"
+      ],
+      "status": "pending"
+    },
+    {
+      "key": "tauri-benchmark=css-animation&case=backdrop-blur&nodes=100",
+      "runtime": "tauri",
+      "parameters": {
+        "benchmark": "css-animation",
+        "case": "backdrop-blur",
+        "nodes": 100
+      },
+      "categories": [
+        "css"
+      ],
+      "status": "pending"
+    },
+    {
+      "key": "flutter-benchmark=css-animation&case=backdrop-blur&nodes=100",
+      "runtime": "flutter",
+      "parameters": {
+        "benchmark": "css-animation",
+        "case": "backdrop-blur",
+        "nodes": 100
+      },
+      "categories": [
+        "css"
+      ],
+      "status": "pending"
+    },
+    {
+      "key": "electron-benchmark=css-animation&case=backdrop-blur&nodes=500",
+      "runtime": "electron",
+      "parameters": {
+        "benchmark": "css-animation",
+        "case": "backdrop-blur",
+        "nodes": 500
+      },
+      "categories": [
+        "css"
+      ],
+      "status": "pending"
+    },
+    {
+      "key": "tauri-benchmark=css-animation&case=backdrop-blur&nodes=500",
+      "runtime": "tauri",
+      "parameters": {
+        "benchmark": "css-animation",
+        "case": "backdrop-blur",
+        "nodes": 500
+      },
+      "categories": [
+        "css"
+      ],
+      "status": "pending"
+    },
+    {
+      "key": "flutter-benchmark=css-animation&case=backdrop-blur&nodes=500",
+      "runtime": "flutter",
+      "parameters": {
+        "benchmark": "css-animation",
+        "case": "backdrop-blur",
+        "nodes": 500
+      },
+      "categories": [
+        "css"
+      ],
+      "status": "pending"
+    },
+    {
+      "key": "electron-benchmark=css-animation&case=backdrop-blur&nodes=1000",
+      "runtime": "electron",
+      "parameters": {
+        "benchmark": "css-animation",
+        "case": "backdrop-blur",
+        "nodes": 1000
+      },
+      "categories": [
+        "css"
+      ],
+      "status": "pending"
+    },
+    {
+      "key": "tauri-benchmark=css-animation&case=backdrop-blur&nodes=1000",
+      "runtime": "tauri",
+      "parameters": {
+        "benchmark": "css-animation",
+        "case": "backdrop-blur",
+        "nodes": 1000
+      },
+      "categories": [
+        "css"
+      ],
+      "status": "pending"
+    },
+    {
+      "key": "flutter-benchmark=css-animation&case=backdrop-blur&nodes=1000",
+      "runtime": "flutter",
+      "parameters": {
+        "benchmark": "css-animation",
+        "case": "backdrop-blur",
+        "nodes": 1000
+      },
+      "categories": [
+        "css"
+      ],
+      "status": "pending"
+    },
+    {
+      "key": "electron-benchmark=css-animation&case=backdrop-blur&nodes=5000",
+      "runtime": "electron",
+      "parameters": {
+        "benchmark": "css-animation",
+        "case": "backdrop-blur",
+        "nodes": 5000
+      },
+      "categories": [
+        "css"
+      ],
+      "status": "pending"
+    },
+    {
+      "key": "tauri-benchmark=css-animation&case=backdrop-blur&nodes=5000",
+      "runtime": "tauri",
+      "parameters": {
+        "benchmark": "css-animation",
+        "case": "backdrop-blur",
+        "nodes": 5000
+      },
+      "categories": [
+        "css"
+      ],
+      "status": "pending"
+    },
+    {
+      "key": "flutter-benchmark=css-animation&case=backdrop-blur&nodes=5000",
+      "runtime": "flutter",
+      "parameters": {
+        "benchmark": "css-animation",
+        "case": "backdrop-blur",
+        "nodes": 5000
+      },
+      "categories": [
+        "css"
+      ],
+      "status": "pending"
+    },
+    {
+      "key": "electron-benchmark=css-animation&case=nested-transform&nodes=100",
+      "runtime": "electron",
+      "parameters": {
+        "benchmark": "css-animation",
+        "case": "nested-transform",
+        "nodes": 100
+      },
+      "categories": [
+        "css"
+      ],
+      "status": "pending"
+    },
+    {
+      "key": "tauri-benchmark=css-animation&case=nested-transform&nodes=100",
+      "runtime": "tauri",
+      "parameters": {
+        "benchmark": "css-animation",
+        "case": "nested-transform",
+        "nodes": 100
+      },
+      "categories": [
+        "css"
+      ],
+      "status": "pending"
+    },
+    {
+      "key": "flutter-benchmark=css-animation&case=nested-transform&nodes=100",
+      "runtime": "flutter",
+      "parameters": {
+        "benchmark": "css-animation",
+        "case": "nested-transform",
+        "nodes": 100
+      },
+      "categories": [
+        "css"
+      ],
+      "status": "pending"
+    },
+    {
+      "key": "electron-benchmark=css-animation&case=nested-transform&nodes=500",
+      "runtime": "electron",
+      "parameters": {
+        "benchmark": "css-animation",
+        "case": "nested-transform",
+        "nodes": 500
+      },
+      "categories": [
+        "css"
+      ],
+      "status": "pending"
+    },
+    {
+      "key": "tauri-benchmark=css-animation&case=nested-transform&nodes=500",
+      "runtime": "tauri",
+      "parameters": {
+        "benchmark": "css-animation",
+        "case": "nested-transform",
+        "nodes": 500
+      },
+      "categories": [
+        "css"
+      ],
+      "status": "pending"
+    },
+    {
+      "key": "flutter-benchmark=css-animation&case=nested-transform&nodes=500",
+      "runtime": "flutter",
+      "parameters": {
+        "benchmark": "css-animation",
+        "case": "nested-transform",
+        "nodes": 500
+      },
+      "categories": [
+        "css"
+      ],
+      "status": "pending"
+    },
+    {
+      "key": "electron-benchmark=css-animation&case=nested-transform&nodes=1000",
+      "runtime": "electron",
+      "parameters": {
+        "benchmark": "css-animation",
+        "case": "nested-transform",
+        "nodes": 1000
+      },
+      "categories": [
+        "css"
+      ],
+      "status": "pending"
+    },
+    {
+      "key": "tauri-benchmark=css-animation&case=nested-transform&nodes=1000",
+      "runtime": "tauri",
+      "parameters": {
+        "benchmark": "css-animation",
+        "case": "nested-transform",
+        "nodes": 1000
+      },
+      "categories": [
+        "css"
+      ],
+      "status": "pending"
+    },
+    {
+      "key": "flutter-benchmark=css-animation&case=nested-transform&nodes=1000",
+      "runtime": "flutter",
+      "parameters": {
+        "benchmark": "css-animation",
+        "case": "nested-transform",
+        "nodes": 1000
+      },
+      "categories": [
+        "css"
+      ],
+      "status": "pending"
+    },
+    {
+      "key": "electron-benchmark=css-animation&case=nested-transform&nodes=5000",
+      "runtime": "electron",
+      "parameters": {
+        "benchmark": "css-animation",
+        "case": "nested-transform",
+        "nodes": 5000
+      },
+      "categories": [
+        "css"
+      ],
+      "status": "pending"
+    },
+    {
+      "key": "tauri-benchmark=css-animation&case=nested-transform&nodes=5000",
+      "runtime": "tauri",
+      "parameters": {
+        "benchmark": "css-animation",
+        "case": "nested-transform",
+        "nodes": 5000
+      },
+      "categories": [
+        "css"
+      ],
+      "status": "pending"
+    },
+    {
+      "key": "flutter-benchmark=css-animation&case=nested-transform&nodes=5000",
+      "runtime": "flutter",
+      "parameters": {
+        "benchmark": "css-animation",
+        "case": "nested-transform",
+        "nodes": 5000
+      },
+      "categories": [
+        "css"
+      ],
+      "status": "pending"
+    },
+    {
+      "key": "electron-benchmark=css-animation&case=scroll-animation&nodes=100",
+      "runtime": "electron",
+      "parameters": {
+        "benchmark": "css-animation",
+        "case": "scroll-animation",
+        "nodes": 100
+      },
+      "categories": [
+        "css"
+      ],
+      "status": "pending"
+    },
+    {
+      "key": "tauri-benchmark=css-animation&case=scroll-animation&nodes=100",
+      "runtime": "tauri",
+      "parameters": {
+        "benchmark": "css-animation",
+        "case": "scroll-animation",
+        "nodes": 100
+      },
+      "categories": [
+        "css"
+      ],
+      "status": "pending"
+    },
+    {
+      "key": "flutter-benchmark=css-animation&case=scroll-animation&nodes=100",
+      "runtime": "flutter",
+      "parameters": {
+        "benchmark": "css-animation",
+        "case": "scroll-animation",
+        "nodes": 100
+      },
+      "categories": [
+        "css"
+      ],
+      "status": "pending"
+    },
+    {
+      "key": "electron-benchmark=css-animation&case=scroll-animation&nodes=500",
+      "runtime": "electron",
+      "parameters": {
+        "benchmark": "css-animation",
+        "case": "scroll-animation",
+        "nodes": 500
+      },
+      "categories": [
+        "css"
+      ],
+      "status": "pending"
+    },
+    {
+      "key": "tauri-benchmark=css-animation&case=scroll-animation&nodes=500",
+      "runtime": "tauri",
+      "parameters": {
+        "benchmark": "css-animation",
+        "case": "scroll-animation",
+        "nodes": 500
+      },
+      "categories": [
+        "css"
+      ],
+      "status": "pending"
+    },
+    {
+      "key": "flutter-benchmark=css-animation&case=scroll-animation&nodes=500",
+      "runtime": "flutter",
+      "parameters": {
+        "benchmark": "css-animation",
+        "case": "scroll-animation",
+        "nodes": 500
+      },
+      "categories": [
+        "css"
+      ],
+      "status": "pending"
+    },
+    {
+      "key": "electron-benchmark=css-animation&case=scroll-animation&nodes=1000",
+      "runtime": "electron",
+      "parameters": {
+        "benchmark": "css-animation",
+        "case": "scroll-animation",
+        "nodes": 1000
+      },
+      "categories": [
+        "css"
+      ],
+      "status": "pending"
+    },
+    {
+      "key": "tauri-benchmark=css-animation&case=scroll-animation&nodes=1000",
+      "runtime": "tauri",
+      "parameters": {
+        "benchmark": "css-animation",
+        "case": "scroll-animation",
+        "nodes": 1000
+      },
+      "categories": [
+        "css"
+      ],
+      "status": "pending"
+    },
+    {
+      "key": "flutter-benchmark=css-animation&case=scroll-animation&nodes=1000",
+      "runtime": "flutter",
+      "parameters": {
+        "benchmark": "css-animation",
+        "case": "scroll-animation",
+        "nodes": 1000
+      },
+      "categories": [
+        "css"
+      ],
+      "status": "pending"
+    },
+    {
+      "key": "electron-benchmark=css-animation&case=scroll-animation&nodes=5000",
+      "runtime": "electron",
+      "parameters": {
+        "benchmark": "css-animation",
+        "case": "scroll-animation",
+        "nodes": 5000
+      },
+      "categories": [
+        "css"
+      ],
+      "status": "pending"
+    },
+    {
+      "key": "tauri-benchmark=css-animation&case=scroll-animation&nodes=5000",
+      "runtime": "tauri",
+      "parameters": {
+        "benchmark": "css-animation",
+        "case": "scroll-animation",
+        "nodes": 5000
+      },
+      "categories": [
+        "css"
+      ],
+      "status": "pending"
+    },
+    {
+      "key": "flutter-benchmark=css-animation&case=scroll-animation&nodes=5000",
+      "runtime": "flutter",
+      "parameters": {
+        "benchmark": "css-animation",
+        "case": "scroll-animation",
+        "nodes": 5000
+      },
+      "categories": [
+        "css"
+      ],
+      "status": "pending"
+    },
+    {
+      "key": "electron-benchmark=css-animation&case=mixed&nodes=100",
+      "runtime": "electron",
+      "parameters": {
+        "benchmark": "css-animation",
+        "case": "mixed",
+        "nodes": 100
+      },
+      "categories": [
+        "css"
+      ],
+      "status": "pending"
+    },
+    {
+      "key": "tauri-benchmark=css-animation&case=mixed&nodes=100",
+      "runtime": "tauri",
+      "parameters": {
+        "benchmark": "css-animation",
+        "case": "mixed",
+        "nodes": 100
+      },
+      "categories": [
+        "css"
+      ],
+      "status": "pending"
+    },
+    {
+      "key": "flutter-benchmark=css-animation&case=mixed&nodes=100",
+      "runtime": "flutter",
+      "parameters": {
+        "benchmark": "css-animation",
+        "case": "mixed",
+        "nodes": 100
+      },
+      "categories": [
+        "css"
+      ],
+      "status": "pending"
+    },
+    {
+      "key": "electron-benchmark=css-animation&case=mixed&nodes=500",
+      "runtime": "electron",
+      "parameters": {
+        "benchmark": "css-animation",
+        "case": "mixed",
+        "nodes": 500
+      },
+      "categories": [
+        "css"
+      ],
+      "status": "pending"
+    },
+    {
+      "key": "tauri-benchmark=css-animation&case=mixed&nodes=500",
+      "runtime": "tauri",
+      "parameters": {
+        "benchmark": "css-animation",
+        "case": "mixed",
+        "nodes": 500
+      },
+      "categories": [
+        "css"
+      ],
+      "status": "pending"
+    },
+    {
+      "key": "flutter-benchmark=css-animation&case=mixed&nodes=500",
+      "runtime": "flutter",
+      "parameters": {
+        "benchmark": "css-animation",
+        "case": "mixed",
+        "nodes": 500
+      },
+      "categories": [
+        "css"
+      ],
+      "status": "pending"
+    },
+    {
+      "key": "electron-benchmark=css-animation&case=mixed&nodes=1000",
+      "runtime": "electron",
+      "parameters": {
+        "benchmark": "css-animation",
+        "case": "mixed",
+        "nodes": 1000
+      },
+      "categories": [
+        "css"
+      ],
+      "status": "pending"
+    },
+    {
+      "key": "tauri-benchmark=css-animation&case=mixed&nodes=1000",
+      "runtime": "tauri",
+      "parameters": {
+        "benchmark": "css-animation",
+        "case": "mixed",
+        "nodes": 1000
+      },
+      "categories": [
+        "css"
+      ],
+      "status": "pending"
+    },
+    {
+      "key": "flutter-benchmark=css-animation&case=mixed&nodes=1000",
+      "runtime": "flutter",
+      "parameters": {
+        "benchmark": "css-animation",
+        "case": "mixed",
+        "nodes": 1000
+      },
+      "categories": [
+        "css"
+      ],
+      "status": "pending"
+    },
+    {
+      "key": "electron-benchmark=css-animation&case=mixed&nodes=5000",
+      "runtime": "electron",
+      "parameters": {
+        "benchmark": "css-animation",
+        "case": "mixed",
+        "nodes": 5000
+      },
+      "categories": [
+        "css"
+      ],
+      "status": "pending"
+    },
+    {
+      "key": "tauri-benchmark=css-animation&case=mixed&nodes=5000",
+      "runtime": "tauri",
+      "parameters": {
+        "benchmark": "css-animation",
+        "case": "mixed",
+        "nodes": 5000
+      },
+      "categories": [
+        "css"
+      ],
+      "status": "pending"
+    },
+    {
+      "key": "flutter-benchmark=css-animation&case=mixed&nodes=5000",
+      "runtime": "flutter",
+      "parameters": {
+        "benchmark": "css-animation",
+        "case": "mixed",
+        "nodes": 5000
+      },
+      "categories": [
+        "css"
+      ],
+      "status": "pending"
+    },
+    {
+      "key": "electron-benchmark=skeletal-3d&asset=RiggedSimple&characters=1",
+      "runtime": "electron",
+      "parameters": {
+        "benchmark": "skeletal-3d",
+        "asset": "RiggedSimple",
+        "characters": 1
+      },
+      "categories": [
+        "baseline",
+        "static-load"
+      ],
+      "status": "pending"
+    },
+    {
+      "key": "tauri-benchmark=skeletal-3d&asset=RiggedSimple&characters=1",
+      "runtime": "tauri",
+      "parameters": {
+        "benchmark": "skeletal-3d",
+        "asset": "RiggedSimple",
+        "characters": 1
+      },
+      "categories": [
+        "baseline",
+        "static-load"
+      ],
+      "status": "pending"
+    },
+    {
+      "key": "electron-benchmark=skeletal-3d&asset=RiggedSimple&characters=10",
+      "runtime": "electron",
+      "parameters": {
+        "benchmark": "skeletal-3d",
+        "asset": "RiggedSimple",
+        "characters": 10
+      },
+      "categories": [
+        "baseline",
+        "static-load"
+      ],
+      "status": "pending"
+    },
+    {
+      "key": "tauri-benchmark=skeletal-3d&asset=RiggedSimple&characters=10",
+      "runtime": "tauri",
+      "parameters": {
+        "benchmark": "skeletal-3d",
+        "asset": "RiggedSimple",
+        "characters": 10
+      },
+      "categories": [
+        "baseline",
+        "static-load"
+      ],
+      "status": "pending"
+    },
+    {
+      "key": "electron-benchmark=skeletal-3d&asset=RiggedSimple&characters=50",
+      "runtime": "electron",
+      "parameters": {
+        "benchmark": "skeletal-3d",
+        "asset": "RiggedSimple",
+        "characters": 50
+      },
+      "categories": [
+        "baseline",
+        "static-load"
+      ],
+      "status": "pending"
+    },
+    {
+      "key": "tauri-benchmark=skeletal-3d&asset=RiggedSimple&characters=50",
+      "runtime": "tauri",
+      "parameters": {
+        "benchmark": "skeletal-3d",
+        "asset": "RiggedSimple",
+        "characters": 50
+      },
+      "categories": [
+        "baseline",
+        "static-load"
+      ],
+      "status": "pending"
+    },
+    {
+      "key": "electron-benchmark=skeletal-3d&asset=RiggedFigure&characters=1",
+      "runtime": "electron",
+      "parameters": {
+        "benchmark": "skeletal-3d",
+        "asset": "RiggedFigure",
+        "characters": 1
+      },
+      "categories": [
+        "baseline",
+        "static-load"
+      ],
+      "status": "pending"
+    },
+    {
+      "key": "tauri-benchmark=skeletal-3d&asset=RiggedFigure&characters=1",
+      "runtime": "tauri",
+      "parameters": {
+        "benchmark": "skeletal-3d",
+        "asset": "RiggedFigure",
+        "characters": 1
+      },
+      "categories": [
+        "baseline",
+        "static-load"
+      ],
+      "status": "pending"
+    },
+    {
+      "key": "electron-benchmark=skeletal-3d&asset=RiggedFigure&characters=10",
+      "runtime": "electron",
+      "parameters": {
+        "benchmark": "skeletal-3d",
+        "asset": "RiggedFigure",
+        "characters": 10
+      },
+      "categories": [
+        "baseline",
+        "static-load"
+      ],
+      "status": "pending"
+    },
+    {
+      "key": "tauri-benchmark=skeletal-3d&asset=RiggedFigure&characters=10",
+      "runtime": "tauri",
+      "parameters": {
+        "benchmark": "skeletal-3d",
+        "asset": "RiggedFigure",
+        "characters": 10
+      },
+      "categories": [
+        "baseline",
+        "static-load"
+      ],
+      "status": "pending"
+    },
+    {
+      "key": "electron-benchmark=skeletal-3d&asset=RiggedFigure&characters=50",
+      "runtime": "electron",
+      "parameters": {
+        "benchmark": "skeletal-3d",
+        "asset": "RiggedFigure",
+        "characters": 50
+      },
+      "categories": [
+        "baseline",
+        "static-load"
+      ],
+      "status": "pending"
+    },
+    {
+      "key": "tauri-benchmark=skeletal-3d&asset=RiggedFigure&characters=50",
+      "runtime": "tauri",
+      "parameters": {
+        "benchmark": "skeletal-3d",
+        "asset": "RiggedFigure",
+        "characters": 50
+      },
+      "categories": [
+        "baseline",
+        "static-load"
+      ],
+      "status": "pending"
+    },
+    {
+      "key": "electron-benchmark=skeletal-3d&asset=generated%2Fcharacter-lowpoly&characters=1",
+      "runtime": "electron",
+      "parameters": {
+        "benchmark": "skeletal-3d",
+        "asset": "generated/character-lowpoly",
+        "characters": 1
+      },
+      "categories": [
+        "baseline",
+        "static-load"
+      ],
+      "status": "pending"
+    },
+    {
+      "key": "tauri-benchmark=skeletal-3d&asset=generated%2Fcharacter-lowpoly&characters=1",
+      "runtime": "tauri",
+      "parameters": {
+        "benchmark": "skeletal-3d",
+        "asset": "generated/character-lowpoly",
+        "characters": 1
+      },
+      "categories": [
+        "baseline",
+        "static-load"
+      ],
+      "status": "pending"
+    },
+    {
+      "key": "electron-benchmark=skeletal-3d&asset=generated%2Fcharacter-lowpoly&characters=10",
+      "runtime": "electron",
+      "parameters": {
+        "benchmark": "skeletal-3d",
+        "asset": "generated/character-lowpoly",
+        "characters": 10
+      },
+      "categories": [
+        "baseline",
+        "static-load"
+      ],
+      "status": "pending"
+    },
+    {
+      "key": "tauri-benchmark=skeletal-3d&asset=generated%2Fcharacter-lowpoly&characters=10",
+      "runtime": "tauri",
+      "parameters": {
+        "benchmark": "skeletal-3d",
+        "asset": "generated/character-lowpoly",
+        "characters": 10
+      },
+      "categories": [
+        "baseline",
+        "static-load"
+      ],
+      "status": "pending"
+    },
+    {
+      "key": "electron-benchmark=skeletal-3d&asset=generated%2Fcharacter-lowpoly&characters=50",
+      "runtime": "electron",
+      "parameters": {
+        "benchmark": "skeletal-3d",
+        "asset": "generated/character-lowpoly",
+        "characters": 50
+      },
+      "categories": [
+        "baseline",
+        "static-load"
+      ],
+      "status": "pending"
+    },
+    {
+      "key": "tauri-benchmark=skeletal-3d&asset=generated%2Fcharacter-lowpoly&characters=50",
+      "runtime": "tauri",
+      "parameters": {
+        "benchmark": "skeletal-3d",
+        "asset": "generated/character-lowpoly",
+        "characters": 50
+      },
+      "categories": [
+        "baseline",
+        "static-load"
+      ],
+      "status": "pending"
+    },
+    {
+      "key": "electron-benchmark=skeletal-3d&asset=stress%2Fscale-t1000000-b50-x4096&characters=1",
+      "runtime": "electron",
+      "parameters": {
+        "benchmark": "skeletal-3d",
+        "asset": "stress/scale-t1000000-b50-x4096",
+        "characters": 1
+      },
+      "categories": [
+        "bone-scaling",
+        "static-load"
+      ],
+      "status": "pending"
+    },
+    {
+      "key": "tauri-benchmark=skeletal-3d&asset=stress%2Fscale-t1000000-b50-x4096&characters=1",
+      "runtime": "tauri",
+      "parameters": {
+        "benchmark": "skeletal-3d",
+        "asset": "stress/scale-t1000000-b50-x4096",
+        "characters": 1
+      },
+      "categories": [
+        "bone-scaling",
+        "static-load"
+      ],
+      "status": "pending"
+    },
+    {
+      "key": "electron-benchmark=skeletal-3d&asset=stress%2Fscale-t1000000-b100-x4096&characters=1",
+      "runtime": "electron",
+      "parameters": {
+        "benchmark": "skeletal-3d",
+        "asset": "stress/scale-t1000000-b100-x4096",
+        "characters": 1
+      },
+      "categories": [
+        "bone-scaling",
+        "static-load",
+        "geometry-scaling",
+        "texture-scaling"
+      ],
+      "status": "pending"
+    },
+    {
+      "key": "tauri-benchmark=skeletal-3d&asset=stress%2Fscale-t1000000-b100-x4096&characters=1",
+      "runtime": "tauri",
+      "parameters": {
+        "benchmark": "skeletal-3d",
+        "asset": "stress/scale-t1000000-b100-x4096",
+        "characters": 1
+      },
+      "categories": [
+        "bone-scaling",
+        "static-load",
+        "geometry-scaling",
+        "texture-scaling"
+      ],
+      "status": "pending"
+    },
+    {
+      "key": "electron-benchmark=skeletal-3d&asset=stress%2Fscale-t1000000-b250-x4096&characters=1",
+      "runtime": "electron",
+      "parameters": {
+        "benchmark": "skeletal-3d",
+        "asset": "stress/scale-t1000000-b250-x4096",
+        "characters": 1
+      },
+      "categories": [
+        "bone-scaling",
+        "static-load"
+      ],
+      "status": "pending"
+    },
+    {
+      "key": "tauri-benchmark=skeletal-3d&asset=stress%2Fscale-t1000000-b250-x4096&characters=1",
+      "runtime": "tauri",
+      "parameters": {
+        "benchmark": "skeletal-3d",
+        "asset": "stress/scale-t1000000-b250-x4096",
+        "characters": 1
+      },
+      "categories": [
+        "bone-scaling",
+        "static-load"
+      ],
+      "status": "pending"
+    },
+    {
+      "key": "electron-benchmark=skeletal-3d&asset=stress%2Fscale-t1000000-b500-x4096&characters=1",
+      "runtime": "electron",
+      "parameters": {
+        "benchmark": "skeletal-3d",
+        "asset": "stress/scale-t1000000-b500-x4096",
+        "characters": 1
+      },
+      "categories": [
+        "bone-scaling",
+        "static-load"
+      ],
+      "status": "pending"
+    },
+    {
+      "key": "tauri-benchmark=skeletal-3d&asset=stress%2Fscale-t1000000-b500-x4096&characters=1",
+      "runtime": "tauri",
+      "parameters": {
+        "benchmark": "skeletal-3d",
+        "asset": "stress/scale-t1000000-b500-x4096",
+        "characters": 1
+      },
+      "categories": [
+        "bone-scaling",
+        "static-load"
+      ],
+      "status": "pending"
+    },
+    {
+      "key": "electron-benchmark=skeletal-3d&asset=stress%2Fscale-t1000000-b1000-x4096&characters=1",
+      "runtime": "electron",
+      "parameters": {
+        "benchmark": "skeletal-3d",
+        "asset": "stress/scale-t1000000-b1000-x4096",
+        "characters": 1
+      },
+      "categories": [
+        "bone-scaling",
+        "static-load"
+      ],
+      "status": "pending"
+    },
+    {
+      "key": "tauri-benchmark=skeletal-3d&asset=stress%2Fscale-t1000000-b1000-x4096&characters=1",
+      "runtime": "tauri",
+      "parameters": {
+        "benchmark": "skeletal-3d",
+        "asset": "stress/scale-t1000000-b1000-x4096",
+        "characters": 1
+      },
+      "categories": [
+        "bone-scaling",
+        "static-load"
+      ],
+      "status": "pending"
+    },
+    {
+      "key": "electron-benchmark=skeletal-3d&asset=stress%2Fscale-t100000-b100-x4096&characters=1",
+      "runtime": "electron",
+      "parameters": {
+        "benchmark": "skeletal-3d",
+        "asset": "stress/scale-t100000-b100-x4096",
+        "characters": 1
+      },
+      "categories": [
+        "geometry-scaling",
+        "static-load",
+        "character-scaling"
+      ],
+      "status": "pending"
+    },
+    {
+      "key": "tauri-benchmark=skeletal-3d&asset=stress%2Fscale-t100000-b100-x4096&characters=1",
+      "runtime": "tauri",
+      "parameters": {
+        "benchmark": "skeletal-3d",
+        "asset": "stress/scale-t100000-b100-x4096",
+        "characters": 1
+      },
+      "categories": [
+        "geometry-scaling",
+        "static-load",
+        "character-scaling"
+      ],
+      "status": "pending"
+    },
+    {
+      "key": "electron-benchmark=skeletal-3d&asset=stress%2Fscale-t500000-b100-x4096&characters=1",
+      "runtime": "electron",
+      "parameters": {
+        "benchmark": "skeletal-3d",
+        "asset": "stress/scale-t500000-b100-x4096",
+        "characters": 1
+      },
+      "categories": [
+        "geometry-scaling",
+        "static-load"
+      ],
+      "status": "pending"
+    },
+    {
+      "key": "tauri-benchmark=skeletal-3d&asset=stress%2Fscale-t500000-b100-x4096&characters=1",
+      "runtime": "tauri",
+      "parameters": {
+        "benchmark": "skeletal-3d",
+        "asset": "stress/scale-t500000-b100-x4096",
+        "characters": 1
+      },
+      "categories": [
+        "geometry-scaling",
+        "static-load"
+      ],
+      "status": "pending"
+    },
+    {
+      "key": "electron-benchmark=skeletal-3d&asset=stress%2Fscale-t5000000-b100-x4096&characters=1",
+      "runtime": "electron",
+      "parameters": {
+        "benchmark": "skeletal-3d",
+        "asset": "stress/scale-t5000000-b100-x4096",
+        "characters": 1
+      },
+      "categories": [
+        "geometry-scaling",
+        "static-load"
+      ],
+      "status": "pending"
+    },
+    {
+      "key": "tauri-benchmark=skeletal-3d&asset=stress%2Fscale-t5000000-b100-x4096&characters=1",
+      "runtime": "tauri",
+      "parameters": {
+        "benchmark": "skeletal-3d",
+        "asset": "stress/scale-t5000000-b100-x4096",
+        "characters": 1
+      },
+      "categories": [
+        "geometry-scaling",
+        "static-load"
+      ],
+      "status": "pending"
+    },
+    {
+      "key": "electron-benchmark=skeletal-3d&asset=stress%2Fscale-t10000000-b100-x4096&characters=1",
+      "runtime": "electron",
+      "parameters": {
+        "benchmark": "skeletal-3d",
+        "asset": "stress/scale-t10000000-b100-x4096",
+        "characters": 1
+      },
+      "categories": [
+        "geometry-scaling",
+        "static-load"
+      ],
+      "status": "pending"
+    },
+    {
+      "key": "tauri-benchmark=skeletal-3d&asset=stress%2Fscale-t10000000-b100-x4096&characters=1",
+      "runtime": "tauri",
+      "parameters": {
+        "benchmark": "skeletal-3d",
+        "asset": "stress/scale-t10000000-b100-x4096",
+        "characters": 1
+      },
+      "categories": [
+        "geometry-scaling",
+        "static-load"
+      ],
+      "status": "pending"
+    },
+    {
+      "key": "electron-benchmark=skeletal-3d&asset=stress%2Fscale-t1000000-b100-x1024&characters=1",
+      "runtime": "electron",
+      "parameters": {
+        "benchmark": "skeletal-3d",
+        "asset": "stress/scale-t1000000-b100-x1024",
+        "characters": 1
+      },
+      "categories": [
+        "texture-scaling",
+        "static-load"
+      ],
+      "status": "pending"
+    },
+    {
+      "key": "tauri-benchmark=skeletal-3d&asset=stress%2Fscale-t1000000-b100-x1024&characters=1",
+      "runtime": "tauri",
+      "parameters": {
+        "benchmark": "skeletal-3d",
+        "asset": "stress/scale-t1000000-b100-x1024",
+        "characters": 1
+      },
+      "categories": [
+        "texture-scaling",
+        "static-load"
+      ],
+      "status": "pending"
+    },
+    {
+      "key": "electron-benchmark=skeletal-3d&asset=stress%2Fscale-t1000000-b100-x2048&characters=1",
+      "runtime": "electron",
+      "parameters": {
+        "benchmark": "skeletal-3d",
+        "asset": "stress/scale-t1000000-b100-x2048",
+        "characters": 1
+      },
+      "categories": [
+        "texture-scaling",
+        "static-load"
+      ],
+      "status": "pending"
+    },
+    {
+      "key": "tauri-benchmark=skeletal-3d&asset=stress%2Fscale-t1000000-b100-x2048&characters=1",
+      "runtime": "tauri",
+      "parameters": {
+        "benchmark": "skeletal-3d",
+        "asset": "stress/scale-t1000000-b100-x2048",
+        "characters": 1
+      },
+      "categories": [
+        "texture-scaling",
+        "static-load"
+      ],
+      "status": "pending"
+    },
+    {
+      "key": "electron-benchmark=skeletal-3d&asset=stress%2Fscale-t1000000-b100-x8192&characters=1",
+      "runtime": "electron",
+      "parameters": {
+        "benchmark": "skeletal-3d",
+        "asset": "stress/scale-t1000000-b100-x8192",
+        "characters": 1
+      },
+      "categories": [
+        "texture-scaling",
+        "static-load"
+      ],
+      "status": "pending"
+    },
+    {
+      "key": "tauri-benchmark=skeletal-3d&asset=stress%2Fscale-t1000000-b100-x8192&characters=1",
+      "runtime": "tauri",
+      "parameters": {
+        "benchmark": "skeletal-3d",
+        "asset": "stress/scale-t1000000-b100-x8192",
+        "characters": 1
+      },
+      "categories": [
+        "texture-scaling",
+        "static-load"
+      ],
+      "status": "pending"
+    },
+    {
+      "key": "electron-benchmark=skeletal-3d&asset=stress%2Fscale-t100000-b100-x4096&characters=10",
+      "runtime": "electron",
+      "parameters": {
+        "benchmark": "skeletal-3d",
+        "asset": "stress/scale-t100000-b100-x4096",
+        "characters": 10
+      },
+      "categories": [
+        "character-scaling",
+        "static-load"
+      ],
+      "status": "pending"
+    },
+    {
+      "key": "tauri-benchmark=skeletal-3d&asset=stress%2Fscale-t100000-b100-x4096&characters=10",
+      "runtime": "tauri",
+      "parameters": {
+        "benchmark": "skeletal-3d",
+        "asset": "stress/scale-t100000-b100-x4096",
+        "characters": 10
+      },
+      "categories": [
+        "character-scaling",
+        "static-load"
+      ],
+      "status": "pending"
+    },
+    {
+      "key": "electron-benchmark=skeletal-3d&asset=stress%2Fscale-t100000-b100-x4096&characters=50",
+      "runtime": "electron",
+      "parameters": {
+        "benchmark": "skeletal-3d",
+        "asset": "stress/scale-t100000-b100-x4096",
+        "characters": 50
+      },
+      "categories": [
+        "character-scaling",
+        "static-load"
+      ],
+      "status": "pending"
+    },
+    {
+      "key": "tauri-benchmark=skeletal-3d&asset=stress%2Fscale-t100000-b100-x4096&characters=50",
+      "runtime": "tauri",
+      "parameters": {
+        "benchmark": "skeletal-3d",
+        "asset": "stress/scale-t100000-b100-x4096",
+        "characters": 50
+      },
+      "categories": [
+        "character-scaling",
+        "static-load"
+      ],
+      "status": "pending"
+    },
+    {
+      "key": "electron-benchmark=skeletal-3d&asset=stress%2Fscale-t100000-b100-x4096&characters=100",
+      "runtime": "electron",
+      "parameters": {
+        "benchmark": "skeletal-3d",
+        "asset": "stress/scale-t100000-b100-x4096",
+        "characters": 100
+      },
+      "categories": [
+        "character-scaling",
+        "static-load"
+      ],
+      "status": "pending"
+    },
+    {
+      "key": "tauri-benchmark=skeletal-3d&asset=stress%2Fscale-t100000-b100-x4096&characters=100",
+      "runtime": "tauri",
+      "parameters": {
+        "benchmark": "skeletal-3d",
+        "asset": "stress/scale-t100000-b100-x4096",
+        "characters": 100
+      },
+      "categories": [
+        "character-scaling",
+        "static-load"
+      ],
+      "status": "pending"
+    },
+    {
+      "key": "electron-benchmark=skeletal-3d&asset=stress%2Fscale-t100000-b100-x4096&characters=250",
+      "runtime": "electron",
+      "parameters": {
+        "benchmark": "skeletal-3d",
+        "asset": "stress/scale-t100000-b100-x4096",
+        "characters": 250
+      },
+      "categories": [
+        "character-scaling",
+        "static-load"
+      ],
+      "status": "pending"
+    },
+    {
+      "key": "tauri-benchmark=skeletal-3d&asset=stress%2Fscale-t100000-b100-x4096&characters=250",
+      "runtime": "tauri",
+      "parameters": {
+        "benchmark": "skeletal-3d",
+        "asset": "stress/scale-t100000-b100-x4096",
+        "characters": 250
+      },
+      "categories": [
+        "character-scaling",
+        "static-load"
+      ],
+      "status": "pending"
+    },
+    {
+      "key": "electron-benchmark=skeletal-3d&asset=stress%2Fscale-t100000-b100-x4096&characters=500",
+      "runtime": "electron",
+      "parameters": {
+        "benchmark": "skeletal-3d",
+        "asset": "stress/scale-t100000-b100-x4096",
+        "characters": 500
+      },
+      "categories": [
+        "character-scaling",
+        "static-load"
+      ],
+      "status": "pending"
+    },
+    {
+      "key": "tauri-benchmark=skeletal-3d&asset=stress%2Fscale-t100000-b100-x4096&characters=500",
+      "runtime": "tauri",
+      "parameters": {
+        "benchmark": "skeletal-3d",
+        "asset": "stress/scale-t100000-b100-x4096",
+        "characters": 500
+      },
+      "categories": [
+        "character-scaling",
+        "static-load"
+      ],
+      "status": "pending"
+    },
+    {
+      "key": "electron-benchmark=skeletal-3d&asset=stress%2Fmega-2_1gb-mixed&characters=1&scene=maximum",
+      "runtime": "electron",
+      "parameters": {
+        "benchmark": "skeletal-3d",
+        "asset": "stress/mega-2_1gb-mixed",
+        "characters": 1,
+        "scene": "maximum"
+      },
+      "categories": [
+        "combined-maximum"
+      ],
+      "status": "pending"
+    },
+    {
+      "key": "tauri-benchmark=skeletal-3d&asset=stress%2Fmega-2_1gb-mixed&characters=1&scene=maximum",
+      "runtime": "tauri",
+      "parameters": {
+        "benchmark": "skeletal-3d",
+        "asset": "stress/mega-2_1gb-mixed",
+        "characters": 1,
+        "scene": "maximum"
+      },
+      "categories": [
+        "combined-maximum"
+      ],
+      "status": "pending"
+    },
+    {
+      "key": "electron-benchmark=skeletal-3d&asset=stress%2Fmega-2_1gb-mixed&characters=10&scene=maximum",
+      "runtime": "electron",
+      "parameters": {
+        "benchmark": "skeletal-3d",
+        "asset": "stress/mega-2_1gb-mixed",
+        "characters": 10,
+        "scene": "maximum"
+      },
+      "categories": [
+        "combined-maximum"
+      ],
+      "status": "pending"
+    },
+    {
+      "key": "tauri-benchmark=skeletal-3d&asset=stress%2Fmega-2_1gb-mixed&characters=10&scene=maximum",
+      "runtime": "tauri",
+      "parameters": {
+        "benchmark": "skeletal-3d",
+        "asset": "stress/mega-2_1gb-mixed",
+        "characters": 10,
+        "scene": "maximum"
+      },
+      "categories": [
+        "combined-maximum"
+      ],
+      "status": "pending"
+    },
+    {
+      "key": "electron-benchmark=skeletal-3d&asset=stress%2Fmega-2_1gb-mixed&characters=50&scene=maximum",
+      "runtime": "electron",
+      "parameters": {
+        "benchmark": "skeletal-3d",
+        "asset": "stress/mega-2_1gb-mixed",
+        "characters": 50,
+        "scene": "maximum"
+      },
+      "categories": [
+        "combined-maximum"
+      ],
+      "status": "pending"
+    },
+    {
+      "key": "tauri-benchmark=skeletal-3d&asset=stress%2Fmega-2_1gb-mixed&characters=50&scene=maximum",
+      "runtime": "tauri",
+      "parameters": {
+        "benchmark": "skeletal-3d",
+        "asset": "stress/mega-2_1gb-mixed",
+        "characters": 50,
+        "scene": "maximum"
+      },
+      "categories": [
+        "combined-maximum"
+      ],
+      "status": "pending"
+    }
+  ],
+  "results": [
+    {
+      "id": "0398e617-c8cd-4a17-a885-afc357b20577",
+      "benchmark": "skeletal-3d",
+      "case": "single-character",
+      "runtime": "electron-chromium",
+      "comparisonClass": "runtime-parity",
+      "parameters": {
+        "asset": "stress/mega-2_1gb-texture-heavy",
+        "characterCount": 1
+      },
+      "asset": "stress/mega-2_1gb-texture-heavy",
+      "assetSha256": "4e1f92748616c905f278c1d7ce3d0e30527540cf66853aaa27b6bfe20bc25f0c",
+      "metadata": {
+        "os": "darwin",
+        "os_version": "27.0.0",
+        "cpu": "Apple M4",
+        "cpu_arch": "arm64",
+        "cpu_cores": 10,
+        "ram": 34359738368,
+        "gpu": "Apple M4",
+        "gpu_driver": null,
+        "display_resolution": "1512x982",
+        "display_scale": 2,
+        "refresh_rate": 60.000003814697266,
+        "runtime": "electron-chromium",
+        "runtime_version": "38.8.6",
+        "webview_version": "140.0.7339.249",
+        "framework": "electron",
+        "framework_version": "38.8.6",
+        "build_mode": "release",
+        "locale": "zh-CN",
+        "resource_scope": "application process tree; CPU percent is one-core normalized",
+        "benchmark_source_sha256": "7d6b6a69cfad54d930be5a32a0d880f90d8c3bf264b429974c252ca69a42f338",
+        "viewport_width": 1280,
+        "viewport_height": 800,
+        "workload_width": 640,
+        "workload_height": 360
+      },
+      "protocol": {
+        "warmupMs": 10000,
+        "measureMs": 30000,
+        "cooldownMs": 5000,
+        "runs": 5,
+        "refreshRateHz": 60,
+        "seed": 20261007
+      },
+      "summary": {
+        "frameCount": {
+          "median": 1801,
+          "min": 1800,
+          "max": 1801,
+          "variance": 0.16
+        },
+        "fpsAverage": {
+          "median": 60.000133259596346,
+          "min": 59.9970001499925,
+          "max": 60.000533041937075,
+          "variance": 0.00000169104619547393
+        },
+        "frameP50Ms": {
+          "median": 16.699999999982538,
+          "min": 16.699999999982538,
+          "max": 16.69999999999709,
+          "variance": 5.082197885474194e-23
+        },
+        "frameP95Ms": {
+          "median": 18.299999999999272,
+          "min": 18.19999999999709,
+          "max": 18.599999999976717,
+          "variance": 0.026399999997223495
+        },
+        "frameP99Ms": {
+          "median": 18.60000000000582,
+          "min": 18.59999999999127,
+          "max": 18.70000000001164,
+          "variance": 0.0016000000003608874
+        },
+        "worstFrameMs": {
+          "median": 18.80000000000291,
+          "min": 18.70000000001164,
+          "max": 18.800000000017462,
+          "variance": 0.0024000000000465663
+        },
+        "droppedFramePercent": {
+          "median": 0,
+          "min": 0,
+          "max": 0,
+          "variance": 0
+        },
+        "cpuAverage": {
+          "median": 1.9387379962743736,
+          "min": 1.7326037354378765,
+          "max": 2.0633153604197076,
+          "variance": 0.011838602174821727
+        },
+        "cpuPeak": {
+          "median": 5.069593072745356,
+          "min": 2.375448205809439,
+          "max": 6.536700477966264,
+          "variance": 1.8162456659245803
+        },
+        "peakMemoryMb": {
+          "median": 12461.765625,
+          "min": 6044.453125,
+          "max": 12621.71875,
+          "variance": 9042840.810996095
+        },
+        "gpuAverage": {
+          "median": null,
+          "min": null,
+          "max": null,
+          "variance": null
+        },
+        "gpuMemoryMb": {
+          "median": null,
+          "min": null,
+          "max": null,
+          "variance": null
+        },
+        "privateMemoryMb": {
+          "median": null,
+          "min": null,
+          "max": null,
+          "variance": null
+        },
+        "animationSamplingMs": {
+          "median": 0.09844617219796853,
+          "min": 0.0971143166312367,
+          "max": 0.1027762357689552,
+          "variance": 0.000004138089317451082
+        },
+        "boneMatrixUpdateMs": {
+          "median": null,
+          "min": null,
+          "max": null,
+          "variance": null
+        },
+        "renderSubmissionMs": {
+          "median": 0.5903440622259324,
+          "min": 0.5530521628859305,
+          "max": 0.5951165366053713,
+          "variance": 0.00024075529759575524
+        },
+        "skinningMs": {
+          "median": null,
+          "min": null,
+          "max": null,
+          "variance": null
+        }
+      },
+      "loadSummary": {
+        "assetLoadMs": {
+          "median": 574.8000000119209,
+          "min": 558.0999999642372,
+          "max": 780.9000000357628,
+          "variance": 7042.785603470707
+        },
+        "parseMs": {
+          "median": 3461.199999988079,
+          "min": 3281.699999988079,
+          "max": 3979.399999976158,
+          "variance": 54757.033597359085
+        },
+        "textureDecodeMs": {
+          "median": null,
+          "min": null,
+          "max": null,
+          "variance": null
+        },
+        "gpuUploadMs": {
+          "median": null,
+          "min": null,
+          "max": null,
+          "variance": null
+        },
+        "firstRenderSubmissionMs": {
+          "median": 1652.800000011921,
+          "min": 1615.2999999523163,
+          "max": 1667.8999999761581,
+          "variance": 370.3144001346588
+        },
+        "ttfmMs": {
+          "median": 5935.899999976158,
+          "min": 5686.899999976158,
+          "max": 6390.699999988079,
+          "variance": 56241.89200133609
+        },
+        "ttfaMs": {
+          "median": 5936.899999976158,
+          "min": 5687.800000011921,
+          "max": 6391.800000011921,
+          "variance": 56290.80560231152
+        },
+        "assetBytes": {
+          "median": 2100000008,
+          "min": 2100000008,
+          "max": 2100000008,
+          "variance": 0
+        },
+        "drawCalls": {
+          "median": 23,
+          "min": 23,
+          "max": 23,
+          "variance": 0
+        },
+        "triangles": {
+          "median": 611663,
+          "min": 611663,
+          "max": 611663,
+          "variance": 0
+        }
+      },
+      "phase": "prior-2.1GB",
+      "raw": "prior-2.1GB/raw/0398e617-c8cd-4a17-a885-afc357b20577.json"
+    },
+    {
+      "id": "3e523326-8575-4ce2-a424-6f494b42a048",
+      "benchmark": "skeletal-3d",
+      "case": "single-character",
+      "runtime": "tauri-wkwebview",
+      "comparisonClass": "runtime-parity",
+      "parameters": {
+        "asset": "stress/mega-2_1gb-texture-heavy",
+        "characterCount": 1
+      },
+      "asset": "stress/mega-2_1gb-texture-heavy",
+      "assetSha256": "4e1f92748616c905f278c1d7ce3d0e30527540cf66853aaa27b6bfe20bc25f0c",
+      "metadata": {
+        "benchmark_source_sha256": "7d6b6a69cfad54d930be5a32a0d880f90d8c3bf264b429974c252ca69a42f338",
+        "build_mode": "release",
+        "cpu": "Apple M4",
+        "cpu_arch": "aarch64",
+        "cpu_cores": 10,
+        "display_resolution": "1512x982",
+        "display_scale": 2,
+        "framework": "tauri",
+        "framework_version": "2.12.1",
+        "gpu": null,
+        "gpu_driver": null,
+        "locale": "zh-CN",
+        "os": "macos",
+        "os_version": "27.0",
+        "ram": 34359738368,
+        "refresh_rate": 60,
+        "refresh_rate_source": "operator-confirmed fixed display setting",
+        "resource_scope": "Tauri host plus discoverable child processes; OS WebView helper coverage may be incomplete; CPU percent is one-core normalized",
+        "runtime": "tauri-wkwebview",
+        "runtime_version": "2.12.1",
+        "viewport_height": 800,
+        "viewport_width": 1280,
+        "webview_user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko)",
+        "webview_version": null,
+        "workload_height": 360,
+        "workload_width": 640
+      },
+      "protocol": {
+        "cooldownMs": 5000,
+        "measureMs": 30000,
+        "refreshRateHz": 60,
+        "runs": 5,
+        "seed": 20261007,
+        "warmupMs": 10000
+      },
+      "summary": {
+        "animationSamplingMs": {
+          "median": 0.07218212104386452,
+          "min": 0.064891846921797,
+          "max": 0.08934517203107659,
+          "variance": 0.00008725580402099825
+        },
+        "boneMatrixUpdateMs": {
+          "median": null,
+          "min": null,
+          "max": null,
+          "variance": null
+        },
+        "cpuAverage": {
+          "median": 4.58188771816992,
+          "min": 4.524589254010108,
+          "max": 4.7114657817348355,
+          "variance": 0.006066960776285182
+        },
+        "cpuPeak": {
+          "median": 5.30891752243042,
+          "min": 5.1151442527771,
+          "max": 5.715701103210449,
+          "variance": 0.05256543301615237
+        },
+        "droppedFramePercent": {
+          "median": 0.6070640176600441,
+          "min": 0.4975124378109453,
+          "max": 0.7166482910694597,
+          "variance": 0.006725541514809969
+        },
+        "fpsAverage": {
+          "median": 60,
+          "min": 59.97401126178656,
+          "max": 60.00932960149274,
+          "variance": 0.00015304157137797995
+        },
+        "frameCount": {
+          "median": 1800,
+          "min": 1800,
+          "max": 1801,
+          "variance": 0.24
+        },
+        "frameP50Ms": {
+          "median": 17,
+          "min": 17,
+          "max": 17,
+          "variance": 0
+        },
+        "frameP95Ms": {
+          "median": 18,
+          "min": 18,
+          "max": 19,
+          "variance": 0.15999999999999998
+        },
+        "frameP99Ms": {
+          "median": 20,
+          "min": 19,
+          "max": 21,
+          "variance": 0.8
+        },
+        "gpuAverage": {
+          "median": null,
+          "min": null,
+          "max": null,
+          "variance": null
+        },
+        "gpuMemoryMb": {
+          "median": null,
+          "min": null,
+          "max": null,
+          "variance": null
+        },
+        "peakMemoryMb": {
+          "median": 109.609375,
+          "min": 85.03125,
+          "max": 109.9375,
+          "variance": 147.06025390625
+        },
+        "privateMemoryMb": {
+          "median": null,
+          "min": null,
+          "max": null,
+          "variance": null
+        },
+        "renderSubmissionMs": {
+          "median": 0.4425319267073848,
+          "min": 0.408763172490294,
+          "max": 0.44617092119866814,
+          "variance": 0.00019074409444327827
+        },
+        "skinningMs": {
+          "median": null,
+          "min": null,
+          "max": null,
+          "variance": null
+        },
+        "worstFrameMs": {
+          "median": 32,
+          "min": 31,
+          "max": 33,
+          "variance": 0.5599999999999999
+        }
+      },
+      "loadSummary": {
+        "assetBytes": {
+          "median": 2100000008,
+          "min": 2100000008,
+          "max": 2100000008,
+          "variance": 0
+        },
+        "assetLoadMs": {
+          "median": 846,
+          "min": 824,
+          "max": 868,
+          "variance": 272.9599999999999
+        },
+        "drawCalls": {
+          "median": 23,
+          "min": 23,
+          "max": 23,
+          "variance": 0
+        },
+        "firstRenderSubmissionMs": {
+          "median": 336,
+          "min": 306,
+          "max": 1260,
+          "variance": 133151.03999999998
+        },
+        "gpuUploadMs": {
+          "median": null,
+          "min": null,
+          "max": null,
+          "variance": null
+        },
+        "parseMs": {
+          "median": 563,
+          "min": 405,
+          "max": 1440,
+          "variance": 148169.04
+        },
+        "textureDecodeMs": {
+          "median": null,
+          "min": null,
+          "max": null,
+          "variance": null
+        },
+        "triangles": {
+          "median": 611663,
+          "min": 611663,
+          "max": 611663,
+          "variance": 0
+        },
+        "ttfaMs": {
+          "median": 1942,
+          "min": 1731,
+          "max": 3454,
+          "variance": 523933.0399999999
+        },
+        "ttfmMs": {
+          "median": 1883,
+          "min": 1671,
+          "max": 3005,
+          "variance": 366067.84
+        }
+      },
+      "phase": "prior-2.1GB",
+      "raw": "prior-2.1GB/raw/3e523326-8575-4ce2-a424-6f494b42a048.json"
+    },
+    {
+      "id": "5245b30d-7f01-4f2d-811f-c00f81782db0",
+      "benchmark": "skeletal-3d",
+      "case": "single-character",
+      "runtime": "tauri-wkwebview",
+      "comparisonClass": "runtime-parity",
+      "parameters": {
+        "asset": "stress/mega-2_1gb-geometry-heavy",
+        "characterCount": 1
+      },
+      "asset": "stress/mega-2_1gb-geometry-heavy",
+      "assetSha256": "6460a717cc5df64ebd3b9c42f36aed9d7605f4427d771569ba5ee1f2a8fe4eaa",
+      "metadata": {
+        "benchmark_source_sha256": "7d6b6a69cfad54d930be5a32a0d880f90d8c3bf264b429974c252ca69a42f338",
+        "build_mode": "release",
+        "cpu": "Apple M4",
+        "cpu_arch": "aarch64",
+        "cpu_cores": 10,
+        "display_resolution": "1512x982",
+        "display_scale": 2,
+        "framework": "tauri",
+        "framework_version": "2.12.1",
+        "gpu": null,
+        "gpu_driver": null,
+        "locale": "zh-CN",
+        "os": "macos",
+        "os_version": "27.0",
+        "ram": 34359738368,
+        "refresh_rate": 60,
+        "refresh_rate_source": "operator-confirmed fixed display setting",
+        "resource_scope": "Tauri host plus discoverable child processes; OS WebView helper coverage may be incomplete; CPU percent is one-core normalized",
+        "runtime": "tauri-wkwebview",
+        "runtime_version": "2.12.1",
+        "viewport_height": 800,
+        "viewport_width": 1280,
+        "webview_user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko)",
+        "webview_version": null,
+        "workload_height": 360,
+        "workload_width": 640
+      },
+      "protocol": {
+        "cooldownMs": 5000,
+        "measureMs": 30000,
+        "refreshRateHz": 60,
+        "runs": 5,
+        "seed": 20261007,
+        "warmupMs": 10000
+      },
+      "summary": {
+        "animationSamplingMs": {
+          "median": 0.07658321060382917,
+          "min": 0.06351550960118169,
+          "max": 0.11029411764705882,
+          "variance": 0.0003974331661245457
+        },
+        "boneMatrixUpdateMs": {
+          "median": null,
+          "min": null,
+          "max": null,
+          "variance": null
+        },
+        "cpuAverage": {
+          "median": 3.3831902627022035,
+          "min": 3.313096377157396,
+          "max": 3.3922778983269968,
+          "variance": 0.0008574034235481829
+        },
+        "cpuPeak": {
+          "median": 5.056023120880127,
+          "min": 4.4492340087890625,
+          "max": 6.035311222076416,
+          "variance": 0.25978038937579184
+        },
+        "droppedFramePercent": {
+          "median": 62.472283813747225,
+          "min": 62.35424764019989,
+          "max": 62.48612652608213,
+          "variance": 0.0025154660113325253
+        },
+        "fpsAverage": {
+          "median": 22.54187060899677,
+          "min": 22.5,
+          "max": 22.58720058633441,
+          "variance": 0.001084405888050195
+        },
+        "frameCount": {
+          "median": 677,
+          "min": 675,
+          "max": 678,
+          "variance": 1.3599999999999999
+        },
+        "frameP50Ms": {
+          "median": 49,
+          "min": 49,
+          "max": 49,
+          "variance": 0
+        },
+        "frameP95Ms": {
+          "median": 52,
+          "min": 52,
+          "max": 52,
+          "variance": 0
+        },
+        "frameP99Ms": {
+          "median": 58,
+          "min": 56,
+          "max": 59,
+          "variance": 1.0368159999999984
+        },
+        "gpuAverage": {
+          "median": null,
+          "min": null,
+          "max": null,
+          "variance": null
+        },
+        "gpuMemoryMb": {
+          "median": null,
+          "min": null,
+          "max": null,
+          "variance": null
+        },
+        "peakMemoryMb": {
+          "median": 109.8125,
+          "min": 109.796875,
+          "max": 110.046875,
+          "variance": 0.009218750000000001
+        },
+        "privateMemoryMb": {
+          "median": null,
+          "min": null,
+          "max": null,
+          "variance": null
+        },
+        "renderSubmissionMs": {
+          "median": 1.707533234859675,
+          "min": 1.667157584683358,
+          "max": 1.720176730486009,
+          "variance": 0.0005479093978573124
+        },
+        "skinningMs": {
+          "median": null,
+          "min": null,
+          "max": null,
+          "variance": null
+        },
+        "worstFrameMs": {
+          "median": 60,
+          "min": 60,
+          "max": 63,
+          "variance": 1.6
+        }
+      },
+      "loadSummary": {
+        "assetBytes": {
+          "median": 2100000164,
+          "min": 2100000164,
+          "max": 2100000164,
+          "variance": 0
+        },
+        "assetLoadMs": {
+          "median": 849,
+          "min": 838,
+          "max": 890,
+          "variance": 384.55999999999995
+        },
+        "drawCalls": {
+          "median": 130,
+          "min": 130,
+          "max": 130,
+          "variance": 0
+        },
+        "firstRenderSubmissionMs": {
+          "median": 2299,
+          "min": 2262,
+          "max": 2411,
+          "variance": 3117.04
+        },
+        "gpuUploadMs": {
+          "median": null,
+          "min": null,
+          "max": null,
+          "variance": null
+        },
+        "parseMs": {
+          "median": 356,
+          "min": 305,
+          "max": 513,
+          "variance": 5703.76
+        },
+        "textureDecodeMs": {
+          "median": null,
+          "min": null,
+          "max": null,
+          "variance": null
+        },
+        "triangles": {
+          "median": 8380127,
+          "min": 8380127,
+          "max": 8380127,
+          "variance": 0
+        },
+        "ttfaMs": {
+          "median": 5318,
+          "min": 5186,
+          "max": 5903,
+          "variance": 70446.63999999998
+        },
+        "ttfmMs": {
+          "median": 5115,
+          "min": 5040,
+          "max": 5321,
+          "variance": 14393.84
+        }
+      },
+      "phase": "prior-2.1GB",
+      "raw": "prior-2.1GB/raw/5245b30d-7f01-4f2d-811f-c00f81782db0.json"
+    },
+    {
+      "id": "b0c42cf9-7957-4919-9443-0c34c525f9e0",
+      "benchmark": "skeletal-3d",
+      "case": "single-character",
+      "runtime": "tauri-wkwebview",
+      "comparisonClass": "runtime-parity",
+      "parameters": {
+        "asset": "stress/mega-2_1gb-mixed",
+        "characterCount": 1
+      },
+      "asset": "stress/mega-2_1gb-mixed",
+      "assetSha256": "1fb5614c2f9a646095f94b8de4177ed74689f38bb47e660a159f4728a40e6b36",
+      "metadata": {
+        "benchmark_source_sha256": "7d6b6a69cfad54d930be5a32a0d880f90d8c3bf264b429974c252ca69a42f338",
+        "build_mode": "release",
+        "cpu": "Apple M4",
+        "cpu_arch": "aarch64",
+        "cpu_cores": 10,
+        "display_resolution": "1512x982",
+        "display_scale": 2,
+        "framework": "tauri",
+        "framework_version": "2.12.1",
+        "gpu": null,
+        "gpu_driver": null,
+        "locale": "zh-CN",
+        "os": "macos",
+        "os_version": "27.0",
+        "ram": 34359738368,
+        "refresh_rate": 60,
+        "refresh_rate_source": "operator-confirmed fixed display setting",
+        "resource_scope": "Tauri host plus discoverable child processes; OS WebView helper coverage may be incomplete; CPU percent is one-core normalized",
+        "runtime": "tauri-wkwebview",
+        "runtime_version": "2.12.1",
+        "viewport_height": 800,
+        "viewport_width": 1280,
+        "webview_user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko)",
+        "webview_version": null,
+        "workload_height": 360,
+        "workload_width": 640
+      },
+      "protocol": {
+        "cooldownMs": 5000,
+        "measureMs": 30000,
+        "refreshRateHz": 60,
+        "runs": 5,
+        "seed": 20261007,
+        "warmupMs": 10000
+      },
+      "summary": {
+        "animationSamplingMs": {
+          "median": 0.08241206030150754,
+          "min": 0.058358061325420374,
+          "max": 0.09180651530108588,
+          "variance": 0.00016704343444190627
+        },
+        "boneMatrixUpdateMs": {
+          "median": null,
+          "min": null,
+          "max": null,
+          "variance": null
+        },
+        "cpuAverage": {
+          "median": 3.732725004996023,
+          "min": 3.685453345698695,
+          "max": 3.7781084122196322,
+          "variance": 0.0013350439288966304
+        },
+        "cpuPeak": {
+          "median": 4.397341251373291,
+          "min": 4.242990016937256,
+          "max": 4.669275760650635,
+          "variance": 0.024311645636353206
+        },
+        "droppedFramePercent": {
+          "median": 44.09972299168975,
+          "min": 43.87132556849695,
+          "max": 44.89456159822419,
+          "variance": 0.13675703863800975
+        },
+        "fpsAverage": {
+          "median": 33.600852509241065,
+          "min": 33.09558725503266,
+          "max": 33.71872188718222,
+          "variance": 0.04891140202816198
+        },
+        "frameCount": {
+          "median": 1009,
+          "min": 993,
+          "max": 1012,
+          "variance": 46.160000000000004
+        },
+        "frameP50Ms": {
+          "median": 33,
+          "min": 33,
+          "max": 33,
+          "variance": 0
+        },
+        "frameP95Ms": {
+          "median": 35,
+          "min": 35,
+          "max": 35,
+          "variance": 0
+        },
+        "frameP99Ms": {
+          "median": 40,
+          "min": 37.93999999999994,
+          "max": 40,
+          "variance": 0.6627840000000367
+        },
+        "gpuAverage": {
+          "median": null,
+          "min": null,
+          "max": null,
+          "variance": null
+        },
+        "gpuMemoryMb": {
+          "median": null,
+          "min": null,
+          "max": null,
+          "variance": null
+        },
+        "peakMemoryMb": {
+          "median": 74.625,
+          "min": 73.578125,
+          "max": 109.671875,
+          "variance": 305.47904296875
+        },
+        "privateMemoryMb": {
+          "median": null,
+          "min": null,
+          "max": null,
+          "variance": null
+        },
+        "renderSubmissionMs": {
+          "median": 0.9821428571428572,
+          "min": 0.9653465346534652,
+          "max": 1.0237388724035608,
+          "variance": 0.0005469676191989443
+        },
+        "skinningMs": {
+          "median": null,
+          "min": null,
+          "max": null,
+          "variance": null
+        },
+        "worstFrameMs": {
+          "median": 45,
+          "min": 43,
+          "max": 437,
+          "variance": 24619.359999999997
+        }
+      },
+      "loadSummary": {
+        "assetBytes": {
+          "median": 2100000088,
+          "min": 2100000088,
+          "max": 2100000088,
+          "variance": 0
+        },
+        "assetLoadMs": {
+          "median": 849,
+          "min": 841,
+          "max": 986,
+          "variance": 2989.04
+        },
+        "drawCalls": {
+          "median": 69,
+          "min": 69,
+          "max": 69,
+          "variance": 0
+        },
+        "firstRenderSubmissionMs": {
+          "median": 1484,
+          "min": 1262,
+          "max": 1843,
+          "variance": 40624.96
+        },
+        "gpuUploadMs": {
+          "median": null,
+          "min": null,
+          "max": null,
+          "variance": null
+        },
+        "parseMs": {
+          "median": 523,
+          "min": 497,
+          "max": 1944,
+          "variance": 320001.43999999994
+        },
+        "textureDecodeMs": {
+          "median": null,
+          "min": null,
+          "max": null,
+          "variance": null
+        },
+        "triangles": {
+          "median": 4398149,
+          "min": 4398149,
+          "max": 4398149,
+          "variance": 0
+        },
+        "ttfaMs": {
+          "median": 3860,
+          "min": 3560,
+          "max": 5799,
+          "variance": 664978.4
+        },
+        "ttfmMs": {
+          "median": 3729,
+          "min": 3446,
+          "max": 5452,
+          "variance": 527442.64
+        }
+      },
+      "phase": "prior-2.1GB",
+      "raw": "prior-2.1GB/raw/b0c42cf9-7957-4919-9443-0c34c525f9e0.json"
+    },
+    {
+      "id": "b9dff1b3-c36d-4c7d-932e-2a08422575f4",
+      "benchmark": "skeletal-3d",
+      "case": "single-character",
+      "runtime": "electron-chromium",
+      "comparisonClass": "runtime-parity",
+      "parameters": {
+        "asset": "stress/mega-2_1gb-geometry-heavy",
+        "characterCount": 1
+      },
+      "asset": "stress/mega-2_1gb-geometry-heavy",
+      "assetSha256": "6460a717cc5df64ebd3b9c42f36aed9d7605f4427d771569ba5ee1f2a8fe4eaa",
+      "metadata": {
+        "os": "darwin",
+        "os_version": "27.0.0",
+        "cpu": "Apple M4",
+        "cpu_arch": "arm64",
+        "cpu_cores": 10,
+        "ram": 34359738368,
+        "gpu": "Apple M4",
+        "gpu_driver": null,
+        "display_resolution": "1512x982",
+        "display_scale": 2,
+        "refresh_rate": 60.000003814697266,
+        "runtime": "electron-chromium",
+        "runtime_version": "38.8.6",
+        "webview_version": "140.0.7339.249",
+        "framework": "electron",
+        "framework_version": "38.8.6",
+        "build_mode": "release",
+        "locale": "zh-CN",
+        "resource_scope": "application process tree; CPU percent is one-core normalized",
+        "benchmark_source_sha256": "7d6b6a69cfad54d930be5a32a0d880f90d8c3bf264b429974c252ca69a42f338",
+        "viewport_width": 1280,
+        "viewport_height": 800,
+        "workload_width": 640,
+        "workload_height": 360
+      },
+      "protocol": {
+        "warmupMs": 10000,
+        "measureMs": 30000,
+        "cooldownMs": 5000,
+        "runs": 5,
+        "refreshRateHz": 60,
+        "seed": 20261007
+      },
+      "summary": {
+        "frameCount": {
+          "median": 634,
+          "min": 632,
+          "max": 635,
+          "variance": 1.2
+        },
+        "fpsAverage": {
+          "median": 21.120904706469318,
+          "min": 21.043028331507607,
+          "max": 21.13165855233163,
+          "variance": 0.0010195459686377709
+        },
+        "frameP50Ms": {
+          "median": 49.90000000000873,
+          "min": 49.89999999999418,
+          "max": 50,
+          "variance": 0.0015999999998370187
+        },
+        "frameP95Ms": {
+          "median": 51.5,
+          "min": 50.69999999999709,
+          "max": 51.60000000000582,
+          "variance": 0.14640000000202563
+        },
+        "frameP99Ms": {
+          "median": 52,
+          "min": 51,
+          "max": 52,
+          "variance": 0.24
+        },
+        "worstFrameMs": {
+          "median": 68.10000000000582,
+          "min": 66.69999999999709,
+          "max": 68.30000000001746,
+          "variance": 0.3424000000067987
+        },
+        "droppedFramePercent": {
+          "median": 64.80044345898004,
+          "min": 64.78092068774265,
+          "max": 64.92785793562707,
+          "variance": 0.002791268834802975
+        },
+        "cpuAverage": {
+          "median": 1.576316219863184,
+          "min": 1.3520123242963362,
+          "max": 1.6277820030015118,
+          "variance": 0.009377861637985794
+        },
+        "cpuPeak": {
+          "median": 4.168657291613979,
+          "min": 1.8827284810017564,
+          "max": 4.2044945224776615,
+          "variance": 0.8359880366884755
+        },
+        "peakMemoryMb": {
+          "median": 8881.59375,
+          "min": 8802.125,
+          "max": 12818.703125,
+          "variance": 3377863.5006835936
+        },
+        "gpuAverage": {
+          "median": null,
+          "min": null,
+          "max": null,
+          "variance": null
+        },
+        "gpuMemoryMb": {
+          "median": null,
+          "min": null,
+          "max": null,
+          "variance": null
+        },
+        "privateMemoryMb": {
+          "median": null,
+          "min": null,
+          "max": null,
+          "variance": null
+        },
+        "animationSamplingMs": {
+          "median": 0.10535432851220679,
+          "min": 0.10126182822398959,
+          "max": 0.1160629922949423,
+          "variance": 0.0000365804790567463
+        },
+        "boneMatrixUpdateMs": {
+          "median": null,
+          "min": null,
+          "max": null,
+          "variance": null
+        },
+        "renderSubmissionMs": {
+          "median": 1.7232704397829823,
+          "min": 1.5430599373973883,
+          "max": 1.8202830204423868,
+          "variance": 0.00969978853245198
+        },
+        "skinningMs": {
+          "median": null,
+          "min": null,
+          "max": null,
+          "variance": null
+        }
+      },
+      "loadSummary": {
+        "assetLoadMs": {
+          "median": 596.1000000238419,
+          "min": 578.3000000119209,
+          "max": 617.5,
+          "variance": 269.9863994894981
+        },
+        "parseMs": {
+          "median": 722.2999999523163,
+          "min": 609.3000000119209,
+          "max": 750,
+          "variance": 2484.3279992575644
+        },
+        "textureDecodeMs": {
+          "median": null,
+          "min": null,
+          "max": null,
+          "variance": null
+        },
+        "gpuUploadMs": {
+          "median": null,
+          "min": null,
+          "max": null,
+          "variance": null
+        },
+        "firstRenderSubmissionMs": {
+          "median": 3067.5,
+          "min": 2769.900000035763,
+          "max": 3104,
+          "variance": 18648.94639477644
+        },
+        "ttfmMs": {
+          "median": 7063.400000035763,
+          "min": 5937.100000023842,
+          "max": 7124.399999976158,
+          "variance": 198279.65839483318
+        },
+        "ttfaMs": {
+          "median": 7065.5,
+          "min": 5940.199999988079,
+          "max": 7126.399999976158,
+          "variance": 197913.46960323566
+        },
+        "assetBytes": {
+          "median": 2100000164,
+          "min": 2100000164,
+          "max": 2100000164,
+          "variance": 0
+        },
+        "drawCalls": {
+          "median": 130,
+          "min": 130,
+          "max": 130,
+          "variance": 0
+        },
+        "triangles": {
+          "median": 8380127,
+          "min": 8380127,
+          "max": 8380127,
+          "variance": 0
+        }
+      },
+      "phase": "prior-2.1GB",
+      "raw": "prior-2.1GB/raw/b9dff1b3-c36d-4c7d-932e-2a08422575f4.json"
+    },
+    {
+      "id": "d5d37942-4665-447d-bf60-2fb3a103ae70",
+      "benchmark": "skeletal-3d",
+      "case": "single-character",
+      "runtime": "electron-chromium",
+      "comparisonClass": "runtime-parity",
+      "parameters": {
+        "asset": "stress/mega-2_1gb-mixed",
+        "characterCount": 1
+      },
+      "asset": "stress/mega-2_1gb-mixed",
+      "assetSha256": "1fb5614c2f9a646095f94b8de4177ed74689f38bb47e660a159f4728a40e6b36",
+      "metadata": {
+        "os": "darwin",
+        "os_version": "27.0.0",
+        "cpu": "Apple M4",
+        "cpu_arch": "arm64",
+        "cpu_cores": 10,
+        "ram": 34359738368,
+        "gpu": "Apple M4",
+        "gpu_driver": null,
+        "display_resolution": "1512x982",
+        "display_scale": 2,
+        "refresh_rate": 60.000003814697266,
+        "runtime": "electron-chromium",
+        "runtime_version": "38.8.6",
+        "webview_version": "140.0.7339.249",
+        "framework": "electron",
+        "framework_version": "38.8.6",
+        "build_mode": "release",
+        "locale": "zh-CN",
+        "resource_scope": "application process tree; CPU percent is one-core normalized",
+        "benchmark_source_sha256": "7d6b6a69cfad54d930be5a32a0d880f90d8c3bf264b429974c252ca69a42f338",
+        "viewport_width": 1280,
+        "viewport_height": 800,
+        "workload_width": 640,
+        "workload_height": 360
+      },
+      "protocol": {
+        "warmupMs": 10000,
+        "measureMs": 30000,
+        "cooldownMs": 5000,
+        "runs": 5,
+        "refreshRateHz": 60,
+        "seed": 20261007
+      },
+      "summary": {
+        "frameCount": {
+          "median": 920,
+          "min": 918,
+          "max": 923,
+          "variance": 2.96
+        },
+        "fpsAverage": {
+          "median": 30.64991138177796,
+          "min": 30.566376985316154,
+          "max": 30.765128410246156,
+          "variance": 0.004777634771126669
+        },
+        "frameP50Ms": {
+          "median": 33.29999999999927,
+          "min": 33.29999999998836,
+          "max": 33.30000000001746,
+          "variance": 1.164670302474663e-22
+        },
+        "frameP95Ms": {
+          "median": 35.19999999998254,
+          "min": 35,
+          "max": 35.30000000000291,
+          "variance": 0.010399999999930151
+        },
+        "frameP99Ms": {
+          "median": 49.96400000000313,
+          "min": 49.87199999999903,
+          "max": 50.08300000000484,
+          "variance": 0.006691840000019893
+        },
+        "worstFrameMs": {
+          "median": 51.5,
+          "min": 50.90000000002328,
+          "max": 51.70000000001164,
+          "variance": 0.07199999999674037
+        },
+        "droppedFramePercent": {
+          "median": 48.917268184342035,
+          "min": 48.72222222222222,
+          "max": 49.056603773584904,
+          "variance": 0.013483935412853098
+        },
+        "cpuAverage": {
+          "median": 1.7070332994168382,
+          "min": 1.563718220151567,
+          "max": 1.7365583880662951,
+          "variance": 0.0037153767513371148
+        },
+        "cpuPeak": {
+          "median": 4.592433855752766,
+          "min": 3.2563966239853337,
+          "max": 4.597904165522917,
+          "variance": 0.281940473290175
+        },
+        "peakMemoryMb": {
+          "median": 7830.96875,
+          "min": 7268.59375,
+          "max": 12524.609375,
+          "variance": 3788792.6157617187
+        },
+        "gpuAverage": {
+          "median": null,
+          "min": null,
+          "max": null,
+          "variance": null
+        },
+        "gpuMemoryMb": {
+          "median": null,
+          "min": null,
+          "max": null,
+          "variance": null
+        },
+        "privateMemoryMb": {
+          "median": null,
+          "min": null,
+          "max": null,
+          "variance": null
+        },
+        "animationSamplingMs": {
+          "median": 0.10021691932595474,
+          "min": 0.08356909685736771,
+          "max": 0.10793478119632473,
+          "variance": 0.00007338784080000318
+        },
+        "boneMatrixUpdateMs": {
+          "median": null,
+          "min": null,
+          "max": null,
+          "variance": null
+        },
+        "renderSubmissionMs": {
+          "median": 1.2445770070894162,
+          "min": 1.209880565004939,
+          "max": 1.2782372135073108,
+          "variance": 0.0005145956843573013
+        },
+        "skinningMs": {
+          "median": null,
+          "min": null,
+          "max": null,
+          "variance": null
+        }
+      },
+      "loadSummary": {
+        "assetLoadMs": {
+          "median": 579.7999999523163,
+          "min": 569.5999999642372,
+          "max": 794.5999999642372,
+          "variance": 7237.03839981184
+        },
+        "parseMs": {
+          "median": 1617.1000000238419,
+          "min": 1556.8999999761581,
+          "max": 1665.4000000357628,
+          "variance": 1544.9384004426956
+        },
+        "textureDecodeMs": {
+          "median": null,
+          "min": null,
+          "max": null,
+          "variance": null
+        },
+        "gpuUploadMs": {
+          "median": null,
+          "min": null,
+          "max": null,
+          "variance": null
+        },
+        "firstRenderSubmissionMs": {
+          "median": 2406.199999988079,
+          "min": 2213.5,
+          "max": 2476.300000011921,
+          "variance": 8691.666401159859
+        },
+        "ttfmMs": {
+          "median": 6019,
+          "min": 5574,
+          "max": 6136.899999976158,
+          "variance": 38092.923997729784
+        },
+        "ttfaMs": {
+          "median": 6020.5,
+          "min": 5576,
+          "max": 6138.199999988079,
+          "variance": 37990.65359869328
+        },
+        "assetBytes": {
+          "median": 2100000088,
+          "min": 2100000088,
+          "max": 2100000088,
+          "variance": 0
+        },
+        "drawCalls": {
+          "median": 69,
+          "min": 69,
+          "max": 69,
+          "variance": 0
+        },
+        "triangles": {
+          "median": 4398149,
+          "min": 4398149,
+          "max": 4398149,
+          "variance": 0
+        }
+      },
+      "phase": "prior-2.1GB",
+      "raw": "prior-2.1GB/raw/d5d37942-4665-447d-bf60-2fb3a103ae70.json"
+    }
+  ],
+  "storage": [],
+  "pixel": [
+    {
+      "fixture": "01-dashboard",
+      "runtime": "tauri",
+      "reference": "electron",
+      "width": 2560,
+      "height": 1600,
+      "pixelDiffCount": 1132,
+      "pixelDiffPercent": 0.02763671875,
+      "threshold": 0.1,
+      "includeAA": false,
+      "ssim": 0.9974446683344251,
+      "ssimSampling": "every fourth pixel, 640x400",
+      "geometry": [
+        {
+          "id": "sidebar",
+          "maxDelta": 0
+        },
+        {
+          "id": "brand",
+          "maxDelta": 0
+        },
+        {
+          "id": "nav-0",
+          "maxDelta": 0
+        },
+        {
+          "id": "nav-1",
+          "maxDelta": 0
+        },
+        {
+          "id": "nav-2",
+          "maxDelta": 0
+        },
+        {
+          "id": "nav-3",
+          "maxDelta": 0
+        },
+        {
+          "id": "nav-4",
+          "maxDelta": 0
+        },
+        {
+          "id": "nav-5",
+          "maxDelta": 0
+        },
+        {
+          "id": "title",
+          "maxDelta": 0
+        },
+        {
+          "id": "subtitle",
+          "maxDelta": 0
+        },
+        {
+          "id": "content",
+          "maxDelta": 0
+        },
+        {
+          "id": "icon",
+          "maxDelta": 0
+        },
+        {
+          "id": "section",
+          "maxDelta": 0
+        },
+        {
+          "id": "stat-0",
+          "maxDelta": 0
+        },
+        {
+          "id": "label-0",
+          "maxDelta": 0
+        },
+        {
+          "id": "value-0",
+          "maxDelta": 0
+        },
+        {
+          "id": "stat-1",
+          "maxDelta": 0
+        },
+        {
+          "id": "label-1",
+          "maxDelta": 0
+        },
+        {
+          "id": "value-1",
+          "maxDelta": 0
+        },
+        {
+          "id": "stat-2",
+          "maxDelta": 0
+        },
+        {
+          "id": "label-2",
+          "maxDelta": 0
+        },
+        {
+          "id": "value-2",
+          "maxDelta": 0
+        },
+        {
+          "id": "visual-strip",
+          "maxDelta": 0
+        },
+        {
+          "id": "input",
+          "maxDelta": 0
+        },
+        {
+          "id": "submit",
+          "maxDelta": 0
+        }
+      ],
+      "textBounds": [
+        {
+          "id": "brand",
+          "maxDelta": 0.004058837890625
+        },
+        {
+          "id": "nav-0",
+          "maxDelta": 0.2001953125
+        },
+        {
+          "id": "nav-1",
+          "maxDelta": 0.2001953125
+        },
+        {
+          "id": "nav-2",
+          "maxDelta": 0.2001953125
+        },
+        {
+          "id": "nav-3",
+          "maxDelta": 0.2001953125
+        },
+        {
+          "id": "nav-4",
+          "maxDelta": 0.2001953125
+        },
+        {
+          "id": "nav-5",
+          "maxDelta": 0.2001953125
+        },
+        {
+          "id": "title",
+          "maxDelta": 0.400390625
+        },
+        {
+          "id": "subtitle",
+          "maxDelta": 0.3001708984375
+        },
+        {
+          "id": "section",
+          "maxDelta": 0.001251220703125
+        },
+        {
+          "id": "label-0",
+          "maxDelta": 0.3001708984375
+        },
+        {
+          "id": "value-0",
+          "maxDelta": 0.4996337890625
+        },
+        {
+          "id": "label-1",
+          "maxDelta": 0.3001708984375
+        },
+        {
+          "id": "value-1",
+          "maxDelta": 0.4996337890625
+        },
+        {
+          "id": "label-2",
+          "maxDelta": 0.3001708984375
+        },
+        {
+          "id": "value-2",
+          "maxDelta": 0.4996337890625
+        },
+        {
+          "id": "submit",
+          "maxDelta": 0.34991455078125
+        }
+      ],
+      "diffImage": "pixel/01-dashboard-tauri-diff.png",
+      "referenceImage": "pixel/01-dashboard-electron.png",
+      "comparisonImage": "pixel/01-dashboard-tauri.png",
+      "class": "runtime-parity"
+    },
+    {
+      "fixture": "01-dashboard",
+      "runtime": "flutter",
+      "reference": "electron",
+      "width": 2560,
+      "height": 1600,
+      "pixelDiffCount": 16941,
+      "pixelDiffPercent": 0.4135986328125,
+      "threshold": 0.1,
+      "includeAA": false,
+      "ssim": 0.9724559349171258,
+      "ssimSampling": "every fourth pixel, 640x400",
+      "geometry": [
+        {
+          "id": "sidebar",
+          "maxDelta": 0
+        },
+        {
+          "id": "brand",
+          "maxDelta": 0
+        },
+        {
+          "id": "nav-0",
+          "maxDelta": 0
+        },
+        {
+          "id": "nav-1",
+          "maxDelta": 0
+        },
+        {
+          "id": "nav-2",
+          "maxDelta": 0
+        },
+        {
+          "id": "nav-3",
+          "maxDelta": 0
+        },
+        {
+          "id": "nav-4",
+          "maxDelta": 0
+        },
+        {
+          "id": "nav-5",
+          "maxDelta": 0
+        },
+        {
+          "id": "title",
+          "maxDelta": 0
+        },
+        {
+          "id": "subtitle",
+          "maxDelta": 0
+        },
+        {
+          "id": "content",
+          "maxDelta": 0
+        },
+        {
+          "id": "icon",
+          "maxDelta": 0
+        },
+        {
+          "id": "section",
+          "maxDelta": 0
+        },
+        {
+          "id": "stat-0",
+          "maxDelta": 0
+        },
+        {
+          "id": "label-0",
+          "maxDelta": 0
+        },
+        {
+          "id": "value-0",
+          "maxDelta": 0
+        },
+        {
+          "id": "stat-1",
+          "maxDelta": 0
+        },
+        {
+          "id": "label-1",
+          "maxDelta": 0
+        },
+        {
+          "id": "value-1",
+          "maxDelta": 0
+        },
+        {
+          "id": "stat-2",
+          "maxDelta": 0
+        },
+        {
+          "id": "label-2",
+          "maxDelta": 0
+        },
+        {
+          "id": "value-2",
+          "maxDelta": 0
+        },
+        {
+          "id": "visual-strip",
+          "maxDelta": 0
+        },
+        {
+          "id": "input",
+          "maxDelta": 0
+        },
+        {
+          "id": "submit",
+          "maxDelta": 0
+        }
+      ],
+      "textBounds": [
+        {
+          "id": "brand",
+          "maxDelta": 1
+        },
+        {
+          "id": "nav-0",
+          "maxDelta": 1
+        },
+        {
+          "id": "nav-1",
+          "maxDelta": 1
+        },
+        {
+          "id": "nav-2",
+          "maxDelta": 1
+        },
+        {
+          "id": "nav-3",
+          "maxDelta": 1
+        },
+        {
+          "id": "nav-4",
+          "maxDelta": 1
+        },
+        {
+          "id": "nav-5",
+          "maxDelta": 1
+        },
+        {
+          "id": "title",
+          "maxDelta": 2
+        },
+        {
+          "id": "subtitle",
+          "maxDelta": 0.5
+        },
+        {
+          "id": "section",
+          "maxDelta": 1
+        },
+        {
+          "id": "label-0",
+          "maxDelta": 0.5
+        },
+        {
+          "id": "value-0",
+          "maxDelta": 0.5
+        },
+        {
+          "id": "label-1",
+          "maxDelta": 0.5
+        },
+        {
+          "id": "value-1",
+          "maxDelta": 0.5
+        },
+        {
+          "id": "label-2",
+          "maxDelta": 0.5
+        },
+        {
+          "id": "value-2",
+          "maxDelta": 0.5
+        }
+      ],
+      "diffImage": "pixel/01-dashboard-flutter-diff.png",
+      "referenceImage": "pixel/01-dashboard-electron.png",
+      "comparisonImage": "pixel/01-dashboard-flutter.png",
+      "class": "semantic visual reference"
+    },
+    {
+      "fixture": "02-chat",
+      "runtime": "tauri",
+      "reference": "electron",
+      "width": 2560,
+      "height": 1600,
+      "pixelDiffCount": 1013,
+      "pixelDiffPercent": 0.0247314453125,
+      "threshold": 0.1,
+      "includeAA": false,
+      "ssim": 0.9971336058026371,
+      "ssimSampling": "every fourth pixel, 640x400",
+      "geometry": [
+        {
+          "id": "sidebar",
+          "maxDelta": 0
+        },
+        {
+          "id": "brand",
+          "maxDelta": 0
+        },
+        {
+          "id": "nav-0",
+          "maxDelta": 0
+        },
+        {
+          "id": "nav-1",
+          "maxDelta": 0
+        },
+        {
+          "id": "nav-2",
+          "maxDelta": 0
+        },
+        {
+          "id": "nav-3",
+          "maxDelta": 0
+        },
+        {
+          "id": "nav-4",
+          "maxDelta": 0
+        },
+        {
+          "id": "nav-5",
+          "maxDelta": 0
+        },
+        {
+          "id": "title",
+          "maxDelta": 0
+        },
+        {
+          "id": "subtitle",
+          "maxDelta": 0
+        },
+        {
+          "id": "content",
+          "maxDelta": 0
+        },
+        {
+          "id": "icon",
+          "maxDelta": 0
+        },
+        {
+          "id": "section",
+          "maxDelta": 0
+        },
+        {
+          "id": "message-0",
+          "maxDelta": 0
+        },
+        {
+          "id": "message-text-0",
+          "maxDelta": 0
+        },
+        {
+          "id": "message-1",
+          "maxDelta": 0
+        },
+        {
+          "id": "message-text-1",
+          "maxDelta": 0
+        },
+        {
+          "id": "message-2",
+          "maxDelta": 0
+        },
+        {
+          "id": "message-text-2",
+          "maxDelta": 0
+        },
+        {
+          "id": "message-3",
+          "maxDelta": 0
+        },
+        {
+          "id": "message-text-3",
+          "maxDelta": 0
+        },
+        {
+          "id": "message-4",
+          "maxDelta": 0
+        },
+        {
+          "id": "message-text-4",
+          "maxDelta": 0
+        },
+        {
+          "id": "visual-strip",
+          "maxDelta": 0
+        },
+        {
+          "id": "input",
+          "maxDelta": 0
+        },
+        {
+          "id": "submit",
+          "maxDelta": 0
+        }
+      ],
+      "textBounds": [
+        {
+          "id": "brand",
+          "maxDelta": 0.004058837890625
+        },
+        {
+          "id": "nav-0",
+          "maxDelta": 0.2001953125
+        },
+        {
+          "id": "nav-1",
+          "maxDelta": 0.2001953125
+        },
+        {
+          "id": "nav-2",
+          "maxDelta": 0.2001953125
+        },
+        {
+          "id": "nav-3",
+          "maxDelta": 0.2001953125
+        },
+        {
+          "id": "nav-4",
+          "maxDelta": 0.2001953125
+        },
+        {
+          "id": "nav-5",
+          "maxDelta": 0.2001953125
+        },
+        {
+          "id": "title",
+          "maxDelta": 0.400390625
+        },
+        {
+          "id": "subtitle",
+          "maxDelta": 0.3001708984375
+        },
+        {
+          "id": "section",
+          "maxDelta": 0.00030517578125
+        },
+        {
+          "id": "message-text-0",
+          "maxDelta": 0.2001953125
+        },
+        {
+          "id": "message-text-1",
+          "maxDelta": 0.2001953125
+        },
+        {
+          "id": "message-text-2",
+          "maxDelta": 0.2001953125
+        },
+        {
+          "id": "message-text-3",
+          "maxDelta": 0.2001953125
+        },
+        {
+          "id": "message-text-4",
+          "maxDelta": 0.2001953125
+        },
+        {
+          "id": "submit",
+          "maxDelta": 0.34991455078125
+        }
+      ],
+      "diffImage": "pixel/02-chat-tauri-diff.png",
+      "referenceImage": "pixel/02-chat-electron.png",
+      "comparisonImage": "pixel/02-chat-tauri.png",
+      "class": "runtime-parity"
+    },
+    {
+      "fixture": "02-chat",
+      "runtime": "flutter",
+      "reference": "electron",
+      "width": 2560,
+      "height": 1600,
+      "pixelDiffCount": 22579,
+      "pixelDiffPercent": 0.5512451171875,
+      "threshold": 0.1,
+      "includeAA": false,
+      "ssim": 0.9628979095658908,
+      "ssimSampling": "every fourth pixel, 640x400",
+      "geometry": [
+        {
+          "id": "sidebar",
+          "maxDelta": 0
+        },
+        {
+          "id": "brand",
+          "maxDelta": 0
+        },
+        {
+          "id": "nav-0",
+          "maxDelta": 0
+        },
+        {
+          "id": "nav-1",
+          "maxDelta": 0
+        },
+        {
+          "id": "nav-2",
+          "maxDelta": 0
+        },
+        {
+          "id": "nav-3",
+          "maxDelta": 0
+        },
+        {
+          "id": "nav-4",
+          "maxDelta": 0
+        },
+        {
+          "id": "nav-5",
+          "maxDelta": 0
+        },
+        {
+          "id": "title",
+          "maxDelta": 0
+        },
+        {
+          "id": "subtitle",
+          "maxDelta": 0
+        },
+        {
+          "id": "content",
+          "maxDelta": 0
+        },
+        {
+          "id": "icon",
+          "maxDelta": 0
+        },
+        {
+          "id": "section",
+          "maxDelta": 0
+        },
+        {
+          "id": "message-0",
+          "maxDelta": 0
+        },
+        {
+          "id": "message-text-0",
+          "maxDelta": 0
+        },
+        {
+          "id": "message-1",
+          "maxDelta": 0
+        },
+        {
+          "id": "message-text-1",
+          "maxDelta": 0
+        },
+        {
+          "id": "message-2",
+          "maxDelta": 0
+        },
+        {
+          "id": "message-text-2",
+          "maxDelta": 0
+        },
+        {
+          "id": "message-3",
+          "maxDelta": 0
+        },
+        {
+          "id": "message-text-3",
+          "maxDelta": 0
+        },
+        {
+          "id": "message-4",
+          "maxDelta": 0
+        },
+        {
+          "id": "message-text-4",
+          "maxDelta": 0
+        },
+        {
+          "id": "visual-strip",
+          "maxDelta": 0
+        },
+        {
+          "id": "input",
+          "maxDelta": 0
+        },
+        {
+          "id": "submit",
+          "maxDelta": 0
+        }
+      ],
+      "textBounds": [
+        {
+          "id": "brand",
+          "maxDelta": 1
+        },
+        {
+          "id": "nav-0",
+          "maxDelta": 1
+        },
+        {
+          "id": "nav-1",
+          "maxDelta": 1
+        },
+        {
+          "id": "nav-2",
+          "maxDelta": 1
+        },
+        {
+          "id": "nav-3",
+          "maxDelta": 1
+        },
+        {
+          "id": "nav-4",
+          "maxDelta": 1
+        },
+        {
+          "id": "nav-5",
+          "maxDelta": 1
+        },
+        {
+          "id": "title",
+          "maxDelta": 2
+        },
+        {
+          "id": "subtitle",
+          "maxDelta": 0.5
+        },
+        {
+          "id": "section",
+          "maxDelta": 1
+        },
+        {
+          "id": "message-text-0",
+          "maxDelta": 1
+        },
+        {
+          "id": "message-text-1",
+          "maxDelta": 1
+        },
+        {
+          "id": "message-text-2",
+          "maxDelta": 1
+        },
+        {
+          "id": "message-text-3",
+          "maxDelta": 1
+        },
+        {
+          "id": "message-text-4",
+          "maxDelta": 1
+        }
+      ],
+      "diffImage": "pixel/02-chat-flutter-diff.png",
+      "referenceImage": "pixel/02-chat-electron.png",
+      "comparisonImage": "pixel/02-chat-flutter.png",
+      "class": "semantic visual reference"
+    },
+    {
+      "fixture": "03-code-editor",
+      "runtime": "tauri",
+      "reference": "electron",
+      "width": 2560,
+      "height": 1600,
+      "pixelDiffCount": 1084,
+      "pixelDiffPercent": 0.02646484375,
+      "threshold": 0.1,
+      "includeAA": false,
+      "ssim": 0.9966799874442609,
+      "ssimSampling": "every fourth pixel, 640x400",
+      "geometry": [
+        {
+          "id": "sidebar",
+          "maxDelta": 0
+        },
+        {
+          "id": "brand",
+          "maxDelta": 0
+        },
+        {
+          "id": "nav-0",
+          "maxDelta": 0
+        },
+        {
+          "id": "nav-1",
+          "maxDelta": 0
+        },
+        {
+          "id": "nav-2",
+          "maxDelta": 0
+        },
+        {
+          "id": "nav-3",
+          "maxDelta": 0
+        },
+        {
+          "id": "nav-4",
+          "maxDelta": 0
+        },
+        {
+          "id": "nav-5",
+          "maxDelta": 0
+        },
+        {
+          "id": "title",
+          "maxDelta": 0
+        },
+        {
+          "id": "subtitle",
+          "maxDelta": 0
+        },
+        {
+          "id": "content",
+          "maxDelta": 0
+        },
+        {
+          "id": "icon",
+          "maxDelta": 0
+        },
+        {
+          "id": "section",
+          "maxDelta": 0
+        },
+        {
+          "id": "editor",
+          "maxDelta": 0
+        },
+        {
+          "id": "code-0",
+          "maxDelta": 0
+        },
+        {
+          "id": "code-1",
+          "maxDelta": 0
+        },
+        {
+          "id": "code-2",
+          "maxDelta": 0
+        },
+        {
+          "id": "code-3",
+          "maxDelta": 0
+        },
+        {
+          "id": "code-4",
+          "maxDelta": 0
+        },
+        {
+          "id": "code-5",
+          "maxDelta": 0
+        },
+        {
+          "id": "code-6",
+          "maxDelta": 0
+        },
+        {
+          "id": "code-7",
+          "maxDelta": 0
+        },
+        {
+          "id": "code-8",
+          "maxDelta": 0
+        },
+        {
+          "id": "code-9",
+          "maxDelta": 0
+        },
+        {
+          "id": "visual-strip",
+          "maxDelta": 0
+        },
+        {
+          "id": "input",
+          "maxDelta": 0
+        },
+        {
+          "id": "submit",
+          "maxDelta": 0
+        }
+      ],
+      "textBounds": [
+        {
+          "id": "brand",
+          "maxDelta": 0.004058837890625
+        },
+        {
+          "id": "nav-0",
+          "maxDelta": 0.2001953125
+        },
+        {
+          "id": "nav-1",
+          "maxDelta": 0.2001953125
+        },
+        {
+          "id": "nav-2",
+          "maxDelta": 0.2001953125
+        },
+        {
+          "id": "nav-3",
+          "maxDelta": 0.2001953125
+        },
+        {
+          "id": "nav-4",
+          "maxDelta": 0.2001953125
+        },
+        {
+          "id": "nav-5",
+          "maxDelta": 0.2001953125
+        },
+        {
+          "id": "title",
+          "maxDelta": 0.400390625
+        },
+        {
+          "id": "subtitle",
+          "maxDelta": 0.3001708984375
+        },
+        {
+          "id": "section",
+          "maxDelta": 0.0006103515625
+        },
+        {
+          "id": "code-0",
+          "maxDelta": 0.2001953125
+        },
+        {
+          "id": "code-1",
+          "maxDelta": 0.2001953125
+        },
+        {
+          "id": "code-2",
+          "maxDelta": 0.2001953125
+        },
+        {
+          "id": "code-3",
+          "maxDelta": 0.2001953125
+        },
+        {
+          "id": "code-4",
+          "maxDelta": 0.2001953125
+        },
+        {
+          "id": "code-5",
+          "maxDelta": 0.2001953125
+        },
+        {
+          "id": "code-6",
+          "maxDelta": 0.2001953125
+        },
+        {
+          "id": "code-7",
+          "maxDelta": 0.2001953125
+        },
+        {
+          "id": "code-8",
+          "maxDelta": 0.2001953125
+        },
+        {
+          "id": "code-9",
+          "maxDelta": 0.2001953125
+        },
+        {
+          "id": "submit",
+          "maxDelta": 0.34991455078125
+        }
+      ],
+      "diffImage": "pixel/03-code-editor-tauri-diff.png",
+      "referenceImage": "pixel/03-code-editor-electron.png",
+      "comparisonImage": "pixel/03-code-editor-tauri.png",
+      "class": "runtime-parity"
+    },
+    {
+      "fixture": "03-code-editor",
+      "runtime": "flutter",
+      "reference": "electron",
+      "width": 2560,
+      "height": 1600,
+      "pixelDiffCount": 39942,
+      "pixelDiffPercent": 0.975146484375,
+      "threshold": 0.1,
+      "includeAA": false,
+      "ssim": 0.9205294496928119,
+      "ssimSampling": "every fourth pixel, 640x400",
+      "geometry": [
+        {
+          "id": "sidebar",
+          "maxDelta": 0
+        },
+        {
+          "id": "brand",
+          "maxDelta": 0
+        },
+        {
+          "id": "nav-0",
+          "maxDelta": 0
+        },
+        {
+          "id": "nav-1",
+          "maxDelta": 0
+        },
+        {
+          "id": "nav-2",
+          "maxDelta": 0
+        },
+        {
+          "id": "nav-3",
+          "maxDelta": 0
+        },
+        {
+          "id": "nav-4",
+          "maxDelta": 0
+        },
+        {
+          "id": "nav-5",
+          "maxDelta": 0
+        },
+        {
+          "id": "title",
+          "maxDelta": 0
+        },
+        {
+          "id": "subtitle",
+          "maxDelta": 0
+        },
+        {
+          "id": "content",
+          "maxDelta": 0
+        },
+        {
+          "id": "icon",
+          "maxDelta": 0
+        },
+        {
+          "id": "section",
+          "maxDelta": 0
+        },
+        {
+          "id": "editor",
+          "maxDelta": 0
+        },
+        {
+          "id": "code-0",
+          "maxDelta": 0
+        },
+        {
+          "id": "code-1",
+          "maxDelta": 0
+        },
+        {
+          "id": "code-2",
+          "maxDelta": 0
+        },
+        {
+          "id": "code-3",
+          "maxDelta": 0
+        },
+        {
+          "id": "code-4",
+          "maxDelta": 0
+        },
+        {
+          "id": "code-5",
+          "maxDelta": 0
+        },
+        {
+          "id": "code-6",
+          "maxDelta": 0
+        },
+        {
+          "id": "code-7",
+          "maxDelta": 0
+        },
+        {
+          "id": "code-8",
+          "maxDelta": 0
+        },
+        {
+          "id": "code-9",
+          "maxDelta": 0
+        },
+        {
+          "id": "visual-strip",
+          "maxDelta": 0
+        },
+        {
+          "id": "input",
+          "maxDelta": 0
+        },
+        {
+          "id": "submit",
+          "maxDelta": 0
+        }
+      ],
+      "textBounds": [
+        {
+          "id": "brand",
+          "maxDelta": 1
+        },
+        {
+          "id": "nav-0",
+          "maxDelta": 1
+        },
+        {
+          "id": "nav-1",
+          "maxDelta": 1
+        },
+        {
+          "id": "nav-2",
+          "maxDelta": 1
+        },
+        {
+          "id": "nav-3",
+          "maxDelta": 1
+        },
+        {
+          "id": "nav-4",
+          "maxDelta": 1
+        },
+        {
+          "id": "nav-5",
+          "maxDelta": 1
+        },
+        {
+          "id": "title",
+          "maxDelta": 2
+        },
+        {
+          "id": "subtitle",
+          "maxDelta": 0.5
+        },
+        {
+          "id": "section",
+          "maxDelta": 1
+        },
+        {
+          "id": "code-0",
+          "maxDelta": 9.593994140625
+        },
+        {
+          "id": "code-1",
+          "maxDelta": 9.593994140625
+        },
+        {
+          "id": "code-2",
+          "maxDelta": 9.59857177734375
+        },
+        {
+          "id": "code-3",
+          "maxDelta": 9.59698486328125
+        },
+        {
+          "id": "code-4",
+          "maxDelta": 9.593963623046875
+        },
+        {
+          "id": "code-5",
+          "maxDelta": 9.593994140625
+        },
+        {
+          "id": "code-6",
+          "maxDelta": 9.593994140625
+        },
+        {
+          "id": "code-7",
+          "maxDelta": 9.59857177734375
+        },
+        {
+          "id": "code-8",
+          "maxDelta": 9.59698486328125
+        },
+        {
+          "id": "code-9",
+          "maxDelta": 9.593963623046875
+        }
+      ],
+      "diffImage": "pixel/03-code-editor-flutter-diff.png",
+      "referenceImage": "pixel/03-code-editor-electron.png",
+      "comparisonImage": "pixel/03-code-editor-flutter.png",
+      "class": "semantic visual reference"
+    },
+    {
+      "fixture": "04-settings",
+      "runtime": "tauri",
+      "reference": "electron",
+      "width": 2560,
+      "height": 1600,
+      "pixelDiffCount": 1703,
+      "pixelDiffPercent": 0.0415771484375,
+      "threshold": 0.1,
+      "includeAA": false,
+      "ssim": 0.9967879499048349,
+      "ssimSampling": "every fourth pixel, 640x400",
+      "geometry": [
+        {
+          "id": "sidebar",
+          "maxDelta": 0
+        },
+        {
+          "id": "brand",
+          "maxDelta": 0
+        },
+        {
+          "id": "nav-0",
+          "maxDelta": 0
+        },
+        {
+          "id": "nav-1",
+          "maxDelta": 0
+        },
+        {
+          "id": "nav-2",
+          "maxDelta": 0
+        },
+        {
+          "id": "nav-3",
+          "maxDelta": 0
+        },
+        {
+          "id": "nav-4",
+          "maxDelta": 0
+        },
+        {
+          "id": "nav-5",
+          "maxDelta": 0
+        },
+        {
+          "id": "title",
+          "maxDelta": 0
+        },
+        {
+          "id": "subtitle",
+          "maxDelta": 0
+        },
+        {
+          "id": "content",
+          "maxDelta": 0
+        },
+        {
+          "id": "icon",
+          "maxDelta": 0
+        },
+        {
+          "id": "section",
+          "maxDelta": 0
+        },
+        {
+          "id": "setting-0",
+          "maxDelta": 0
+        },
+        {
+          "id": "setting-label-0",
+          "maxDelta": 0
+        },
+        {
+          "id": "setting-button-0",
+          "maxDelta": 0
+        },
+        {
+          "id": "setting-1",
+          "maxDelta": 0
+        },
+        {
+          "id": "setting-label-1",
+          "maxDelta": 0
+        },
+        {
+          "id": "setting-button-1",
+          "maxDelta": 0
+        },
+        {
+          "id": "setting-2",
+          "maxDelta": 0
+        },
+        {
+          "id": "setting-label-2",
+          "maxDelta": 0
+        },
+        {
+          "id": "setting-button-2",
+          "maxDelta": 0
+        },
+        {
+          "id": "setting-3",
+          "maxDelta": 0
+        },
+        {
+          "id": "setting-label-3",
+          "maxDelta": 0
+        },
+        {
+          "id": "setting-button-3",
+          "maxDelta": 0
+        },
+        {
+          "id": "visual-strip",
+          "maxDelta": 0
+        },
+        {
+          "id": "input",
+          "maxDelta": 0
+        },
+        {
+          "id": "submit",
+          "maxDelta": 0
+        }
+      ],
+      "textBounds": [
+        {
+          "id": "brand",
+          "maxDelta": 0.004058837890625
+        },
+        {
+          "id": "nav-0",
+          "maxDelta": 0.2001953125
+        },
+        {
+          "id": "nav-1",
+          "maxDelta": 0.2001953125
+        },
+        {
+          "id": "nav-2",
+          "maxDelta": 0.2001953125
+        },
+        {
+          "id": "nav-3",
+          "maxDelta": 0.2001953125
+        },
+        {
+          "id": "nav-4",
+          "maxDelta": 0.2001953125
+        },
+        {
+          "id": "nav-5",
+          "maxDelta": 0.2001953125
+        },
+        {
+          "id": "title",
+          "maxDelta": 0.400390625
+        },
+        {
+          "id": "subtitle",
+          "maxDelta": 0.3001708984375
+        },
+        {
+          "id": "section",
+          "maxDelta": 0.00189208984375
+        },
+        {
+          "id": "setting-label-0",
+          "maxDelta": 0.2001953125
+        },
+        {
+          "id": "setting-button-0",
+          "maxDelta": 0.34991455078125
+        },
+        {
+          "id": "setting-label-1",
+          "maxDelta": 0.2001953125
+        },
+        {
+          "id": "setting-button-1",
+          "maxDelta": 0.34991455078125
+        },
+        {
+          "id": "setting-label-2",
+          "maxDelta": 0.2001953125
+        },
+        {
+          "id": "setting-button-2",
+          "maxDelta": 0.34991455078130684
+        },
+        {
+          "id": "setting-label-3",
+          "maxDelta": 0.2001953125
+        },
+        {
+          "id": "setting-button-3",
+          "maxDelta": 0.34991455078130684
+        },
+        {
+          "id": "submit",
+          "maxDelta": 0.34991455078125
+        }
+      ],
+      "diffImage": "pixel/04-settings-tauri-diff.png",
+      "referenceImage": "pixel/04-settings-electron.png",
+      "comparisonImage": "pixel/04-settings-tauri.png",
+      "class": "runtime-parity"
+    },
+    {
+      "fixture": "04-settings",
+      "runtime": "flutter",
+      "reference": "electron",
+      "width": 2560,
+      "height": 1600,
+      "pixelDiffCount": 19677,
+      "pixelDiffPercent": 0.4803955078125,
+      "threshold": 0.1,
+      "includeAA": false,
+      "ssim": 0.9659515007767697,
+      "ssimSampling": "every fourth pixel, 640x400",
+      "geometry": [
+        {
+          "id": "sidebar",
+          "maxDelta": 0
+        },
+        {
+          "id": "brand",
+          "maxDelta": 0
+        },
+        {
+          "id": "nav-0",
+          "maxDelta": 0
+        },
+        {
+          "id": "nav-1",
+          "maxDelta": 0
+        },
+        {
+          "id": "nav-2",
+          "maxDelta": 0
+        },
+        {
+          "id": "nav-3",
+          "maxDelta": 0
+        },
+        {
+          "id": "nav-4",
+          "maxDelta": 0
+        },
+        {
+          "id": "nav-5",
+          "maxDelta": 0
+        },
+        {
+          "id": "title",
+          "maxDelta": 0
+        },
+        {
+          "id": "subtitle",
+          "maxDelta": 0
+        },
+        {
+          "id": "content",
+          "maxDelta": 0
+        },
+        {
+          "id": "icon",
+          "maxDelta": 0
+        },
+        {
+          "id": "section",
+          "maxDelta": 0
+        },
+        {
+          "id": "setting-0",
+          "maxDelta": 0
+        },
+        {
+          "id": "setting-label-0",
+          "maxDelta": 0
+        },
+        {
+          "id": "setting-button-0",
+          "maxDelta": 0
+        },
+        {
+          "id": "setting-1",
+          "maxDelta": 0
+        },
+        {
+          "id": "setting-label-1",
+          "maxDelta": 0
+        },
+        {
+          "id": "setting-button-1",
+          "maxDelta": 0
+        },
+        {
+          "id": "setting-2",
+          "maxDelta": 0
+        },
+        {
+          "id": "setting-label-2",
+          "maxDelta": 0
+        },
+        {
+          "id": "setting-button-2",
+          "maxDelta": 0
+        },
+        {
+          "id": "setting-3",
+          "maxDelta": 0
+        },
+        {
+          "id": "setting-label-3",
+          "maxDelta": 0
+        },
+        {
+          "id": "setting-button-3",
+          "maxDelta": 0
+        },
+        {
+          "id": "visual-strip",
+          "maxDelta": 0
+        },
+        {
+          "id": "input",
+          "maxDelta": 0
+        },
+        {
+          "id": "submit",
+          "maxDelta": 0
+        }
+      ],
+      "textBounds": [
+        {
+          "id": "brand",
+          "maxDelta": 1
+        },
+        {
+          "id": "nav-0",
+          "maxDelta": 1
+        },
+        {
+          "id": "nav-1",
+          "maxDelta": 1
+        },
+        {
+          "id": "nav-2",
+          "maxDelta": 1
+        },
+        {
+          "id": "nav-3",
+          "maxDelta": 1
+        },
+        {
+          "id": "nav-4",
+          "maxDelta": 1
+        },
+        {
+          "id": "nav-5",
+          "maxDelta": 1
+        },
+        {
+          "id": "title",
+          "maxDelta": 2
+        },
+        {
+          "id": "subtitle",
+          "maxDelta": 0.5
+        },
+        {
+          "id": "section",
+          "maxDelta": 1
+        },
+        {
+          "id": "setting-label-0",
+          "maxDelta": 1
+        },
+        {
+          "id": "setting-label-1",
+          "maxDelta": 1
+        },
+        {
+          "id": "setting-label-2",
+          "maxDelta": 1
+        },
+        {
+          "id": "setting-label-3",
+          "maxDelta": 1
+        }
+      ],
+      "diffImage": "pixel/04-settings-flutter-diff.png",
+      "referenceImage": "pixel/04-settings-electron.png",
+      "comparisonImage": "pixel/04-settings-flutter.png",
+      "class": "semantic visual reference"
+    },
+    {
+      "fixture": "05-media-player",
+      "runtime": "tauri",
+      "reference": "electron",
+      "width": 2560,
+      "height": 1600,
+      "pixelDiffCount": 1135,
+      "pixelDiffPercent": 0.0277099609375,
+      "threshold": 0.1,
+      "includeAA": false,
+      "ssim": 0.9970478799739816,
+      "ssimSampling": "every fourth pixel, 640x400",
+      "geometry": [
+        {
+          "id": "sidebar",
+          "maxDelta": 0
+        },
+        {
+          "id": "brand",
+          "maxDelta": 0
+        },
+        {
+          "id": "nav-0",
+          "maxDelta": 0
+        },
+        {
+          "id": "nav-1",
+          "maxDelta": 0
+        },
+        {
+          "id": "nav-2",
+          "maxDelta": 0
+        },
+        {
+          "id": "nav-3",
+          "maxDelta": 0
+        },
+        {
+          "id": "nav-4",
+          "maxDelta": 0
+        },
+        {
+          "id": "nav-5",
+          "maxDelta": 0
+        },
+        {
+          "id": "title",
+          "maxDelta": 0
+        },
+        {
+          "id": "subtitle",
+          "maxDelta": 0
+        },
+        {
+          "id": "content",
+          "maxDelta": 0
+        },
+        {
+          "id": "icon",
+          "maxDelta": 0
+        },
+        {
+          "id": "section",
+          "maxDelta": 0
+        },
+        {
+          "id": "cover",
+          "maxDelta": 0
+        },
+        {
+          "id": "track",
+          "maxDelta": 0
+        },
+        {
+          "id": "artist",
+          "maxDelta": 0
+        },
+        {
+          "id": "progress",
+          "maxDelta": 0
+        },
+        {
+          "id": "play",
+          "maxDelta": 0
+        },
+        {
+          "id": "input",
+          "maxDelta": 0
+        },
+        {
+          "id": "submit",
+          "maxDelta": 0
+        }
+      ],
+      "textBounds": [
+        {
+          "id": "brand",
+          "maxDelta": 0.004058837890625
+        },
+        {
+          "id": "nav-0",
+          "maxDelta": 0.2001953125
+        },
+        {
+          "id": "nav-1",
+          "maxDelta": 0.2001953125
+        },
+        {
+          "id": "nav-2",
+          "maxDelta": 0.2001953125
+        },
+        {
+          "id": "nav-3",
+          "maxDelta": 0.2001953125
+        },
+        {
+          "id": "nav-4",
+          "maxDelta": 0.2001953125
+        },
+        {
+          "id": "nav-5",
+          "maxDelta": 0.2001953125
+        },
+        {
+          "id": "title",
+          "maxDelta": 0.400390625
+        },
+        {
+          "id": "subtitle",
+          "maxDelta": 0.3001708984375
+        },
+        {
+          "id": "section",
+          "maxDelta": 0.003753662109375
+        },
+        {
+          "id": "track",
+          "maxDelta": 0.399658203125
+        },
+        {
+          "id": "artist",
+          "maxDelta": 0.2001953125
+        },
+        {
+          "id": "play",
+          "maxDelta": 0.39990234375
+        },
+        {
+          "id": "submit",
+          "maxDelta": 0.34991455078125
+        }
+      ],
+      "diffImage": "pixel/05-media-player-tauri-diff.png",
+      "referenceImage": "pixel/05-media-player-electron.png",
+      "comparisonImage": "pixel/05-media-player-tauri.png",
+      "class": "runtime-parity"
+    },
+    {
+      "fixture": "05-media-player",
+      "runtime": "flutter",
+      "reference": "electron",
+      "width": 2560,
+      "height": 1600,
+      "pixelDiffCount": 19706,
+      "pixelDiffPercent": 0.481103515625,
+      "threshold": 0.1,
+      "includeAA": false,
+      "ssim": 0.9697530198852884,
+      "ssimSampling": "every fourth pixel, 640x400",
+      "geometry": [
+        {
+          "id": "sidebar",
+          "maxDelta": 0
+        },
+        {
+          "id": "brand",
+          "maxDelta": 0
+        },
+        {
+          "id": "nav-0",
+          "maxDelta": 0
+        },
+        {
+          "id": "nav-1",
+          "maxDelta": 0
+        },
+        {
+          "id": "nav-2",
+          "maxDelta": 0
+        },
+        {
+          "id": "nav-3",
+          "maxDelta": 0
+        },
+        {
+          "id": "nav-4",
+          "maxDelta": 0
+        },
+        {
+          "id": "nav-5",
+          "maxDelta": 0
+        },
+        {
+          "id": "title",
+          "maxDelta": 0
+        },
+        {
+          "id": "subtitle",
+          "maxDelta": 0
+        },
+        {
+          "id": "content",
+          "maxDelta": 0
+        },
+        {
+          "id": "icon",
+          "maxDelta": 0
+        },
+        {
+          "id": "section",
+          "maxDelta": 0
+        },
+        {
+          "id": "cover",
+          "maxDelta": 0
+        },
+        {
+          "id": "track",
+          "maxDelta": 0
+        },
+        {
+          "id": "artist",
+          "maxDelta": 0
+        },
+        {
+          "id": "progress",
+          "maxDelta": 0
+        },
+        {
+          "id": "play",
+          "maxDelta": 0
+        },
+        {
+          "id": "input",
+          "maxDelta": 0
+        },
+        {
+          "id": "submit",
+          "maxDelta": 0
+        }
+      ],
+      "textBounds": [
+        {
+          "id": "brand",
+          "maxDelta": 1
+        },
+        {
+          "id": "nav-0",
+          "maxDelta": 1
+        },
+        {
+          "id": "nav-1",
+          "maxDelta": 1
+        },
+        {
+          "id": "nav-2",
+          "maxDelta": 1
+        },
+        {
+          "id": "nav-3",
+          "maxDelta": 1
+        },
+        {
+          "id": "nav-4",
+          "maxDelta": 1
+        },
+        {
+          "id": "nav-5",
+          "maxDelta": 1
+        },
+        {
+          "id": "title",
+          "maxDelta": 2
+        },
+        {
+          "id": "subtitle",
+          "maxDelta": 0.5
+        },
+        {
+          "id": "section",
+          "maxDelta": 1
+        },
+        {
+          "id": "track",
+          "maxDelta": 1
+        },
+        {
+          "id": "artist",
+          "maxDelta": 1
+        }
+      ],
+      "diffImage": "pixel/05-media-player-flutter-diff.png",
+      "referenceImage": "pixel/05-media-player-electron.png",
+      "comparisonImage": "pixel/05-media-player-flutter.png",
+      "class": "semantic visual reference"
+    },
+    {
+      "fixture": "06-complex-modal",
+      "runtime": "tauri",
+      "reference": "electron",
+      "width": 2560,
+      "height": 1600,
+      "pixelDiffCount": 1098,
+      "pixelDiffPercent": 0.026806640625,
+      "threshold": 0.1,
+      "includeAA": false,
+      "ssim": 0.9965133462540786,
+      "ssimSampling": "every fourth pixel, 640x400",
+      "geometry": [
+        {
+          "id": "sidebar",
+          "maxDelta": 0
+        },
+        {
+          "id": "brand",
+          "maxDelta": 0
+        },
+        {
+          "id": "nav-0",
+          "maxDelta": 0
+        },
+        {
+          "id": "nav-1",
+          "maxDelta": 0
+        },
+        {
+          "id": "nav-2",
+          "maxDelta": 0
+        },
+        {
+          "id": "nav-3",
+          "maxDelta": 0
+        },
+        {
+          "id": "nav-4",
+          "maxDelta": 0
+        },
+        {
+          "id": "nav-5",
+          "maxDelta": 0
+        },
+        {
+          "id": "title",
+          "maxDelta": 0
+        },
+        {
+          "id": "subtitle",
+          "maxDelta": 0
+        },
+        {
+          "id": "content",
+          "maxDelta": 0
+        },
+        {
+          "id": "icon",
+          "maxDelta": 0
+        },
+        {
+          "id": "section",
+          "maxDelta": 0
+        },
+        {
+          "id": "backdrop",
+          "maxDelta": 0
+        },
+        {
+          "id": "modal",
+          "maxDelta": 0
+        },
+        {
+          "id": "modal-title",
+          "maxDelta": 0
+        },
+        {
+          "id": "modal-body",
+          "maxDelta": 0
+        },
+        {
+          "id": "modal-submit",
+          "maxDelta": 0
+        },
+        {
+          "id": "input",
+          "maxDelta": 0
+        },
+        {
+          "id": "submit",
+          "maxDelta": 0
+        }
+      ],
+      "textBounds": [
+        {
+          "id": "brand",
+          "maxDelta": 0.004058837890625
+        },
+        {
+          "id": "nav-0",
+          "maxDelta": 0.2001953125
+        },
+        {
+          "id": "nav-1",
+          "maxDelta": 0.2001953125
+        },
+        {
+          "id": "nav-2",
+          "maxDelta": 0.2001953125
+        },
+        {
+          "id": "nav-3",
+          "maxDelta": 0.2001953125
+        },
+        {
+          "id": "nav-4",
+          "maxDelta": 0.2001953125
+        },
+        {
+          "id": "nav-5",
+          "maxDelta": 0.2001953125
+        },
+        {
+          "id": "title",
+          "maxDelta": 0.400390625
+        },
+        {
+          "id": "subtitle",
+          "maxDelta": 0.3001708984375
+        },
+        {
+          "id": "section",
+          "maxDelta": 0.004364013671875
+        },
+        {
+          "id": "modal-title",
+          "maxDelta": 0.2996826171875
+        },
+        {
+          "id": "modal-body",
+          "maxDelta": 0.2001953125
+        },
+        {
+          "id": "modal-submit",
+          "maxDelta": 0.39990234375
+        },
+        {
+          "id": "submit",
+          "maxDelta": 0.34991455078125
+        }
+      ],
+      "diffImage": "pixel/06-complex-modal-tauri-diff.png",
+      "referenceImage": "pixel/06-complex-modal-electron.png",
+      "comparisonImage": "pixel/06-complex-modal-tauri.png",
+      "class": "runtime-parity"
+    },
+    {
+      "fixture": "06-complex-modal",
+      "runtime": "flutter",
+      "reference": "electron",
+      "width": 2560,
+      "height": 1600,
+      "pixelDiffCount": 220034,
+      "pixelDiffPercent": 5.371923828125,
+      "threshold": 0.1,
+      "includeAA": false,
+      "ssim": 0.9571558239334333,
+      "ssimSampling": "every fourth pixel, 640x400",
+      "geometry": [
+        {
+          "id": "sidebar",
+          "maxDelta": 0
+        },
+        {
+          "id": "brand",
+          "maxDelta": 0
+        },
+        {
+          "id": "nav-0",
+          "maxDelta": 0
+        },
+        {
+          "id": "nav-1",
+          "maxDelta": 0
+        },
+        {
+          "id": "nav-2",
+          "maxDelta": 0
+        },
+        {
+          "id": "nav-3",
+          "maxDelta": 0
+        },
+        {
+          "id": "nav-4",
+          "maxDelta": 0
+        },
+        {
+          "id": "nav-5",
+          "maxDelta": 0
+        },
+        {
+          "id": "title",
+          "maxDelta": 0
+        },
+        {
+          "id": "subtitle",
+          "maxDelta": 0
+        },
+        {
+          "id": "content",
+          "maxDelta": 0
+        },
+        {
+          "id": "icon",
+          "maxDelta": 0
+        },
+        {
+          "id": "section",
+          "maxDelta": 0
+        },
+        {
+          "id": "backdrop",
+          "maxDelta": 0
+        },
+        {
+          "id": "modal",
+          "maxDelta": 0
+        },
+        {
+          "id": "modal-title",
+          "maxDelta": 0
+        },
+        {
+          "id": "modal-body",
+          "maxDelta": 0
+        },
+        {
+          "id": "modal-submit",
+          "maxDelta": 0
+        },
+        {
+          "id": "input",
+          "maxDelta": 0
+        },
+        {
+          "id": "submit",
+          "maxDelta": 0
+        }
+      ],
+      "textBounds": [
+        {
+          "id": "brand",
+          "maxDelta": 1
+        },
+        {
+          "id": "nav-0",
+          "maxDelta": 1
+        },
+        {
+          "id": "nav-1",
+          "maxDelta": 1
+        },
+        {
+          "id": "nav-2",
+          "maxDelta": 1
+        },
+        {
+          "id": "nav-3",
+          "maxDelta": 1
+        },
+        {
+          "id": "nav-4",
+          "maxDelta": 1
+        },
+        {
+          "id": "nav-5",
+          "maxDelta": 1
+        },
+        {
+          "id": "title",
+          "maxDelta": 2
+        },
+        {
+          "id": "subtitle",
+          "maxDelta": 0.5
+        },
+        {
+          "id": "section",
+          "maxDelta": 1
+        },
+        {
+          "id": "modal-title",
+          "maxDelta": 1.5
+        },
+        {
+          "id": "modal-body",
+          "maxDelta": 1
+        }
+      ],
+      "diffImage": "pixel/06-complex-modal-flutter-diff.png",
+      "referenceImage": "pixel/06-complex-modal-electron.png",
+      "comparisonImage": "pixel/06-complex-modal-flutter.png",
+      "class": "semantic visual reference"
+    }
+  ],
+  "expected3d": 64,
+  "coverageNotes": [
+    "CSS：32 种参数 × 3 壳；Flutter 为语义等价组，不用于浏览器 CSS API 排名。",
+    "3D：骨骼 50/100/250/500/1000、三角形 100K/500K/1M/5M/10M、贴图 1K/2K/4K/8K、角色 1/10/50/100/250/500。",
+    "2.1GB：复用此前六组完整 60Hz 数据，单独标识 prior-2.1GB 阶段及源码指纹，不混合旧诊断。",
+    "Storage：8 种大小 × 2 种块数据 × 4 操作；小文件 3 数量 × 3 大小 × 2 类型 × 3 操作；SQLite 6 操作，各壳共 124 组。",
+    "Pixel：6 fixtures × Electron/Tauri/Flutter，共 18 截图、12 对比；SSIM 在固定降采样图计算。",
+    "本机 60Hz：操作者已确认设置；120Hz 及其他操作系统尚未运行。",
+    "未支持：完整 Flutter native 3D、Tauri native wgpu；不会补造这些组的成绩。",
+    "CPU/RSS：Tauri OS WebView helper 覆盖不全，跨壳资源比较不成立。"
+  ]
+}

@@ -1,0 +1,825 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>CrossUI · Benchmark Report</title>
+    <style>
+      @font-face {
+        font-family: Plex;
+        src: url(data:font/woff2;base64,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) format("woff2");
+      }
+      * {
+        box-sizing: border-box;
+      }
+      html {
+        scroll-behavior: smooth;
+      }
+      body {
+        margin: 0;
+        background: #f4f3ec;
+        color: #18382d;
+        font-family: Plex, "PingFang SC", sans-serif;
+        line-height: 1.6;
+      }
+      button,
+      select,
+      input {
+        font: inherit;
+      }
+      a {
+        color: inherit;
+        text-underline-offset: 4px;
+      }
+      header {
+        padding: 22px 5vw;
+        border-bottom: 1px solid #18382d30;
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+        align-items: center;
+      }
+      header strong {
+        letter-spacing: 0.18em;
+        font-size: 14px;
+      }
+      nav {
+        display: flex;
+        gap: 24px;
+        font-size: 13px;
+      }
+      main {
+        max-width: 1420px;
+        margin: auto;
+        padding: 0 5vw 80px;
+      }
+      .hero {
+        padding: 64px 0 48px;
+        border-bottom: 1px solid #18382d35;
+        display: grid;
+        grid-template-columns: 1.6fr 1fr;
+        gap: 70px;
+      }
+      .eyebrow {
+        font-size: 12px;
+        letter-spacing: 0.18em;
+        text-transform: uppercase;
+        color: #647369;
+      }
+      h1 {
+        font-size: clamp(48px, 7vw, 92px);
+        font-weight: 400;
+        line-height: 1.02;
+        letter-spacing: -0.06em;
+        margin: 20px 0 28px;
+      }
+      h1 em {
+        color: #b94d2d;
+        font-style: normal;
+      }
+      h2 {
+        font-weight: 400;
+        font-size: 34px;
+        line-height: 1.2;
+        margin: 8px 0 18px;
+      }
+      h3 {
+        font-size: 18px;
+        font-weight: 500;
+      }
+      .meta {
+        font-size: 14px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        align-self: end;
+        padding-bottom: 22px;
+      }
+      .meta span {
+        display: block;
+        color: #778378;
+        font-size: 12px;
+      }
+      .meta b {
+        font-weight: 500;
+      }
+      .lead {
+        max-width: 660px;
+        color: #5c6e61;
+        font-size: 17px;
+      }
+      .button {
+        border: 1px solid #18382d55;
+        border-radius: 0;
+        background: none;
+        padding: 8px 15px;
+        cursor: pointer;
+      }
+      .button:hover {
+        background: #e8ecdf;
+      }
+      .cover {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        margin: 34px 0;
+        gap: 0;
+        border: 1px solid #18382d30;
+      }
+      .coverage {
+        padding: 24px;
+        border-right: 1px solid #18382d30;
+      }
+      .coverage:last-child {
+        border: 0;
+      }
+      .number {
+        font-size: 36px;
+        line-height: 1.2;
+        letter-spacing: -0.03em;
+      }
+      .coverage small {
+        color: #718073;
+      }
+      section {
+        padding-top: 56px;
+        margin-top: 20px;
+        scroll-margin-top: 18px;
+      }
+      .section-top {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        gap: 28px;
+      }
+      .section-top p {
+        max-width: 620px;
+        font-size: 14px;
+        color: #637266;
+      }
+      .controls {
+        display: flex;
+        gap: 12px;
+        align-items: center;
+        flex-wrap: wrap;
+        font-size: 13px;
+      }
+      select,
+      input {
+        background: #fffef7;
+        border: 1px solid #bec8bb;
+        border-radius: 0;
+        padding: 9px;
+        max-width: 240px;
+      }
+      .legend {
+        display: flex;
+        gap: 22px;
+        font-size: 12px;
+        margin: 14px 0;
+      }
+      .legend i {
+        width: 10px;
+        height: 10px;
+        display: inline-block;
+        margin-right: 6px;
+      }
+      .e {
+        background: #315d46;
+      }
+      .t {
+        background: #cb643e;
+      }
+      .f {
+        background: #627b9f;
+      }
+      .panel {
+        background: #fffef8;
+        border: 1px solid #cbd3c6;
+        padding: 24px;
+        margin-top: 18px;
+      }
+      .chart {
+        width: 100%;
+        height: auto;
+        display: block;
+      }
+      .table-wrap {
+        overflow: auto;
+        margin-top: 22px;
+      }
+      table {
+        border-collapse: collapse;
+        width: 100%;
+        font-size: 13px;
+        white-space: nowrap;
+      }
+      th {
+        text-align: left;
+        padding: 13px 12px;
+        border-bottom: 2px solid #18382d;
+        font-weight: 500;
+        color: #657369;
+      }
+      td {
+        padding: 13px 12px;
+        border-bottom: 1px solid #d8dfd1;
+        font-variant-numeric: tabular-nums;
+      }
+      tr:hover td {
+        background: #edf2e6;
+      }
+      .tag {
+        font-size: 11px;
+        padding: 3px 7px;
+        background: #e5efda;
+        color: #315d46;
+      }
+      .tag.warn {
+        background: #f5e5d6;
+        color: #9e4f2e;
+      }
+      .empty {
+        border: 1px dashed #bdc8b8;
+        padding: 26px;
+        color: #718073;
+      }
+      .note {
+        font-size: 13px;
+        border-left: 3px solid #cb643e;
+        padding: 12px 18px;
+        background: #efece1;
+        margin: 20px 0;
+        color: #596958;
+      }
+      .status-list {
+        font-size: 13px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+      }
+      .status-list p {
+        margin: 0;
+        padding: 12px 0;
+        border-bottom: 1px solid #d1d9c9;
+      }
+      .pixel-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 18px;
+      }
+      .pixel-grid figure {
+        margin: 0;
+      }
+      .pixel-grid img {
+        width: 100%;
+        display: block;
+        border: 1px solid #bdc8b8;
+      }
+      .pixel-grid figcaption {
+        font-size: 12px;
+        margin: 8px 0;
+      }
+      .diff-overlay {
+        position: relative;
+      }
+      .diff-overlay img + img {
+        position: absolute;
+        inset: 0;
+        opacity: 0.5;
+      }
+      details {
+        margin: 16px 0;
+        font-size: 13px;
+      }
+      summary {
+        cursor: pointer;
+      }
+      footer {
+        border-top: 1px solid #becbb5;
+        padding-top: 28px;
+        margin-top: 60px;
+        color: #788476;
+        font-size: 12px;
+        display: flex;
+        justify-content: space-between;
+      }
+      .conclusion {
+        font-size: 19px;
+        line-height: 1.8;
+        padding: 28px 0;
+        border-top: 1px solid #bdc8b8;
+      }
+      .progress {
+        height: 4px;
+        background: #d9dfd2;
+        margin-top: 15px;
+      }
+      .progress > i {
+        display: block;
+        height: 100%;
+        background: #315d46;
+      }
+      .subtle {
+        font-size: 12px;
+        color: #7a887a;
+      }
+      @media (max-width: 800px) {
+        nav {
+          gap: 10px;
+        }
+        header {
+          align-items: flex-start;
+        }
+        .hero {
+          grid-template-columns: 1fr;
+          gap: 20px;
+          padding: 34px 0;
+        }
+        .cover {
+          grid-template-columns: 1fr 1fr;
+        }
+        .coverage {
+          border-bottom: 1px solid #18382d30;
+        }
+        .section-top {
+          display: block;
+        }
+        .pixel-grid,
+        .status-list {
+          grid-template-columns: 1fr;
+        }
+        h2 {
+          font-size: 28px;
+        }
+      }
+      @media print {
+        button,
+        .controls {
+          display: none;
+        }
+        body {
+          background: #fff;
+        }
+        section {
+          break-inside: avoid;
+        }
+        header {
+          position: static;
+        }
+        .hero {
+          padding-top: 20px;
+        }
+        h1 {
+          font-size: 56px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <strong>CROSSUI / FIELD REPORT</strong>
+      <nav>
+        <a href="#css">CSS</a><a href="#storage">STORAGE</a
+        ><a href="#three">3D</a><a href="#pixel">PIXEL</a>
+      </nav>
+    </header>
+    <main>
+      <div class="hero">
+        <div>
+          <div class="eyebrow">Performance study · Local release builds</div>
+          <h1>One machine.<br /><em>Four workloads.</em></h1>
+          <p class="lead" id="lead"></p>
+          <button class="button" onclick="location.reload()">
+            刷新当前报告 ↻
+          </button>
+        </div>
+        <div class="meta">
+          <div><span>DEVICE</span><b>Apple M4 · 32 GiB</b></div>
+          <div><span>DISPLAY</span><b>固定 60 Hz · DPR 2</b></div>
+          <div><span>RUNTIMES</span><b>Electron / Tauri / Flutter</b></div>
+          <div><span>UPDATED</span><b id="updated"></b></div>
+          <div><span>DYNAMIC PROTOCOL</span><b>10s / 30s / 5s × 5</b></div>
+          <div><span>CLASSIFICATION</span><b>运行时对比 / 语义参考</b></div>
+        </div>
+      </div>
+      <div class="cover" id="coverage"></div>
+      <div class="conclusion" id="finding"></div>
+      <section id="css">
+        <div class="section-top">
+          <div>
+            <div class="eyebrow">01 / CSS animation stress</div>
+            <h2>动画与合成压力</h2>
+          </div>
+          <p>
+            8 种 workload × 100 / 500 / 1000 / 5000 节点。Electron/Tauri
+            使用同一 Web 实现；Flutter 是语义等价参考，帧时间来自引擎，不能用于
+            CSS API 兼容性排名。
+          </p>
+        </div>
+        <div class="controls">
+          <label
+            >节点数
+            <select id="nodes">
+              <option>100</option>
+              <option>500</option>
+              <option>1000</option>
+              <option>5000</option>
+            </select></label
+          ><label
+            >显示
+            <select id="class">
+              <option value="all">含 Flutter 语义参考</option>
+              <option value="web">仅 Electron / Tauri</option>
+            </select></label
+          >
+        </div>
+        <div class="legend">
+          <span><i class="e"></i>Electron</span
+          ><span><i class="t"></i>Tauri</span
+          ><span><i class="f"></i>Flutter · semantic</span>
+        </div>
+        <div class="panel" id="css-chart"></div>
+        <div class="table-wrap" id="css-table"></div>
+      </section>
+      <section id="storage">
+        <div class="section-top">
+          <div>
+            <div class="eyebrow">02 / Local storage</div>
+            <h2>文件与 SQLite</h2>
+          </div>
+          <p>
+            Node fs / Rust std::fs / Dart io；各使用原生
+            SQLite。每项预热一次、测量五次。单文件写入包含
+            flush/fsync，小文件创建不逐文件同步。读取是页缓存未控制的暖读，不能等同磁盘冷读。
+          </p>
+        </div>
+        <div class="controls">
+          <label
+            >操作
+            <select id="operation"></select></label
+          ><label
+            >数据类型
+            <select id="entropy">
+              <option value="all">全部</option>
+              <option value="random">随机块</option>
+              <option value="compressible">可压缩块</option>
+            </select></label
+          >
+        </div>
+        <div class="table-wrap" id="storage-table"></div>
+        <div class="note">
+          存储计时在原生 API
+          内执行，初始化、内容/行数校验和清理不计时。随机数据是重复的固定种子
+          1MiB 高熵块；随机 IO 为 2048 次 4KiB 操作。SQLite
+          版本会单独显示，不把不同引擎版本当作完全相同实现。
+        </div>
+      </section>
+      <section id="three">
+        <div class="section-top">
+          <div>
+            <div class="eyebrow">03 / Mesh & skeletal animation</div>
+            <h2>从参数扩展到 2.1GB</h2>
+          </div>
+          <p>
+            骨骼、三角形、角色数量、贴图分辨率分别扩展。静态载入指标在每次准备阶段采集。TTFM
+            是 CPU 提交加下一次回调的代理，非 GPU 完成确认；GPU
+            上传/解码尚未独立计时。
+          </p>
+        </div>
+        <div class="controls">
+          <label
+            >筛选
+            <input id="asset-filter" placeholder="模型 / bone / scale / mixed"
+          /></label>
+        </div>
+        <div class="table-wrap" id="three-table"></div>
+        <div class="note">
+          Tauri 的进程树采集不完整覆盖系统 WebKit XPC 进程，CPU/RSS
+          不用于跨壳比较。系统缓存未控制，固定测试顺序不支持把载入时间差异全部归因于运行时。
+        </div>
+      </section>
+      <section id="pixel">
+        <div class="section-top">
+          <div>
+            <div class="eyebrow">04 / Pixel consistency</div>
+            <h2>先看布局，再看像素</h2>
+          </div>
+          <p>
+            六个固定 fixture，真实原生壳截图。统一
+            1280×800、DPR2、英文、浅色、固定状态、相同本地 IBM Plex TTF。Flutter
+            作为自绘语义视觉参考。
+          </p>
+        </div>
+        <div class="controls">
+          <label
+            >Fixture
+            <select id="fixture"></select></label
+          ><label
+            >对比
+            <select id="pixel-runtime">
+              <option value="tauri">Tauri</option>
+              <option value="flutter">Flutter</option>
+            </select></label
+          ><label
+            >叠加 <input type="range" id="opacity" min="0" max="100" value="50"
+          /></label>
+        </div>
+        <div id="pixel-view"></div>
+        <div class="table-wrap" id="pixel-table"></div>
+        <div class="note">
+          Pixel diff 阈值 0.1，忽略 AA 分类；SSIM 在固定 640×400
+          采样图计算。Geometry diff 比较实际渲染节点边界。文字边界由 Web Range
+          与 Flutter TextPainter 得到，其测量定义不同，不按 bit-identical
+          判定合格。
+        </div>
+      </section>
+      <section>
+        <div class="eyebrow">Coverage & evidence</div>
+        <h2>测试范围与未支持项</h2>
+        <div class="status-list" id="status"></div>
+        <details>
+          <summary>查看失败或跳过的参数</summary>
+          <div class="table-wrap" id="failures"></div>
+        </details>
+        <div class="note">
+          当前只有本机 macOS 60Hz。120Hz 需要操作者切换固定刷新率后另跑；Windows
+          / Linux 未测试。Flutter native 3D、Tauri native wgpu
+          后端尚未实现，报告不给它们补造成绩。冷启动、GPU utilization / GPU
+          memory / private memory 未提供独立可靠采样。
+        </div>
+      </section>
+      <footer>
+        <span>CROSSUI / Reproducible evidence, bounded conclusions.</span
+        ><span id="source"></span>
+      </footer>
+    </main>
+    <script id="data" type="application/json">
+{"updated":"2026-10-07T12:02:09.447Z","jobs":[{"key":"electron-benchmark=css-animation&case=translate&nodes=100","runtime":"electron","parameters":{"benchmark":"css-animation","case":"translate","nodes":100},"categories":["css"],"status":"pending"},{"key":"tauri-benchmark=css-animation&case=translate&nodes=100","runtime":"tauri","parameters":{"benchmark":"css-animation","case":"translate","nodes":100},"categories":["css"],"status":"pending"},{"key":"flutter-benchmark=css-animation&case=translate&nodes=100","runtime":"flutter","parameters":{"benchmark":"css-animation","case":"translate","nodes":100},"categories":["css"],"status":"pending"},{"key":"electron-benchmark=css-animation&case=translate&nodes=500","runtime":"electron","parameters":{"benchmark":"css-animation","case":"translate","nodes":500},"categories":["css"],"status":"pending"},{"key":"tauri-benchmark=css-animation&case=translate&nodes=500","runtime":"tauri","parameters":{"benchmark":"css-animation","case":"translate","nodes":500},"categories":["css"],"status":"pending"},{"key":"flutter-benchmark=css-animation&case=translate&nodes=500","runtime":"flutter","parameters":{"benchmark":"css-animation","case":"translate","nodes":500},"categories":["css"],"status":"pending"},{"key":"electron-benchmark=css-animation&case=translate&nodes=1000","runtime":"electron","parameters":{"benchmark":"css-animation","case":"translate","nodes":1000},"categories":["css"],"status":"pending"},{"key":"tauri-benchmark=css-animation&case=translate&nodes=1000","runtime":"tauri","parameters":{"benchmark":"css-animation","case":"translate","nodes":1000},"categories":["css"],"status":"pending"},{"key":"flutter-benchmark=css-animation&case=translate&nodes=1000","runtime":"flutter","parameters":{"benchmark":"css-animation","case":"translate","nodes":1000},"categories":["css"],"status":"pending"},{"key":"electron-benchmark=css-animation&case=translate&nodes=5000","runtime":"electron","parameters":{"benchmark":"css-animation","case":"translate","nodes":5000},"categories":["css"],"status":"pending"},{"key":"tauri-benchmark=css-animation&case=translate&nodes=5000","runtime":"tauri","parameters":{"benchmark":"css-animation","case":"translate","nodes":5000},"categories":["css"],"status":"pending"},{"key":"flutter-benchmark=css-animation&case=translate&nodes=5000","runtime":"flutter","parameters":{"benchmark":"css-animation","case":"translate","nodes":5000},"categories":["css"],"status":"pending"},{"key":"electron-benchmark=css-animation&case=scale-rotate&nodes=100","runtime":"electron","parameters":{"benchmark":"css-animation","case":"scale-rotate","nodes":100},"categories":["css"],"status":"pending"},{"key":"tauri-benchmark=css-animation&case=scale-rotate&nodes=100","runtime":"tauri","parameters":{"benchmark":"css-animation","case":"scale-rotate","nodes":100},"categories":["css"],"status":"pending"},{"key":"flutter-benchmark=css-animation&case=scale-rotate&nodes=100","runtime":"flutter","parameters":{"benchmark":"css-animation","case":"scale-rotate","nodes":100},"categories":["css"],"status":"pending"},{"key":"electron-benchmark=css-animation&case=scale-rotate&nodes=500","runtime":"electron","parameters":{"benchmark":"css-animation","case":"scale-rotate","nodes":500},"categories":["css"],"status":"pending"},{"key":"tauri-benchmark=css-animation&case=scale-rotate&nodes=500","runtime":"tauri","parameters":{"benchmark":"css-animation","case":"scale-rotate","nodes":500},"categories":["css"],"status":"pending"},{"key":"flutter-benchmark=css-animation&case=scale-rotate&nodes=500","runtime":"flutter","parameters":{"benchmark":"css-animation","case":"scale-rotate","nodes":500},"categories":["css"],"status":"pending"},{"key":"electron-benchmark=css-animation&case=scale-rotate&nodes=1000","runtime":"electron","parameters":{"benchmark":"css-animation","case":"scale-rotate","nodes":1000},"categories":["css"],"status":"pending"},{"key":"tauri-benchmark=css-animation&case=scale-rotate&nodes=1000","runtime":"tauri","parameters":{"benchmark":"css-animation","case":"scale-rotate","nodes":1000},"categories":["css"],"status":"pending"},{"key":"flutter-benchmark=css-animation&case=scale-rotate&nodes=1000","runtime":"flutter","parameters":{"benchmark":"css-animation","case":"scale-rotate","nodes":1000},"categories":["css"],"status":"pending"},{"key":"electron-benchmark=css-animation&case=scale-rotate&nodes=5000","runtime":"electron","parameters":{"benchmark":"css-animation","case":"scale-rotate","nodes":5000},"categories":["css"],"status":"pending"},{"key":"tauri-benchmark=css-animation&case=scale-rotate&nodes=5000","runtime":"tauri","parameters":{"benchmark":"css-animation","case":"scale-rotate","nodes":5000},"categories":["css"],"status":"pending"},{"key":"flutter-benchmark=css-animation&case=scale-rotate&nodes=5000","runtime":"flutter","parameters":{"benchmark":"css-animation","case":"scale-rotate","nodes":5000},"categories":["css"],"status":"pending"},{"key":"electron-benchmark=css-animation&case=opacity&nodes=100","runtime":"electron","parameters":{"benchmark":"css-animation","case":"opacity","nodes":100},"categories":["css"],"status":"pending"},{"key":"tauri-benchmark=css-animation&case=opacity&nodes=100","runtime":"tauri","parameters":{"benchmark":"css-animation","case":"opacity","nodes":100},"categories":["css"],"status":"pending"},{"key":"flutter-benchmark=css-animation&case=opacity&nodes=100","runtime":"flutter","parameters":{"benchmark":"css-animation","case":"opacity","nodes":100},"categories":["css"],"status":"pending"},{"key":"electron-benchmark=css-animation&case=opacity&nodes=500","runtime":"electron","parameters":{"benchmark":"css-animation","case":"opacity","nodes":500},"categories":["css"],"status":"pending"},{"key":"tauri-benchmark=css-animation&case=opacity&nodes=500","runtime":"tauri","parameters":{"benchmark":"css-animation","case":"opacity","nodes":500},"categories":["css"],"status":"pending"},{"key":"flutter-benchmark=css-animation&case=opacity&nodes=500","runtime":"flutter","parameters":{"benchmark":"css-animation","case":"opacity","nodes":500},"categories":["css"],"status":"pending"},{"key":"electron-benchmark=css-animation&case=opacity&nodes=1000","runtime":"electron","parameters":{"benchmark":"css-animation","case":"opacity","nodes":1000},"categories":["css"],"status":"pending"},{"key":"tauri-benchmark=css-animation&case=opacity&nodes=1000","runtime":"tauri","parameters":{"benchmark":"css-animation","case":"opacity","nodes":1000},"categories":["css"],"status":"pending"},{"key":"flutter-benchmark=css-animation&case=opacity&nodes=1000","runtime":"flutter","parameters":{"benchmark":"css-animation","case":"opacity","nodes":1000},"categories":["css"],"status":"pending"},{"key":"electron-benchmark=css-animation&case=opacity&nodes=5000","runtime":"electron","parameters":{"benchmark":"css-animation","case":"opacity","nodes":5000},"categories":["css"],"status":"pending"},{"key":"tauri-benchmark=css-animation&case=opacity&nodes=5000","runtime":"tauri","parameters":{"benchmark":"css-animation","case":"opacity","nodes":5000},"categories":["css"],"status":"pending"},{"key":"flutter-benchmark=css-animation&case=opacity&nodes=5000","runtime":"flutter","parameters":{"benchmark":"css-animation","case":"opacity","nodes":5000},"categories":["css"],"status":"pending"},{"key":"electron-benchmark=css-animation&case=blur&nodes=100","runtime":"electron","parameters":{"benchmark":"css-animation","case":"blur","nodes":100},"categories":["css"],"status":"pending"},{"key":"tauri-benchmark=css-animation&case=blur&nodes=100","runtime":"tauri","parameters":{"benchmark":"css-animation","case":"blur","nodes":100},"categories":["css"],"status":"pending"},{"key":"flutter-benchmark=css-animation&case=blur&nodes=100","runtime":"flutter","parameters":{"benchmark":"css-animation","case":"blur","nodes":100},"categories":["css"],"status":"pending"},{"key":"electron-benchmark=css-animation&case=blur&nodes=500","runtime":"electron","parameters":{"benchmark":"css-animation","case":"blur","nodes":500},"categories":["css"],"status":"pending"},{"key":"tauri-benchmark=css-animation&case=blur&nodes=500","runtime":"tauri","parameters":{"benchmark":"css-animation","case":"blur","nodes":500},"categories":["css"],"status":"pending"},{"key":"flutter-benchmark=css-animation&case=blur&nodes=500","runtime":"flutter","parameters":{"benchmark":"css-animation","case":"blur","nodes":500},"categories":["css"],"status":"pending"},{"key":"electron-benchmark=css-animation&case=blur&nodes=1000","runtime":"electron","parameters":{"benchmark":"css-animation","case":"blur","nodes":1000},"categories":["css"],"status":"pending"},{"key":"tauri-benchmark=css-animation&case=blur&nodes=1000","runtime":"tauri","parameters":{"benchmark":"css-animation","case":"blur","nodes":1000},"categories":["css"],"status":"pending"},{"key":"flutter-benchmark=css-animation&case=blur&nodes=1000","runtime":"flutter","parameters":{"benchmark":"css-animation","case":"blur","nodes":1000},"categories":["css"],"status":"pending"},{"key":"electron-benchmark=css-animation&case=blur&nodes=5000","runtime":"electron","parameters":{"benchmark":"css-animation","case":"blur","nodes":5000},"categories":["css"],"status":"pending"},{"key":"tauri-benchmark=css-animation&case=blur&nodes=5000","runtime":"tauri","parameters":{"benchmark":"css-animation","case":"blur","nodes":5000},"categories":["css"],"status":"pending"},{"key":"flutter-benchmark=css-animation&case=blur&nodes=5000","runtime":"flutter","parameters":{"benchmark":"css-animation","case":"blur","nodes":5000},"categories":["css"],"status":"pending"},{"key":"electron-benchmark=css-animation&case=backdrop-blur&nodes=100","runtime":"electron","parameters":{"benchmark":"css-animation","case":"backdrop-blur","nodes":100},"categories":["css"],"status":"pending"},{"key":"tauri-benchmark=css-animation&case=backdrop-blur&nodes=100","runtime":"tauri","parameters":{"benchmark":"css-animation","case":"backdrop-blur","nodes":100},"categories":["css"],"status":"pending"},{"key":"flutter-benchmark=css-animation&case=backdrop-blur&nodes=100","runtime":"flutter","parameters":{"benchmark":"css-animation","case":"backdrop-blur","nodes":100},"categories":["css"],"status":"pending"},{"key":"electron-benchmark=css-animation&case=backdrop-blur&nodes=500","runtime":"electron","parameters":{"benchmark":"css-animation","case":"backdrop-blur","nodes":500},"categories":["css"],"status":"pending"},{"key":"tauri-benchmark=css-animation&case=backdrop-blur&nodes=500","runtime":"tauri","parameters":{"benchmark":"css-animation","case":"backdrop-blur","nodes":500},"categories":["css"],"status":"pending"},{"key":"flutter-benchmark=css-animation&case=backdrop-blur&nodes=500","runtime":"flutter","parameters":{"benchmark":"css-animation","case":"backdrop-blur","nodes":500},"categories":["css"],"status":"pending"},{"key":"electron-benchmark=css-animation&case=backdrop-blur&nodes=1000","runtime":"electron","parameters":{"benchmark":"css-animation","case":"backdrop-blur","nodes":1000},"categories":["css"],"status":"pending"},{"key":"tauri-benchmark=css-animation&case=backdrop-blur&nodes=1000","runtime":"tauri","parameters":{"benchmark":"css-animation","case":"backdrop-blur","nodes":1000},"categories":["css"],"status":"pending"},{"key":"flutter-benchmark=css-animation&case=backdrop-blur&nodes=1000","runtime":"flutter","parameters":{"benchmark":"css-animation","case":"backdrop-blur","nodes":1000},"categories":["css"],"status":"pending"},{"key":"electron-benchmark=css-animation&case=backdrop-blur&nodes=5000","runtime":"electron","parameters":{"benchmark":"css-animation","case":"backdrop-blur","nodes":5000},"categories":["css"],"status":"pending"},{"key":"tauri-benchmark=css-animation&case=backdrop-blur&nodes=5000","runtime":"tauri","parameters":{"benchmark":"css-animation","case":"backdrop-blur","nodes":5000},"categories":["css"],"status":"pending"},{"key":"flutter-benchmark=css-animation&case=backdrop-blur&nodes=5000","runtime":"flutter","parameters":{"benchmark":"css-animation","case":"backdrop-blur","nodes":5000},"categories":["css"],"status":"pending"},{"key":"electron-benchmark=css-animation&case=nested-transform&nodes=100","runtime":"electron","parameters":{"benchmark":"css-animation","case":"nested-transform","nodes":100},"categories":["css"],"status":"pending"},{"key":"tauri-benchmark=css-animation&case=nested-transform&nodes=100","runtime":"tauri","parameters":{"benchmark":"css-animation","case":"nested-transform","nodes":100},"categories":["css"],"status":"pending"},{"key":"flutter-benchmark=css-animation&case=nested-transform&nodes=100","runtime":"flutter","parameters":{"benchmark":"css-animation","case":"nested-transform","nodes":100},"categories":["css"],"status":"pending"},{"key":"electron-benchmark=css-animation&case=nested-transform&nodes=500","runtime":"electron","parameters":{"benchmark":"css-animation","case":"nested-transform","nodes":500},"categories":["css"],"status":"pending"},{"key":"tauri-benchmark=css-animation&case=nested-transform&nodes=500","runtime":"tauri","parameters":{"benchmark":"css-animation","case":"nested-transform","nodes":500},"categories":["css"],"status":"pending"},{"key":"flutter-benchmark=css-animation&case=nested-transform&nodes=500","runtime":"flutter","parameters":{"benchmark":"css-animation","case":"nested-transform","nodes":500},"categories":["css"],"status":"pending"},{"key":"electron-benchmark=css-animation&case=nested-transform&nodes=1000","runtime":"electron","parameters":{"benchmark":"css-animation","case":"nested-transform","nodes":1000},"categories":["css"],"status":"pending"},{"key":"tauri-benchmark=css-animation&case=nested-transform&nodes=1000","runtime":"tauri","parameters":{"benchmark":"css-animation","case":"nested-transform","nodes":1000},"categories":["css"],"status":"pending"},{"key":"flutter-benchmark=css-animation&case=nested-transform&nodes=1000","runtime":"flutter","parameters":{"benchmark":"css-animation","case":"nested-transform","nodes":1000},"categories":["css"],"status":"pending"},{"key":"electron-benchmark=css-animation&case=nested-transform&nodes=5000","runtime":"electron","parameters":{"benchmark":"css-animation","case":"nested-transform","nodes":5000},"categories":["css"],"status":"pending"},{"key":"tauri-benchmark=css-animation&case=nested-transform&nodes=5000","runtime":"tauri","parameters":{"benchmark":"css-animation","case":"nested-transform","nodes":5000},"categories":["css"],"status":"pending"},{"key":"flutter-benchmark=css-animation&case=nested-transform&nodes=5000","runtime":"flutter","parameters":{"benchmark":"css-animation","case":"nested-transform","nodes":5000},"categories":["css"],"status":"pending"},{"key":"electron-benchmark=css-animation&case=scroll-animation&nodes=100","runtime":"electron","parameters":{"benchmark":"css-animation","case":"scroll-animation","nodes":100},"categories":["css"],"status":"pending"},{"key":"tauri-benchmark=css-animation&case=scroll-animation&nodes=100","runtime":"tauri","parameters":{"benchmark":"css-animation","case":"scroll-animation","nodes":100},"categories":["css"],"status":"pending"},{"key":"flutter-benchmark=css-animation&case=scroll-animation&nodes=100","runtime":"flutter","parameters":{"benchmark":"css-animation","case":"scroll-animation","nodes":100},"categories":["css"],"status":"pending"},{"key":"electron-benchmark=css-animation&case=scroll-animation&nodes=500","runtime":"electron","parameters":{"benchmark":"css-animation","case":"scroll-animation","nodes":500},"categories":["css"],"status":"pending"},{"key":"tauri-benchmark=css-animation&case=scroll-animation&nodes=500","runtime":"tauri","parameters":{"benchmark":"css-animation","case":"scroll-animation","nodes":500},"categories":["css"],"status":"pending"},{"key":"flutter-benchmark=css-animation&case=scroll-animation&nodes=500","runtime":"flutter","parameters":{"benchmark":"css-animation","case":"scroll-animation","nodes":500},"categories":["css"],"status":"pending"},{"key":"electron-benchmark=css-animation&case=scroll-animation&nodes=1000","runtime":"electron","parameters":{"benchmark":"css-animation","case":"scroll-animation","nodes":1000},"categories":["css"],"status":"pending"},{"key":"tauri-benchmark=css-animation&case=scroll-animation&nodes=1000","runtime":"tauri","parameters":{"benchmark":"css-animation","case":"scroll-animation","nodes":1000},"categories":["css"],"status":"pending"},{"key":"flutter-benchmark=css-animation&case=scroll-animation&nodes=1000","runtime":"flutter","parameters":{"benchmark":"css-animation","case":"scroll-animation","nodes":1000},"categories":["css"],"status":"pending"},{"key":"electron-benchmark=css-animation&case=scroll-animation&nodes=5000","runtime":"electron","parameters":{"benchmark":"css-animation","case":"scroll-animation","nodes":5000},"categories":["css"],"status":"pending"},{"key":"tauri-benchmark=css-animation&case=scroll-animation&nodes=5000","runtime":"tauri","parameters":{"benchmark":"css-animation","case":"scroll-animation","nodes":5000},"categories":["css"],"status":"pending"},{"key":"flutter-benchmark=css-animation&case=scroll-animation&nodes=5000","runtime":"flutter","parameters":{"benchmark":"css-animation","case":"scroll-animation","nodes":5000},"categories":["css"],"status":"pending"},{"key":"electron-benchmark=css-animation&case=mixed&nodes=100","runtime":"electron","parameters":{"benchmark":"css-animation","case":"mixed","nodes":100},"categories":["css"],"status":"pending"},{"key":"tauri-benchmark=css-animation&case=mixed&nodes=100","runtime":"tauri","parameters":{"benchmark":"css-animation","case":"mixed","nodes":100},"categories":["css"],"status":"pending"},{"key":"flutter-benchmark=css-animation&case=mixed&nodes=100","runtime":"flutter","parameters":{"benchmark":"css-animation","case":"mixed","nodes":100},"categories":["css"],"status":"pending"},{"key":"electron-benchmark=css-animation&case=mixed&nodes=500","runtime":"electron","parameters":{"benchmark":"css-animation","case":"mixed","nodes":500},"categories":["css"],"status":"pending"},{"key":"tauri-benchmark=css-animation&case=mixed&nodes=500","runtime":"tauri","parameters":{"benchmark":"css-animation","case":"mixed","nodes":500},"categories":["css"],"status":"pending"},{"key":"flutter-benchmark=css-animation&case=mixed&nodes=500","runtime":"flutter","parameters":{"benchmark":"css-animation","case":"mixed","nodes":500},"categories":["css"],"status":"pending"},{"key":"electron-benchmark=css-animation&case=mixed&nodes=1000","runtime":"electron","parameters":{"benchmark":"css-animation","case":"mixed","nodes":1000},"categories":["css"],"status":"pending"},{"key":"tauri-benchmark=css-animation&case=mixed&nodes=1000","runtime":"tauri","parameters":{"benchmark":"css-animation","case":"mixed","nodes":1000},"categories":["css"],"status":"pending"},{"key":"flutter-benchmark=css-animation&case=mixed&nodes=1000","runtime":"flutter","parameters":{"benchmark":"css-animation","case":"mixed","nodes":1000},"categories":["css"],"status":"pending"},{"key":"electron-benchmark=css-animation&case=mixed&nodes=5000","runtime":"electron","parameters":{"benchmark":"css-animation","case":"mixed","nodes":5000},"categories":["css"],"status":"pending"},{"key":"tauri-benchmark=css-animation&case=mixed&nodes=5000","runtime":"tauri","parameters":{"benchmark":"css-animation","case":"mixed","nodes":5000},"categories":["css"],"status":"pending"},{"key":"flutter-benchmark=css-animation&case=mixed&nodes=5000","runtime":"flutter","parameters":{"benchmark":"css-animation","case":"mixed","nodes":5000},"categories":["css"],"status":"pending"},{"key":"electron-benchmark=skeletal-3d&asset=RiggedSimple&characters=1","runtime":"electron","parameters":{"benchmark":"skeletal-3d","asset":"RiggedSimple","characters":1},"categories":["baseline","static-load"],"status":"pending"},{"key":"tauri-benchmark=skeletal-3d&asset=RiggedSimple&characters=1","runtime":"tauri","parameters":{"benchmark":"skeletal-3d","asset":"RiggedSimple","characters":1},"categories":["baseline","static-load"],"status":"pending"},{"key":"electron-benchmark=skeletal-3d&asset=RiggedSimple&characters=10","runtime":"electron","parameters":{"benchmark":"skeletal-3d","asset":"RiggedSimple","characters":10},"categories":["baseline","static-load"],"status":"pending"},{"key":"tauri-benchmark=skeletal-3d&asset=RiggedSimple&characters=10","runtime":"tauri","parameters":{"benchmark":"skeletal-3d","asset":"RiggedSimple","characters":10},"categories":["baseline","static-load"],"status":"pending"},{"key":"electron-benchmark=skeletal-3d&asset=RiggedSimple&characters=50","runtime":"electron","parameters":{"benchmark":"skeletal-3d","asset":"RiggedSimple","characters":50},"categories":["baseline","static-load"],"status":"pending"},{"key":"tauri-benchmark=skeletal-3d&asset=RiggedSimple&characters=50","runtime":"tauri","parameters":{"benchmark":"skeletal-3d","asset":"RiggedSimple","characters":50},"categories":["baseline","static-load"],"status":"pending"},{"key":"electron-benchmark=skeletal-3d&asset=RiggedFigure&characters=1","runtime":"electron","parameters":{"benchmark":"skeletal-3d","asset":"RiggedFigure","characters":1},"categories":["baseline","static-load"],"status":"pending"},{"key":"tauri-benchmark=skeletal-3d&asset=RiggedFigure&characters=1","runtime":"tauri","parameters":{"benchmark":"skeletal-3d","asset":"RiggedFigure","characters":1},"categories":["baseline","static-load"],"status":"pending"},{"key":"electron-benchmark=skeletal-3d&asset=RiggedFigure&characters=10","runtime":"electron","parameters":{"benchmark":"skeletal-3d","asset":"RiggedFigure","characters":10},"categories":["baseline","static-load"],"status":"pending"},{"key":"tauri-benchmark=skeletal-3d&asset=RiggedFigure&characters=10","runtime":"tauri","parameters":{"benchmark":"skeletal-3d","asset":"RiggedFigure","characters":10},"categories":["baseline","static-load"],"status":"pending"},{"key":"electron-benchmark=skeletal-3d&asset=RiggedFigure&characters=50","runtime":"electron","parameters":{"benchmark":"skeletal-3d","asset":"RiggedFigure","characters":50},"categories":["baseline","static-load"],"status":"pending"},{"key":"tauri-benchmark=skeletal-3d&asset=RiggedFigure&characters=50","runtime":"tauri","parameters":{"benchmark":"skeletal-3d","asset":"RiggedFigure","characters":50},"categories":["baseline","static-load"],"status":"pending"},{"key":"electron-benchmark=skeletal-3d&asset=generated%2Fcharacter-lowpoly&characters=1","runtime":"electron","parameters":{"benchmark":"skeletal-3d","asset":"generated/character-lowpoly","characters":1},"categories":["baseline","static-load"],"status":"pending"},{"key":"tauri-benchmark=skeletal-3d&asset=generated%2Fcharacter-lowpoly&characters=1","runtime":"tauri","parameters":{"benchmark":"skeletal-3d","asset":"generated/character-lowpoly","characters":1},"categories":["baseline","static-load"],"status":"pending"},{"key":"electron-benchmark=skeletal-3d&asset=generated%2Fcharacter-lowpoly&characters=10","runtime":"electron","parameters":{"benchmark":"skeletal-3d","asset":"generated/character-lowpoly","characters":10},"categories":["baseline","static-load"],"status":"pending"},{"key":"tauri-benchmark=skeletal-3d&asset=generated%2Fcharacter-lowpoly&characters=10","runtime":"tauri","parameters":{"benchmark":"skeletal-3d","asset":"generated/character-lowpoly","characters":10},"categories":["baseline","static-load"],"status":"pending"},{"key":"electron-benchmark=skeletal-3d&asset=generated%2Fcharacter-lowpoly&characters=50","runtime":"electron","parameters":{"benchmark":"skeletal-3d","asset":"generated/character-lowpoly","characters":50},"categories":["baseline","static-load"],"status":"pending"},{"key":"tauri-benchmark=skeletal-3d&asset=generated%2Fcharacter-lowpoly&characters=50","runtime":"tauri","parameters":{"benchmark":"skeletal-3d","asset":"generated/character-lowpoly","characters":50},"categories":["baseline","static-load"],"status":"pending"},{"key":"electron-benchmark=skeletal-3d&asset=stress%2Fscale-t1000000-b50-x4096&characters=1","runtime":"electron","parameters":{"benchmark":"skeletal-3d","asset":"stress/scale-t1000000-b50-x4096","characters":1},"categories":["bone-scaling","static-load"],"status":"pending"},{"key":"tauri-benchmark=skeletal-3d&asset=stress%2Fscale-t1000000-b50-x4096&characters=1","runtime":"tauri","parameters":{"benchmark":"skeletal-3d","asset":"stress/scale-t1000000-b50-x4096","characters":1},"categories":["bone-scaling","static-load"],"status":"pending"},{"key":"electron-benchmark=skeletal-3d&asset=stress%2Fscale-t1000000-b100-x4096&characters=1","runtime":"electron","parameters":{"benchmark":"skeletal-3d","asset":"stress/scale-t1000000-b100-x4096","characters":1},"categories":["bone-scaling","static-load","geometry-scaling","texture-scaling"],"status":"pending"},{"key":"tauri-benchmark=skeletal-3d&asset=stress%2Fscale-t1000000-b100-x4096&characters=1","runtime":"tauri","parameters":{"benchmark":"skeletal-3d","asset":"stress/scale-t1000000-b100-x4096","characters":1},"categories":["bone-scaling","static-load","geometry-scaling","texture-scaling"],"status":"pending"},{"key":"electron-benchmark=skeletal-3d&asset=stress%2Fscale-t1000000-b250-x4096&characters=1","runtime":"electron","parameters":{"benchmark":"skeletal-3d","asset":"stress/scale-t1000000-b250-x4096","characters":1},"categories":["bone-scaling","static-load"],"status":"pending"},{"key":"tauri-benchmark=skeletal-3d&asset=stress%2Fscale-t1000000-b250-x4096&characters=1","runtime":"tauri","parameters":{"benchmark":"skeletal-3d","asset":"stress/scale-t1000000-b250-x4096","characters":1},"categories":["bone-scaling","static-load"],"status":"pending"},{"key":"electron-benchmark=skeletal-3d&asset=stress%2Fscale-t1000000-b500-x4096&characters=1","runtime":"electron","parameters":{"benchmark":"skeletal-3d","asset":"stress/scale-t1000000-b500-x4096","characters":1},"categories":["bone-scaling","static-load"],"status":"pending"},{"key":"tauri-benchmark=skeletal-3d&asset=stress%2Fscale-t1000000-b500-x4096&characters=1","runtime":"tauri","parameters":{"benchmark":"skeletal-3d","asset":"stress/scale-t1000000-b500-x4096","characters":1},"categories":["bone-scaling","static-load"],"status":"pending"},{"key":"electron-benchmark=skeletal-3d&asset=stress%2Fscale-t1000000-b1000-x4096&characters=1","runtime":"electron","parameters":{"benchmark":"skeletal-3d","asset":"stress/scale-t1000000-b1000-x4096","characters":1},"categories":["bone-scaling","static-load"],"status":"pending"},{"key":"tauri-benchmark=skeletal-3d&asset=stress%2Fscale-t1000000-b1000-x4096&characters=1","runtime":"tauri","parameters":{"benchmark":"skeletal-3d","asset":"stress/scale-t1000000-b1000-x4096","characters":1},"categories":["bone-scaling","static-load"],"status":"pending"},{"key":"electron-benchmark=skeletal-3d&asset=stress%2Fscale-t100000-b100-x4096&characters=1","runtime":"electron","parameters":{"benchmark":"skeletal-3d","asset":"stress/scale-t100000-b100-x4096","characters":1},"categories":["geometry-scaling","static-load","character-scaling"],"status":"pending"},{"key":"tauri-benchmark=skeletal-3d&asset=stress%2Fscale-t100000-b100-x4096&characters=1","runtime":"tauri","parameters":{"benchmark":"skeletal-3d","asset":"stress/scale-t100000-b100-x4096","characters":1},"categories":["geometry-scaling","static-load","character-scaling"],"status":"pending"},{"key":"electron-benchmark=skeletal-3d&asset=stress%2Fscale-t500000-b100-x4096&characters=1","runtime":"electron","parameters":{"benchmark":"skeletal-3d","asset":"stress/scale-t500000-b100-x4096","characters":1},"categories":["geometry-scaling","static-load"],"status":"pending"},{"key":"tauri-benchmark=skeletal-3d&asset=stress%2Fscale-t500000-b100-x4096&characters=1","runtime":"tauri","parameters":{"benchmark":"skeletal-3d","asset":"stress/scale-t500000-b100-x4096","characters":1},"categories":["geometry-scaling","static-load"],"status":"pending"},{"key":"electron-benchmark=skeletal-3d&asset=stress%2Fscale-t5000000-b100-x4096&characters=1","runtime":"electron","parameters":{"benchmark":"skeletal-3d","asset":"stress/scale-t5000000-b100-x4096","characters":1},"categories":["geometry-scaling","static-load"],"status":"pending"},{"key":"tauri-benchmark=skeletal-3d&asset=stress%2Fscale-t5000000-b100-x4096&characters=1","runtime":"tauri","parameters":{"benchmark":"skeletal-3d","asset":"stress/scale-t5000000-b100-x4096","characters":1},"categories":["geometry-scaling","static-load"],"status":"pending"},{"key":"electron-benchmark=skeletal-3d&asset=stress%2Fscale-t10000000-b100-x4096&characters=1","runtime":"electron","parameters":{"benchmark":"skeletal-3d","asset":"stress/scale-t10000000-b100-x4096","characters":1},"categories":["geometry-scaling","static-load"],"status":"pending"},{"key":"tauri-benchmark=skeletal-3d&asset=stress%2Fscale-t10000000-b100-x4096&characters=1","runtime":"tauri","parameters":{"benchmark":"skeletal-3d","asset":"stress/scale-t10000000-b100-x4096","characters":1},"categories":["geometry-scaling","static-load"],"status":"pending"},{"key":"electron-benchmark=skeletal-3d&asset=stress%2Fscale-t1000000-b100-x1024&characters=1","runtime":"electron","parameters":{"benchmark":"skeletal-3d","asset":"stress/scale-t1000000-b100-x1024","characters":1},"categories":["texture-scaling","static-load"],"status":"pending"},{"key":"tauri-benchmark=skeletal-3d&asset=stress%2Fscale-t1000000-b100-x1024&characters=1","runtime":"tauri","parameters":{"benchmark":"skeletal-3d","asset":"stress/scale-t1000000-b100-x1024","characters":1},"categories":["texture-scaling","static-load"],"status":"pending"},{"key":"electron-benchmark=skeletal-3d&asset=stress%2Fscale-t1000000-b100-x2048&characters=1","runtime":"electron","parameters":{"benchmark":"skeletal-3d","asset":"stress/scale-t1000000-b100-x2048","characters":1},"categories":["texture-scaling","static-load"],"status":"pending"},{"key":"tauri-benchmark=skeletal-3d&asset=stress%2Fscale-t1000000-b100-x2048&characters=1","runtime":"tauri","parameters":{"benchmark":"skeletal-3d","asset":"stress/scale-t1000000-b100-x2048","characters":1},"categories":["texture-scaling","static-load"],"status":"pending"},{"key":"electron-benchmark=skeletal-3d&asset=stress%2Fscale-t1000000-b100-x8192&characters=1","runtime":"electron","parameters":{"benchmark":"skeletal-3d","asset":"stress/scale-t1000000-b100-x8192","characters":1},"categories":["texture-scaling","static-load"],"status":"pending"},{"key":"tauri-benchmark=skeletal-3d&asset=stress%2Fscale-t1000000-b100-x8192&characters=1","runtime":"tauri","parameters":{"benchmark":"skeletal-3d","asset":"stress/scale-t1000000-b100-x8192","characters":1},"categories":["texture-scaling","static-load"],"status":"pending"},{"key":"electron-benchmark=skeletal-3d&asset=stress%2Fscale-t100000-b100-x4096&characters=10","runtime":"electron","parameters":{"benchmark":"skeletal-3d","asset":"stress/scale-t100000-b100-x4096","characters":10},"categories":["character-scaling","static-load"],"status":"pending"},{"key":"tauri-benchmark=skeletal-3d&asset=stress%2Fscale-t100000-b100-x4096&characters=10","runtime":"tauri","parameters":{"benchmark":"skeletal-3d","asset":"stress/scale-t100000-b100-x4096","characters":10},"categories":["character-scaling","static-load"],"status":"pending"},{"key":"electron-benchmark=skeletal-3d&asset=stress%2Fscale-t100000-b100-x4096&characters=50","runtime":"electron","parameters":{"benchmark":"skeletal-3d","asset":"stress/scale-t100000-b100-x4096","characters":50},"categories":["character-scaling","static-load"],"status":"pending"},{"key":"tauri-benchmark=skeletal-3d&asset=stress%2Fscale-t100000-b100-x4096&characters=50","runtime":"tauri","parameters":{"benchmark":"skeletal-3d","asset":"stress/scale-t100000-b100-x4096","characters":50},"categories":["character-scaling","static-load"],"status":"pending"},{"key":"electron-benchmark=skeletal-3d&asset=stress%2Fscale-t100000-b100-x4096&characters=100","runtime":"electron","parameters":{"benchmark":"skeletal-3d","asset":"stress/scale-t100000-b100-x4096","characters":100},"categories":["character-scaling","static-load"],"status":"pending"},{"key":"tauri-benchmark=skeletal-3d&asset=stress%2Fscale-t100000-b100-x4096&characters=100","runtime":"tauri","parameters":{"benchmark":"skeletal-3d","asset":"stress/scale-t100000-b100-x4096","characters":100},"categories":["character-scaling","static-load"],"status":"pending"},{"key":"electron-benchmark=skeletal-3d&asset=stress%2Fscale-t100000-b100-x4096&characters=250","runtime":"electron","parameters":{"benchmark":"skeletal-3d","asset":"stress/scale-t100000-b100-x4096","characters":250},"categories":["character-scaling","static-load"],"status":"pending"},{"key":"tauri-benchmark=skeletal-3d&asset=stress%2Fscale-t100000-b100-x4096&characters=250","runtime":"tauri","parameters":{"benchmark":"skeletal-3d","asset":"stress/scale-t100000-b100-x4096","characters":250},"categories":["character-scaling","static-load"],"status":"pending"},{"key":"electron-benchmark=skeletal-3d&asset=stress%2Fscale-t100000-b100-x4096&characters=500","runtime":"electron","parameters":{"benchmark":"skeletal-3d","asset":"stress/scale-t100000-b100-x4096","characters":500},"categories":["character-scaling","static-load"],"status":"pending"},{"key":"tauri-benchmark=skeletal-3d&asset=stress%2Fscale-t100000-b100-x4096&characters=500","runtime":"tauri","parameters":{"benchmark":"skeletal-3d","asset":"stress/scale-t100000-b100-x4096","characters":500},"categories":["character-scaling","static-load"],"status":"pending"},{"key":"electron-benchmark=skeletal-3d&asset=stress%2Fmega-2_1gb-mixed&characters=1&scene=maximum","runtime":"electron","parameters":{"benchmark":"skeletal-3d","asset":"stress/mega-2_1gb-mixed","characters":1,"scene":"maximum"},"categories":["combined-maximum"],"status":"pending"},{"key":"tauri-benchmark=skeletal-3d&asset=stress%2Fmega-2_1gb-mixed&characters=1&scene=maximum","runtime":"tauri","parameters":{"benchmark":"skeletal-3d","asset":"stress/mega-2_1gb-mixed","characters":1,"scene":"maximum"},"categories":["combined-maximum"],"status":"pending"},{"key":"electron-benchmark=skeletal-3d&asset=stress%2Fmega-2_1gb-mixed&characters=10&scene=maximum","runtime":"electron","parameters":{"benchmark":"skeletal-3d","asset":"stress/mega-2_1gb-mixed","characters":10,"scene":"maximum"},"categories":["combined-maximum"],"status":"pending"},{"key":"tauri-benchmark=skeletal-3d&asset=stress%2Fmega-2_1gb-mixed&characters=10&scene=maximum","runtime":"tauri","parameters":{"benchmark":"skeletal-3d","asset":"stress/mega-2_1gb-mixed","characters":10,"scene":"maximum"},"categories":["combined-maximum"],"status":"pending"},{"key":"electron-benchmark=skeletal-3d&asset=stress%2Fmega-2_1gb-mixed&characters=50&scene=maximum","runtime":"electron","parameters":{"benchmark":"skeletal-3d","asset":"stress/mega-2_1gb-mixed","characters":50,"scene":"maximum"},"categories":["combined-maximum"],"status":"pending"},{"key":"tauri-benchmark=skeletal-3d&asset=stress%2Fmega-2_1gb-mixed&characters=50&scene=maximum","runtime":"tauri","parameters":{"benchmark":"skeletal-3d","asset":"stress/mega-2_1gb-mixed","characters":50,"scene":"maximum"},"categories":["combined-maximum"],"status":"pending"}],"results":[{"id":"0398e617-c8cd-4a17-a885-afc357b20577","benchmark":"skeletal-3d","case":"single-character","runtime":"electron-chromium","comparisonClass":"runtime-parity","parameters":{"asset":"stress/mega-2_1gb-texture-heavy","characterCount":1},"asset":"stress/mega-2_1gb-texture-heavy","assetSha256":"4e1f92748616c905f278c1d7ce3d0e30527540cf66853aaa27b6bfe20bc25f0c","metadata":{"os":"darwin","os_version":"27.0.0","cpu":"Apple M4","cpu_arch":"arm64","cpu_cores":10,"ram":34359738368,"gpu":"Apple M4","gpu_driver":null,"display_resolution":"1512x982","display_scale":2,"refresh_rate":60.000003814697266,"runtime":"electron-chromium","runtime_version":"38.8.6","webview_version":"140.0.7339.249","framework":"electron","framework_version":"38.8.6","build_mode":"release","locale":"zh-CN","resource_scope":"application process tree; CPU percent is one-core normalized","benchmark_source_sha256":"7d6b6a69cfad54d930be5a32a0d880f90d8c3bf264b429974c252ca69a42f338","viewport_width":1280,"viewport_height":800,"workload_width":640,"workload_height":360},"protocol":{"warmupMs":10000,"measureMs":30000,"cooldownMs":5000,"runs":5,"refreshRateHz":60,"seed":20261007},"summary":{"frameCount":{"median":1801,"min":1800,"max":1801,"variance":0.16},"fpsAverage":{"median":60.000133259596346,"min":59.9970001499925,"max":60.000533041937075,"variance":0.00000169104619547393},"frameP50Ms":{"median":16.699999999982538,"min":16.699999999982538,"max":16.69999999999709,"variance":5.082197885474194e-23},"frameP95Ms":{"median":18.299999999999272,"min":18.19999999999709,"max":18.599999999976717,"variance":0.026399999997223495},"frameP99Ms":{"median":18.60000000000582,"min":18.59999999999127,"max":18.70000000001164,"variance":0.0016000000003608874},"worstFrameMs":{"median":18.80000000000291,"min":18.70000000001164,"max":18.800000000017462,"variance":0.0024000000000465663},"droppedFramePercent":{"median":0,"min":0,"max":0,"variance":0},"cpuAverage":{"median":1.9387379962743736,"min":1.7326037354378765,"max":2.0633153604197076,"variance":0.011838602174821727},"cpuPeak":{"median":5.069593072745356,"min":2.375448205809439,"max":6.536700477966264,"variance":1.8162456659245803},"peakMemoryMb":{"median":12461.765625,"min":6044.453125,"max":12621.71875,"variance":9042840.810996095},"gpuAverage":{"median":null,"min":null,"max":null,"variance":null},"gpuMemoryMb":{"median":null,"min":null,"max":null,"variance":null},"privateMemoryMb":{"median":null,"min":null,"max":null,"variance":null},"animationSamplingMs":{"median":0.09844617219796853,"min":0.0971143166312367,"max":0.1027762357689552,"variance":0.000004138089317451082},"boneMatrixUpdateMs":{"median":null,"min":null,"max":null,"variance":null},"renderSubmissionMs":{"median":0.5903440622259324,"min":0.5530521628859305,"max":0.5951165366053713,"variance":0.00024075529759575524},"skinningMs":{"median":null,"min":null,"max":null,"variance":null}},"loadSummary":{"assetLoadMs":{"median":574.8000000119209,"min":558.0999999642372,"max":780.9000000357628,"variance":7042.785603470707},"parseMs":{"median":3461.199999988079,"min":3281.699999988079,"max":3979.399999976158,"variance":54757.033597359085},"textureDecodeMs":{"median":null,"min":null,"max":null,"variance":null},"gpuUploadMs":{"median":null,"min":null,"max":null,"variance":null},"firstRenderSubmissionMs":{"median":1652.800000011921,"min":1615.2999999523163,"max":1667.8999999761581,"variance":370.3144001346588},"ttfmMs":{"median":5935.899999976158,"min":5686.899999976158,"max":6390.699999988079,"variance":56241.89200133609},"ttfaMs":{"median":5936.899999976158,"min":5687.800000011921,"max":6391.800000011921,"variance":56290.80560231152},"assetBytes":{"median":2100000008,"min":2100000008,"max":2100000008,"variance":0},"drawCalls":{"median":23,"min":23,"max":23,"variance":0},"triangles":{"median":611663,"min":611663,"max":611663,"variance":0}},"phase":"prior-2.1GB","raw":"prior-2.1GB/raw/0398e617-c8cd-4a17-a885-afc357b20577.json"},{"id":"3e523326-8575-4ce2-a424-6f494b42a048","benchmark":"skeletal-3d","case":"single-character","runtime":"tauri-wkwebview","comparisonClass":"runtime-parity","parameters":{"asset":"stress/mega-2_1gb-texture-heavy","characterCount":1},"asset":"stress/mega-2_1gb-texture-heavy","assetSha256":"4e1f92748616c905f278c1d7ce3d0e30527540cf66853aaa27b6bfe20bc25f0c","metadata":{"benchmark_source_sha256":"7d6b6a69cfad54d930be5a32a0d880f90d8c3bf264b429974c252ca69a42f338","build_mode":"release","cpu":"Apple M4","cpu_arch":"aarch64","cpu_cores":10,"display_resolution":"1512x982","display_scale":2,"framework":"tauri","framework_version":"2.12.1","gpu":null,"gpu_driver":null,"locale":"zh-CN","os":"macos","os_version":"27.0","ram":34359738368,"refresh_rate":60,"refresh_rate_source":"operator-confirmed fixed display setting","resource_scope":"Tauri host plus discoverable child processes; OS WebView helper coverage may be incomplete; CPU percent is one-core normalized","runtime":"tauri-wkwebview","runtime_version":"2.12.1","viewport_height":800,"viewport_width":1280,"webview_user_agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko)","webview_version":null,"workload_height":360,"workload_width":640},"protocol":{"cooldownMs":5000,"measureMs":30000,"refreshRateHz":60,"runs":5,"seed":20261007,"warmupMs":10000},"summary":{"animationSamplingMs":{"median":0.07218212104386452,"min":0.064891846921797,"max":0.08934517203107659,"variance":0.00008725580402099825},"boneMatrixUpdateMs":{"median":null,"min":null,"max":null,"variance":null},"cpuAverage":{"median":4.58188771816992,"min":4.524589254010108,"max":4.7114657817348355,"variance":0.006066960776285182},"cpuPeak":{"median":5.30891752243042,"min":5.1151442527771,"max":5.715701103210449,"variance":0.05256543301615237},"droppedFramePercent":{"median":0.6070640176600441,"min":0.4975124378109453,"max":0.7166482910694597,"variance":0.006725541514809969},"fpsAverage":{"median":60,"min":59.97401126178656,"max":60.00932960149274,"variance":0.00015304157137797995},"frameCount":{"median":1800,"min":1800,"max":1801,"variance":0.24},"frameP50Ms":{"median":17,"min":17,"max":17,"variance":0},"frameP95Ms":{"median":18,"min":18,"max":19,"variance":0.15999999999999998},"frameP99Ms":{"median":20,"min":19,"max":21,"variance":0.8},"gpuAverage":{"median":null,"min":null,"max":null,"variance":null},"gpuMemoryMb":{"median":null,"min":null,"max":null,"variance":null},"peakMemoryMb":{"median":109.609375,"min":85.03125,"max":109.9375,"variance":147.06025390625},"privateMemoryMb":{"median":null,"min":null,"max":null,"variance":null},"renderSubmissionMs":{"median":0.4425319267073848,"min":0.408763172490294,"max":0.44617092119866814,"variance":0.00019074409444327827},"skinningMs":{"median":null,"min":null,"max":null,"variance":null},"worstFrameMs":{"median":32,"min":31,"max":33,"variance":0.5599999999999999}},"loadSummary":{"assetBytes":{"median":2100000008,"min":2100000008,"max":2100000008,"variance":0},"assetLoadMs":{"median":846,"min":824,"max":868,"variance":272.9599999999999},"drawCalls":{"median":23,"min":23,"max":23,"variance":0},"firstRenderSubmissionMs":{"median":336,"min":306,"max":1260,"variance":133151.03999999998},"gpuUploadMs":{"median":null,"min":null,"max":null,"variance":null},"parseMs":{"median":563,"min":405,"max":1440,"variance":148169.04},"textureDecodeMs":{"median":null,"min":null,"max":null,"variance":null},"triangles":{"median":611663,"min":611663,"max":611663,"variance":0},"ttfaMs":{"median":1942,"min":1731,"max":3454,"variance":523933.0399999999},"ttfmMs":{"median":1883,"min":1671,"max":3005,"variance":366067.84}},"phase":"prior-2.1GB","raw":"prior-2.1GB/raw/3e523326-8575-4ce2-a424-6f494b42a048.json"},{"id":"5245b30d-7f01-4f2d-811f-c00f81782db0","benchmark":"skeletal-3d","case":"single-character","runtime":"tauri-wkwebview","comparisonClass":"runtime-parity","parameters":{"asset":"stress/mega-2_1gb-geometry-heavy","characterCount":1},"asset":"stress/mega-2_1gb-geometry-heavy","assetSha256":"6460a717cc5df64ebd3b9c42f36aed9d7605f4427d771569ba5ee1f2a8fe4eaa","metadata":{"benchmark_source_sha256":"7d6b6a69cfad54d930be5a32a0d880f90d8c3bf264b429974c252ca69a42f338","build_mode":"release","cpu":"Apple M4","cpu_arch":"aarch64","cpu_cores":10,"display_resolution":"1512x982","display_scale":2,"framework":"tauri","framework_version":"2.12.1","gpu":null,"gpu_driver":null,"locale":"zh-CN","os":"macos","os_version":"27.0","ram":34359738368,"refresh_rate":60,"refresh_rate_source":"operator-confirmed fixed display setting","resource_scope":"Tauri host plus discoverable child processes; OS WebView helper coverage may be incomplete; CPU percent is one-core normalized","runtime":"tauri-wkwebview","runtime_version":"2.12.1","viewport_height":800,"viewport_width":1280,"webview_user_agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko)","webview_version":null,"workload_height":360,"workload_width":640},"protocol":{"cooldownMs":5000,"measureMs":30000,"refreshRateHz":60,"runs":5,"seed":20261007,"warmupMs":10000},"summary":{"animationSamplingMs":{"median":0.07658321060382917,"min":0.06351550960118169,"max":0.11029411764705882,"variance":0.0003974331661245457},"boneMatrixUpdateMs":{"median":null,"min":null,"max":null,"variance":null},"cpuAverage":{"median":3.3831902627022035,"min":3.313096377157396,"max":3.3922778983269968,"variance":0.0008574034235481829},"cpuPeak":{"median":5.056023120880127,"min":4.4492340087890625,"max":6.035311222076416,"variance":0.25978038937579184},"droppedFramePercent":{"median":62.472283813747225,"min":62.35424764019989,"max":62.48612652608213,"variance":0.0025154660113325253},"fpsAverage":{"median":22.54187060899677,"min":22.5,"max":22.58720058633441,"variance":0.001084405888050195},"frameCount":{"median":677,"min":675,"max":678,"variance":1.3599999999999999},"frameP50Ms":{"median":49,"min":49,"max":49,"variance":0},"frameP95Ms":{"median":52,"min":52,"max":52,"variance":0},"frameP99Ms":{"median":58,"min":56,"max":59,"variance":1.0368159999999984},"gpuAverage":{"median":null,"min":null,"max":null,"variance":null},"gpuMemoryMb":{"median":null,"min":null,"max":null,"variance":null},"peakMemoryMb":{"median":109.8125,"min":109.796875,"max":110.046875,"variance":0.009218750000000001},"privateMemoryMb":{"median":null,"min":null,"max":null,"variance":null},"renderSubmissionMs":{"median":1.707533234859675,"min":1.667157584683358,"max":1.720176730486009,"variance":0.0005479093978573124},"skinningMs":{"median":null,"min":null,"max":null,"variance":null},"worstFrameMs":{"median":60,"min":60,"max":63,"variance":1.6}},"loadSummary":{"assetBytes":{"median":2100000164,"min":2100000164,"max":2100000164,"variance":0},"assetLoadMs":{"median":849,"min":838,"max":890,"variance":384.55999999999995},"drawCalls":{"median":130,"min":130,"max":130,"variance":0},"firstRenderSubmissionMs":{"median":2299,"min":2262,"max":2411,"variance":3117.04},"gpuUploadMs":{"median":null,"min":null,"max":null,"variance":null},"parseMs":{"median":356,"min":305,"max":513,"variance":5703.76},"textureDecodeMs":{"median":null,"min":null,"max":null,"variance":null},"triangles":{"median":8380127,"min":8380127,"max":8380127,"variance":0},"ttfaMs":{"median":5318,"min":5186,"max":5903,"variance":70446.63999999998},"ttfmMs":{"median":5115,"min":5040,"max":5321,"variance":14393.84}},"phase":"prior-2.1GB","raw":"prior-2.1GB/raw/5245b30d-7f01-4f2d-811f-c00f81782db0.json"},{"id":"b0c42cf9-7957-4919-9443-0c34c525f9e0","benchmark":"skeletal-3d","case":"single-character","runtime":"tauri-wkwebview","comparisonClass":"runtime-parity","parameters":{"asset":"stress/mega-2_1gb-mixed","characterCount":1},"asset":"stress/mega-2_1gb-mixed","assetSha256":"1fb5614c2f9a646095f94b8de4177ed74689f38bb47e660a159f4728a40e6b36","metadata":{"benchmark_source_sha256":"7d6b6a69cfad54d930be5a32a0d880f90d8c3bf264b429974c252ca69a42f338","build_mode":"release","cpu":"Apple M4","cpu_arch":"aarch64","cpu_cores":10,"display_resolution":"1512x982","display_scale":2,"framework":"tauri","framework_version":"2.12.1","gpu":null,"gpu_driver":null,"locale":"zh-CN","os":"macos","os_version":"27.0","ram":34359738368,"refresh_rate":60,"refresh_rate_source":"operator-confirmed fixed display setting","resource_scope":"Tauri host plus discoverable child processes; OS WebView helper coverage may be incomplete; CPU percent is one-core normalized","runtime":"tauri-wkwebview","runtime_version":"2.12.1","viewport_height":800,"viewport_width":1280,"webview_user_agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko)","webview_version":null,"workload_height":360,"workload_width":640},"protocol":{"cooldownMs":5000,"measureMs":30000,"refreshRateHz":60,"runs":5,"seed":20261007,"warmupMs":10000},"summary":{"animationSamplingMs":{"median":0.08241206030150754,"min":0.058358061325420374,"max":0.09180651530108588,"variance":0.00016704343444190627},"boneMatrixUpdateMs":{"median":null,"min":null,"max":null,"variance":null},"cpuAverage":{"median":3.732725004996023,"min":3.685453345698695,"max":3.7781084122196322,"variance":0.0013350439288966304},"cpuPeak":{"median":4.397341251373291,"min":4.242990016937256,"max":4.669275760650635,"variance":0.024311645636353206},"droppedFramePercent":{"median":44.09972299168975,"min":43.87132556849695,"max":44.89456159822419,"variance":0.13675703863800975},"fpsAverage":{"median":33.600852509241065,"min":33.09558725503266,"max":33.71872188718222,"variance":0.04891140202816198},"frameCount":{"median":1009,"min":993,"max":1012,"variance":46.160000000000004},"frameP50Ms":{"median":33,"min":33,"max":33,"variance":0},"frameP95Ms":{"median":35,"min":35,"max":35,"variance":0},"frameP99Ms":{"median":40,"min":37.93999999999994,"max":40,"variance":0.6627840000000367},"gpuAverage":{"median":null,"min":null,"max":null,"variance":null},"gpuMemoryMb":{"median":null,"min":null,"max":null,"variance":null},"peakMemoryMb":{"median":74.625,"min":73.578125,"max":109.671875,"variance":305.47904296875},"privateMemoryMb":{"median":null,"min":null,"max":null,"variance":null},"renderSubmissionMs":{"median":0.9821428571428572,"min":0.9653465346534652,"max":1.0237388724035608,"variance":0.0005469676191989443},"skinningMs":{"median":null,"min":null,"max":null,"variance":null},"worstFrameMs":{"median":45,"min":43,"max":437,"variance":24619.359999999997}},"loadSummary":{"assetBytes":{"median":2100000088,"min":2100000088,"max":2100000088,"variance":0},"assetLoadMs":{"median":849,"min":841,"max":986,"variance":2989.04},"drawCalls":{"median":69,"min":69,"max":69,"variance":0},"firstRenderSubmissionMs":{"median":1484,"min":1262,"max":1843,"variance":40624.96},"gpuUploadMs":{"median":null,"min":null,"max":null,"variance":null},"parseMs":{"median":523,"min":497,"max":1944,"variance":320001.43999999994},"textureDecodeMs":{"median":null,"min":null,"max":null,"variance":null},"triangles":{"median":4398149,"min":4398149,"max":4398149,"variance":0},"ttfaMs":{"median":3860,"min":3560,"max":5799,"variance":664978.4},"ttfmMs":{"median":3729,"min":3446,"max":5452,"variance":527442.64}},"phase":"prior-2.1GB","raw":"prior-2.1GB/raw/b0c42cf9-7957-4919-9443-0c34c525f9e0.json"},{"id":"b9dff1b3-c36d-4c7d-932e-2a08422575f4","benchmark":"skeletal-3d","case":"single-character","runtime":"electron-chromium","comparisonClass":"runtime-parity","parameters":{"asset":"stress/mega-2_1gb-geometry-heavy","characterCount":1},"asset":"stress/mega-2_1gb-geometry-heavy","assetSha256":"6460a717cc5df64ebd3b9c42f36aed9d7605f4427d771569ba5ee1f2a8fe4eaa","metadata":{"os":"darwin","os_version":"27.0.0","cpu":"Apple M4","cpu_arch":"arm64","cpu_cores":10,"ram":34359738368,"gpu":"Apple M4","gpu_driver":null,"display_resolution":"1512x982","display_scale":2,"refresh_rate":60.000003814697266,"runtime":"electron-chromium","runtime_version":"38.8.6","webview_version":"140.0.7339.249","framework":"electron","framework_version":"38.8.6","build_mode":"release","locale":"zh-CN","resource_scope":"application process tree; CPU percent is one-core normalized","benchmark_source_sha256":"7d6b6a69cfad54d930be5a32a0d880f90d8c3bf264b429974c252ca69a42f338","viewport_width":1280,"viewport_height":800,"workload_width":640,"workload_height":360},"protocol":{"warmupMs":10000,"measureMs":30000,"cooldownMs":5000,"runs":5,"refreshRateHz":60,"seed":20261007},"summary":{"frameCount":{"median":634,"min":632,"max":635,"variance":1.2},"fpsAverage":{"median":21.120904706469318,"min":21.043028331507607,"max":21.13165855233163,"variance":0.0010195459686377709},"frameP50Ms":{"median":49.90000000000873,"min":49.89999999999418,"max":50,"variance":0.0015999999998370187},"frameP95Ms":{"median":51.5,"min":50.69999999999709,"max":51.60000000000582,"variance":0.14640000000202563},"frameP99Ms":{"median":52,"min":51,"max":52,"variance":0.24},"worstFrameMs":{"median":68.10000000000582,"min":66.69999999999709,"max":68.30000000001746,"variance":0.3424000000067987},"droppedFramePercent":{"median":64.80044345898004,"min":64.78092068774265,"max":64.92785793562707,"variance":0.002791268834802975},"cpuAverage":{"median":1.576316219863184,"min":1.3520123242963362,"max":1.6277820030015118,"variance":0.009377861637985794},"cpuPeak":{"median":4.168657291613979,"min":1.8827284810017564,"max":4.2044945224776615,"variance":0.8359880366884755},"peakMemoryMb":{"median":8881.59375,"min":8802.125,"max":12818.703125,"variance":3377863.5006835936},"gpuAverage":{"median":null,"min":null,"max":null,"variance":null},"gpuMemoryMb":{"median":null,"min":null,"max":null,"variance":null},"privateMemoryMb":{"median":null,"min":null,"max":null,"variance":null},"animationSamplingMs":{"median":0.10535432851220679,"min":0.10126182822398959,"max":0.1160629922949423,"variance":0.0000365804790567463},"boneMatrixUpdateMs":{"median":null,"min":null,"max":null,"variance":null},"renderSubmissionMs":{"median":1.7232704397829823,"min":1.5430599373973883,"max":1.8202830204423868,"variance":0.00969978853245198},"skinningMs":{"median":null,"min":null,"max":null,"variance":null}},"loadSummary":{"assetLoadMs":{"median":596.1000000238419,"min":578.3000000119209,"max":617.5,"variance":269.9863994894981},"parseMs":{"median":722.2999999523163,"min":609.3000000119209,"max":750,"variance":2484.3279992575644},"textureDecodeMs":{"median":null,"min":null,"max":null,"variance":null},"gpuUploadMs":{"median":null,"min":null,"max":null,"variance":null},"firstRenderSubmissionMs":{"median":3067.5,"min":2769.900000035763,"max":3104,"variance":18648.94639477644},"ttfmMs":{"median":7063.400000035763,"min":5937.100000023842,"max":7124.399999976158,"variance":198279.65839483318},"ttfaMs":{"median":7065.5,"min":5940.199999988079,"max":7126.399999976158,"variance":197913.46960323566},"assetBytes":{"median":2100000164,"min":2100000164,"max":2100000164,"variance":0},"drawCalls":{"median":130,"min":130,"max":130,"variance":0},"triangles":{"median":8380127,"min":8380127,"max":8380127,"variance":0}},"phase":"prior-2.1GB","raw":"prior-2.1GB/raw/b9dff1b3-c36d-4c7d-932e-2a08422575f4.json"},{"id":"d5d37942-4665-447d-bf60-2fb3a103ae70","benchmark":"skeletal-3d","case":"single-character","runtime":"electron-chromium","comparisonClass":"runtime-parity","parameters":{"asset":"stress/mega-2_1gb-mixed","characterCount":1},"asset":"stress/mega-2_1gb-mixed","assetSha256":"1fb5614c2f9a646095f94b8de4177ed74689f38bb47e660a159f4728a40e6b36","metadata":{"os":"darwin","os_version":"27.0.0","cpu":"Apple M4","cpu_arch":"arm64","cpu_cores":10,"ram":34359738368,"gpu":"Apple M4","gpu_driver":null,"display_resolution":"1512x982","display_scale":2,"refresh_rate":60.000003814697266,"runtime":"electron-chromium","runtime_version":"38.8.6","webview_version":"140.0.7339.249","framework":"electron","framework_version":"38.8.6","build_mode":"release","locale":"zh-CN","resource_scope":"application process tree; CPU percent is one-core normalized","benchmark_source_sha256":"7d6b6a69cfad54d930be5a32a0d880f90d8c3bf264b429974c252ca69a42f338","viewport_width":1280,"viewport_height":800,"workload_width":640,"workload_height":360},"protocol":{"warmupMs":10000,"measureMs":30000,"cooldownMs":5000,"runs":5,"refreshRateHz":60,"seed":20261007},"summary":{"frameCount":{"median":920,"min":918,"max":923,"variance":2.96},"fpsAverage":{"median":30.64991138177796,"min":30.566376985316154,"max":30.765128410246156,"variance":0.004777634771126669},"frameP50Ms":{"median":33.29999999999927,"min":33.29999999998836,"max":33.30000000001746,"variance":1.164670302474663e-22},"frameP95Ms":{"median":35.19999999998254,"min":35,"max":35.30000000000291,"variance":0.010399999999930151},"frameP99Ms":{"median":49.96400000000313,"min":49.87199999999903,"max":50.08300000000484,"variance":0.006691840000019893},"worstFrameMs":{"median":51.5,"min":50.90000000002328,"max":51.70000000001164,"variance":0.07199999999674037},"droppedFramePercent":{"median":48.917268184342035,"min":48.72222222222222,"max":49.056603773584904,"variance":0.013483935412853098},"cpuAverage":{"median":1.7070332994168382,"min":1.563718220151567,"max":1.7365583880662951,"variance":0.0037153767513371148},"cpuPeak":{"median":4.592433855752766,"min":3.2563966239853337,"max":4.597904165522917,"variance":0.281940473290175},"peakMemoryMb":{"median":7830.96875,"min":7268.59375,"max":12524.609375,"variance":3788792.6157617187},"gpuAverage":{"median":null,"min":null,"max":null,"variance":null},"gpuMemoryMb":{"median":null,"min":null,"max":null,"variance":null},"privateMemoryMb":{"median":null,"min":null,"max":null,"variance":null},"animationSamplingMs":{"median":0.10021691932595474,"min":0.08356909685736771,"max":0.10793478119632473,"variance":0.00007338784080000318},"boneMatrixUpdateMs":{"median":null,"min":null,"max":null,"variance":null},"renderSubmissionMs":{"median":1.2445770070894162,"min":1.209880565004939,"max":1.2782372135073108,"variance":0.0005145956843573013},"skinningMs":{"median":null,"min":null,"max":null,"variance":null}},"loadSummary":{"assetLoadMs":{"median":579.7999999523163,"min":569.5999999642372,"max":794.5999999642372,"variance":7237.03839981184},"parseMs":{"median":1617.1000000238419,"min":1556.8999999761581,"max":1665.4000000357628,"variance":1544.9384004426956},"textureDecodeMs":{"median":null,"min":null,"max":null,"variance":null},"gpuUploadMs":{"median":null,"min":null,"max":null,"variance":null},"firstRenderSubmissionMs":{"median":2406.199999988079,"min":2213.5,"max":2476.300000011921,"variance":8691.666401159859},"ttfmMs":{"median":6019,"min":5574,"max":6136.899999976158,"variance":38092.923997729784},"ttfaMs":{"median":6020.5,"min":5576,"max":6138.199999988079,"variance":37990.65359869328},"assetBytes":{"median":2100000088,"min":2100000088,"max":2100000088,"variance":0},"drawCalls":{"median":69,"min":69,"max":69,"variance":0},"triangles":{"median":4398149,"min":4398149,"max":4398149,"variance":0}},"phase":"prior-2.1GB","raw":"prior-2.1GB/raw/d5d37942-4665-447d-bf60-2fb3a103ae70.json"}],"storage":[],"pixel":[{"fixture":"01-dashboard","runtime":"tauri","reference":"electron","width":2560,"height":1600,"pixelDiffCount":1132,"pixelDiffPercent":0.02763671875,"threshold":0.1,"includeAA":false,"ssim":0.9974446683344251,"ssimSampling":"every fourth pixel, 640x400","geometry":[{"id":"sidebar","maxDelta":0},{"id":"brand","maxDelta":0},{"id":"nav-0","maxDelta":0},{"id":"nav-1","maxDelta":0},{"id":"nav-2","maxDelta":0},{"id":"nav-3","maxDelta":0},{"id":"nav-4","maxDelta":0},{"id":"nav-5","maxDelta":0},{"id":"title","maxDelta":0},{"id":"subtitle","maxDelta":0},{"id":"content","maxDelta":0},{"id":"icon","maxDelta":0},{"id":"section","maxDelta":0},{"id":"stat-0","maxDelta":0},{"id":"label-0","maxDelta":0},{"id":"value-0","maxDelta":0},{"id":"stat-1","maxDelta":0},{"id":"label-1","maxDelta":0},{"id":"value-1","maxDelta":0},{"id":"stat-2","maxDelta":0},{"id":"label-2","maxDelta":0},{"id":"value-2","maxDelta":0},{"id":"visual-strip","maxDelta":0},{"id":"input","maxDelta":0},{"id":"submit","maxDelta":0}],"textBounds":[{"id":"brand","maxDelta":0.004058837890625},{"id":"nav-0","maxDelta":0.2001953125},{"id":"nav-1","maxDelta":0.2001953125},{"id":"nav-2","maxDelta":0.2001953125},{"id":"nav-3","maxDelta":0.2001953125},{"id":"nav-4","maxDelta":0.2001953125},{"id":"nav-5","maxDelta":0.2001953125},{"id":"title","maxDelta":0.400390625},{"id":"subtitle","maxDelta":0.3001708984375},{"id":"section","maxDelta":0.001251220703125},{"id":"label-0","maxDelta":0.3001708984375},{"id":"value-0","maxDelta":0.4996337890625},{"id":"label-1","maxDelta":0.3001708984375},{"id":"value-1","maxDelta":0.4996337890625},{"id":"label-2","maxDelta":0.3001708984375},{"id":"value-2","maxDelta":0.4996337890625},{"id":"submit","maxDelta":0.34991455078125}],"diffImage":"pixel/01-dashboard-tauri-diff.png","referenceImage":"pixel/01-dashboard-electron.png","comparisonImage":"pixel/01-dashboard-tauri.png","class":"runtime-parity"},{"fixture":"01-dashboard","runtime":"flutter","reference":"electron","width":2560,"height":1600,"pixelDiffCount":16941,"pixelDiffPercent":0.4135986328125,"threshold":0.1,"includeAA":false,"ssim":0.9724559349171258,"ssimSampling":"every fourth pixel, 640x400","geometry":[{"id":"sidebar","maxDelta":0},{"id":"brand","maxDelta":0},{"id":"nav-0","maxDelta":0},{"id":"nav-1","maxDelta":0},{"id":"nav-2","maxDelta":0},{"id":"nav-3","maxDelta":0},{"id":"nav-4","maxDelta":0},{"id":"nav-5","maxDelta":0},{"id":"title","maxDelta":0},{"id":"subtitle","maxDelta":0},{"id":"content","maxDelta":0},{"id":"icon","maxDelta":0},{"id":"section","maxDelta":0},{"id":"stat-0","maxDelta":0},{"id":"label-0","maxDelta":0},{"id":"value-0","maxDelta":0},{"id":"stat-1","maxDelta":0},{"id":"label-1","maxDelta":0},{"id":"value-1","maxDelta":0},{"id":"stat-2","maxDelta":0},{"id":"label-2","maxDelta":0},{"id":"value-2","maxDelta":0},{"id":"visual-strip","maxDelta":0},{"id":"input","maxDelta":0},{"id":"submit","maxDelta":0}],"textBounds":[{"id":"brand","maxDelta":1},{"id":"nav-0","maxDelta":1},{"id":"nav-1","maxDelta":1},{"id":"nav-2","maxDelta":1},{"id":"nav-3","maxDelta":1},{"id":"nav-4","maxDelta":1},{"id":"nav-5","maxDelta":1},{"id":"title","maxDelta":2},{"id":"subtitle","maxDelta":0.5},{"id":"section","maxDelta":1},{"id":"label-0","maxDelta":0.5},{"id":"value-0","maxDelta":0.5},{"id":"label-1","maxDelta":0.5},{"id":"value-1","maxDelta":0.5},{"id":"label-2","maxDelta":0.5},{"id":"value-2","maxDelta":0.5}],"diffImage":"pixel/01-dashboard-flutter-diff.png","referenceImage":"pixel/01-dashboard-electron.png","comparisonImage":"pixel/01-dashboard-flutter.png","class":"semantic visual reference"},{"fixture":"02-chat","runtime":"tauri","reference":"electron","width":2560,"height":1600,"pixelDiffCount":1013,"pixelDiffPercent":0.0247314453125,"threshold":0.1,"includeAA":false,"ssim":0.9971336058026371,"ssimSampling":"every fourth pixel, 640x400","geometry":[{"id":"sidebar","maxDelta":0},{"id":"brand","maxDelta":0},{"id":"nav-0","maxDelta":0},{"id":"nav-1","maxDelta":0},{"id":"nav-2","maxDelta":0},{"id":"nav-3","maxDelta":0},{"id":"nav-4","maxDelta":0},{"id":"nav-5","maxDelta":0},{"id":"title","maxDelta":0},{"id":"subtitle","maxDelta":0},{"id":"content","maxDelta":0},{"id":"icon","maxDelta":0},{"id":"section","maxDelta":0},{"id":"message-0","maxDelta":0},{"id":"message-text-0","maxDelta":0},{"id":"message-1","maxDelta":0},{"id":"message-text-1","maxDelta":0},{"id":"message-2","maxDelta":0},{"id":"message-text-2","maxDelta":0},{"id":"message-3","maxDelta":0},{"id":"message-text-3","maxDelta":0},{"id":"message-4","maxDelta":0},{"id":"message-text-4","maxDelta":0},{"id":"visual-strip","maxDelta":0},{"id":"input","maxDelta":0},{"id":"submit","maxDelta":0}],"textBounds":[{"id":"brand","maxDelta":0.004058837890625},{"id":"nav-0","maxDelta":0.2001953125},{"id":"nav-1","maxDelta":0.2001953125},{"id":"nav-2","maxDelta":0.2001953125},{"id":"nav-3","maxDelta":0.2001953125},{"id":"nav-4","maxDelta":0.2001953125},{"id":"nav-5","maxDelta":0.2001953125},{"id":"title","maxDelta":0.400390625},{"id":"subtitle","maxDelta":0.3001708984375},{"id":"section","maxDelta":0.00030517578125},{"id":"message-text-0","maxDelta":0.2001953125},{"id":"message-text-1","maxDelta":0.2001953125},{"id":"message-text-2","maxDelta":0.2001953125},{"id":"message-text-3","maxDelta":0.2001953125},{"id":"message-text-4","maxDelta":0.2001953125},{"id":"submit","maxDelta":0.34991455078125}],"diffImage":"pixel/02-chat-tauri-diff.png","referenceImage":"pixel/02-chat-electron.png","comparisonImage":"pixel/02-chat-tauri.png","class":"runtime-parity"},{"fixture":"02-chat","runtime":"flutter","reference":"electron","width":2560,"height":1600,"pixelDiffCount":22579,"pixelDiffPercent":0.5512451171875,"threshold":0.1,"includeAA":false,"ssim":0.9628979095658908,"ssimSampling":"every fourth pixel, 640x400","geometry":[{"id":"sidebar","maxDelta":0},{"id":"brand","maxDelta":0},{"id":"nav-0","maxDelta":0},{"id":"nav-1","maxDelta":0},{"id":"nav-2","maxDelta":0},{"id":"nav-3","maxDelta":0},{"id":"nav-4","maxDelta":0},{"id":"nav-5","maxDelta":0},{"id":"title","maxDelta":0},{"id":"subtitle","maxDelta":0},{"id":"content","maxDelta":0},{"id":"icon","maxDelta":0},{"id":"section","maxDelta":0},{"id":"message-0","maxDelta":0},{"id":"message-text-0","maxDelta":0},{"id":"message-1","maxDelta":0},{"id":"message-text-1","maxDelta":0},{"id":"message-2","maxDelta":0},{"id":"message-text-2","maxDelta":0},{"id":"message-3","maxDelta":0},{"id":"message-text-3","maxDelta":0},{"id":"message-4","maxDelta":0},{"id":"message-text-4","maxDelta":0},{"id":"visual-strip","maxDelta":0},{"id":"input","maxDelta":0},{"id":"submit","maxDelta":0}],"textBounds":[{"id":"brand","maxDelta":1},{"id":"nav-0","maxDelta":1},{"id":"nav-1","maxDelta":1},{"id":"nav-2","maxDelta":1},{"id":"nav-3","maxDelta":1},{"id":"nav-4","maxDelta":1},{"id":"nav-5","maxDelta":1},{"id":"title","maxDelta":2},{"id":"subtitle","maxDelta":0.5},{"id":"section","maxDelta":1},{"id":"message-text-0","maxDelta":1},{"id":"message-text-1","maxDelta":1},{"id":"message-text-2","maxDelta":1},{"id":"message-text-3","maxDelta":1},{"id":"message-text-4","maxDelta":1}],"diffImage":"pixel/02-chat-flutter-diff.png","referenceImage":"pixel/02-chat-electron.png","comparisonImage":"pixel/02-chat-flutter.png","class":"semantic visual reference"},{"fixture":"03-code-editor","runtime":"tauri","reference":"electron","width":2560,"height":1600,"pixelDiffCount":1084,"pixelDiffPercent":0.02646484375,"threshold":0.1,"includeAA":false,"ssim":0.9966799874442609,"ssimSampling":"every fourth pixel, 640x400","geometry":[{"id":"sidebar","maxDelta":0},{"id":"brand","maxDelta":0},{"id":"nav-0","maxDelta":0},{"id":"nav-1","maxDelta":0},{"id":"nav-2","maxDelta":0},{"id":"nav-3","maxDelta":0},{"id":"nav-4","maxDelta":0},{"id":"nav-5","maxDelta":0},{"id":"title","maxDelta":0},{"id":"subtitle","maxDelta":0},{"id":"content","maxDelta":0},{"id":"icon","maxDelta":0},{"id":"section","maxDelta":0},{"id":"editor","maxDelta":0},{"id":"code-0","maxDelta":0},{"id":"code-1","maxDelta":0},{"id":"code-2","maxDelta":0},{"id":"code-3","maxDelta":0},{"id":"code-4","maxDelta":0},{"id":"code-5","maxDelta":0},{"id":"code-6","maxDelta":0},{"id":"code-7","maxDelta":0},{"id":"code-8","maxDelta":0},{"id":"code-9","maxDelta":0},{"id":"visual-strip","maxDelta":0},{"id":"input","maxDelta":0},{"id":"submit","maxDelta":0}],"textBounds":[{"id":"brand","maxDelta":0.004058837890625},{"id":"nav-0","maxDelta":0.2001953125},{"id":"nav-1","maxDelta":0.2001953125},{"id":"nav-2","maxDelta":0.2001953125},{"id":"nav-3","maxDelta":0.2001953125},{"id":"nav-4","maxDelta":0.2001953125},{"id":"nav-5","maxDelta":0.2001953125},{"id":"title","maxDelta":0.400390625},{"id":"subtitle","maxDelta":0.3001708984375},{"id":"section","maxDelta":0.0006103515625},{"id":"code-0","maxDelta":0.2001953125},{"id":"code-1","maxDelta":0.2001953125},{"id":"code-2","maxDelta":0.2001953125},{"id":"code-3","maxDelta":0.2001953125},{"id":"code-4","maxDelta":0.2001953125},{"id":"code-5","maxDelta":0.2001953125},{"id":"code-6","maxDelta":0.2001953125},{"id":"code-7","maxDelta":0.2001953125},{"id":"code-8","maxDelta":0.2001953125},{"id":"code-9","maxDelta":0.2001953125},{"id":"submit","maxDelta":0.34991455078125}],"diffImage":"pixel/03-code-editor-tauri-diff.png","referenceImage":"pixel/03-code-editor-electron.png","comparisonImage":"pixel/03-code-editor-tauri.png","class":"runtime-parity"},{"fixture":"03-code-editor","runtime":"flutter","reference":"electron","width":2560,"height":1600,"pixelDiffCount":39942,"pixelDiffPercent":0.975146484375,"threshold":0.1,"includeAA":false,"ssim":0.9205294496928119,"ssimSampling":"every fourth pixel, 640x400","geometry":[{"id":"sidebar","maxDelta":0},{"id":"brand","maxDelta":0},{"id":"nav-0","maxDelta":0},{"id":"nav-1","maxDelta":0},{"id":"nav-2","maxDelta":0},{"id":"nav-3","maxDelta":0},{"id":"nav-4","maxDelta":0},{"id":"nav-5","maxDelta":0},{"id":"title","maxDelta":0},{"id":"subtitle","maxDelta":0},{"id":"content","maxDelta":0},{"id":"icon","maxDelta":0},{"id":"section","maxDelta":0},{"id":"editor","maxDelta":0},{"id":"code-0","maxDelta":0},{"id":"code-1","maxDelta":0},{"id":"code-2","maxDelta":0},{"id":"code-3","maxDelta":0},{"id":"code-4","maxDelta":0},{"id":"code-5","maxDelta":0},{"id":"code-6","maxDelta":0},{"id":"code-7","maxDelta":0},{"id":"code-8","maxDelta":0},{"id":"code-9","maxDelta":0},{"id":"visual-strip","maxDelta":0},{"id":"input","maxDelta":0},{"id":"submit","maxDelta":0}],"textBounds":[{"id":"brand","maxDelta":1},{"id":"nav-0","maxDelta":1},{"id":"nav-1","maxDelta":1},{"id":"nav-2","maxDelta":1},{"id":"nav-3","maxDelta":1},{"id":"nav-4","maxDelta":1},{"id":"nav-5","maxDelta":1},{"id":"title","maxDelta":2},{"id":"subtitle","maxDelta":0.5},{"id":"section","maxDelta":1},{"id":"code-0","maxDelta":9.593994140625},{"id":"code-1","maxDelta":9.593994140625},{"id":"code-2","maxDelta":9.59857177734375},{"id":"code-3","maxDelta":9.59698486328125},{"id":"code-4","maxDelta":9.593963623046875},{"id":"code-5","maxDelta":9.593994140625},{"id":"code-6","maxDelta":9.593994140625},{"id":"code-7","maxDelta":9.59857177734375},{"id":"code-8","maxDelta":9.59698486328125},{"id":"code-9","maxDelta":9.593963623046875}],"diffImage":"pixel/03-code-editor-flutter-diff.png","referenceImage":"pixel/03-code-editor-electron.png","comparisonImage":"pixel/03-code-editor-flutter.png","class":"semantic visual reference"},{"fixture":"04-settings","runtime":"tauri","reference":"electron","width":2560,"height":1600,"pixelDiffCount":1703,"pixelDiffPercent":0.0415771484375,"threshold":0.1,"includeAA":false,"ssim":0.9967879499048349,"ssimSampling":"every fourth pixel, 640x400","geometry":[{"id":"sidebar","maxDelta":0},{"id":"brand","maxDelta":0},{"id":"nav-0","maxDelta":0},{"id":"nav-1","maxDelta":0},{"id":"nav-2","maxDelta":0},{"id":"nav-3","maxDelta":0},{"id":"nav-4","maxDelta":0},{"id":"nav-5","maxDelta":0},{"id":"title","maxDelta":0},{"id":"subtitle","maxDelta":0},{"id":"content","maxDelta":0},{"id":"icon","maxDelta":0},{"id":"section","maxDelta":0},{"id":"setting-0","maxDelta":0},{"id":"setting-label-0","maxDelta":0},{"id":"setting-button-0","maxDelta":0},{"id":"setting-1","maxDelta":0},{"id":"setting-label-1","maxDelta":0},{"id":"setting-button-1","maxDelta":0},{"id":"setting-2","maxDelta":0},{"id":"setting-label-2","maxDelta":0},{"id":"setting-button-2","maxDelta":0},{"id":"setting-3","maxDelta":0},{"id":"setting-label-3","maxDelta":0},{"id":"setting-button-3","maxDelta":0},{"id":"visual-strip","maxDelta":0},{"id":"input","maxDelta":0},{"id":"submit","maxDelta":0}],"textBounds":[{"id":"brand","maxDelta":0.004058837890625},{"id":"nav-0","maxDelta":0.2001953125},{"id":"nav-1","maxDelta":0.2001953125},{"id":"nav-2","maxDelta":0.2001953125},{"id":"nav-3","maxDelta":0.2001953125},{"id":"nav-4","maxDelta":0.2001953125},{"id":"nav-5","maxDelta":0.2001953125},{"id":"title","maxDelta":0.400390625},{"id":"subtitle","maxDelta":0.3001708984375},{"id":"section","maxDelta":0.00189208984375},{"id":"setting-label-0","maxDelta":0.2001953125},{"id":"setting-button-0","maxDelta":0.34991455078125},{"id":"setting-label-1","maxDelta":0.2001953125},{"id":"setting-button-1","maxDelta":0.34991455078125},{"id":"setting-label-2","maxDelta":0.2001953125},{"id":"setting-button-2","maxDelta":0.34991455078130684},{"id":"setting-label-3","maxDelta":0.2001953125},{"id":"setting-button-3","maxDelta":0.34991455078130684},{"id":"submit","maxDelta":0.34991455078125}],"diffImage":"pixel/04-settings-tauri-diff.png","referenceImage":"pixel/04-settings-electron.png","comparisonImage":"pixel/04-settings-tauri.png","class":"runtime-parity"},{"fixture":"04-settings","runtime":"flutter","reference":"electron","width":2560,"height":1600,"pixelDiffCount":19677,"pixelDiffPercent":0.4803955078125,"threshold":0.1,"includeAA":false,"ssim":0.9659515007767697,"ssimSampling":"every fourth pixel, 640x400","geometry":[{"id":"sidebar","maxDelta":0},{"id":"brand","maxDelta":0},{"id":"nav-0","maxDelta":0},{"id":"nav-1","maxDelta":0},{"id":"nav-2","maxDelta":0},{"id":"nav-3","maxDelta":0},{"id":"nav-4","maxDelta":0},{"id":"nav-5","maxDelta":0},{"id":"title","maxDelta":0},{"id":"subtitle","maxDelta":0},{"id":"content","maxDelta":0},{"id":"icon","maxDelta":0},{"id":"section","maxDelta":0},{"id":"setting-0","maxDelta":0},{"id":"setting-label-0","maxDelta":0},{"id":"setting-button-0","maxDelta":0},{"id":"setting-1","maxDelta":0},{"id":"setting-label-1","maxDelta":0},{"id":"setting-button-1","maxDelta":0},{"id":"setting-2","maxDelta":0},{"id":"setting-label-2","maxDelta":0},{"id":"setting-button-2","maxDelta":0},{"id":"setting-3","maxDelta":0},{"id":"setting-label-3","maxDelta":0},{"id":"setting-button-3","maxDelta":0},{"id":"visual-strip","maxDelta":0},{"id":"input","maxDelta":0},{"id":"submit","maxDelta":0}],"textBounds":[{"id":"brand","maxDelta":1},{"id":"nav-0","maxDelta":1},{"id":"nav-1","maxDelta":1},{"id":"nav-2","maxDelta":1},{"id":"nav-3","maxDelta":1},{"id":"nav-4","maxDelta":1},{"id":"nav-5","maxDelta":1},{"id":"title","maxDelta":2},{"id":"subtitle","maxDelta":0.5},{"id":"section","maxDelta":1},{"id":"setting-label-0","maxDelta":1},{"id":"setting-label-1","maxDelta":1},{"id":"setting-label-2","maxDelta":1},{"id":"setting-label-3","maxDelta":1}],"diffImage":"pixel/04-settings-flutter-diff.png","referenceImage":"pixel/04-settings-electron.png","comparisonImage":"pixel/04-settings-flutter.png","class":"semantic visual reference"},{"fixture":"05-media-player","runtime":"tauri","reference":"electron","width":2560,"height":1600,"pixelDiffCount":1135,"pixelDiffPercent":0.0277099609375,"threshold":0.1,"includeAA":false,"ssim":0.9970478799739816,"ssimSampling":"every fourth pixel, 640x400","geometry":[{"id":"sidebar","maxDelta":0},{"id":"brand","maxDelta":0},{"id":"nav-0","maxDelta":0},{"id":"nav-1","maxDelta":0},{"id":"nav-2","maxDelta":0},{"id":"nav-3","maxDelta":0},{"id":"nav-4","maxDelta":0},{"id":"nav-5","maxDelta":0},{"id":"title","maxDelta":0},{"id":"subtitle","maxDelta":0},{"id":"content","maxDelta":0},{"id":"icon","maxDelta":0},{"id":"section","maxDelta":0},{"id":"cover","maxDelta":0},{"id":"track","maxDelta":0},{"id":"artist","maxDelta":0},{"id":"progress","maxDelta":0},{"id":"play","maxDelta":0},{"id":"input","maxDelta":0},{"id":"submit","maxDelta":0}],"textBounds":[{"id":"brand","maxDelta":0.004058837890625},{"id":"nav-0","maxDelta":0.2001953125},{"id":"nav-1","maxDelta":0.2001953125},{"id":"nav-2","maxDelta":0.2001953125},{"id":"nav-3","maxDelta":0.2001953125},{"id":"nav-4","maxDelta":0.2001953125},{"id":"nav-5","maxDelta":0.2001953125},{"id":"title","maxDelta":0.400390625},{"id":"subtitle","maxDelta":0.3001708984375},{"id":"section","maxDelta":0.003753662109375},{"id":"track","maxDelta":0.399658203125},{"id":"artist","maxDelta":0.2001953125},{"id":"play","maxDelta":0.39990234375},{"id":"submit","maxDelta":0.34991455078125}],"diffImage":"pixel/05-media-player-tauri-diff.png","referenceImage":"pixel/05-media-player-electron.png","comparisonImage":"pixel/05-media-player-tauri.png","class":"runtime-parity"},{"fixture":"05-media-player","runtime":"flutter","reference":"electron","width":2560,"height":1600,"pixelDiffCount":19706,"pixelDiffPercent":0.481103515625,"threshold":0.1,"includeAA":false,"ssim":0.9697530198852884,"ssimSampling":"every fourth pixel, 640x400","geometry":[{"id":"sidebar","maxDelta":0},{"id":"brand","maxDelta":0},{"id":"nav-0","maxDelta":0},{"id":"nav-1","maxDelta":0},{"id":"nav-2","maxDelta":0},{"id":"nav-3","maxDelta":0},{"id":"nav-4","maxDelta":0},{"id":"nav-5","maxDelta":0},{"id":"title","maxDelta":0},{"id":"subtitle","maxDelta":0},{"id":"content","maxDelta":0},{"id":"icon","maxDelta":0},{"id":"section","maxDelta":0},{"id":"cover","maxDelta":0},{"id":"track","maxDelta":0},{"id":"artist","maxDelta":0},{"id":"progress","maxDelta":0},{"id":"play","maxDelta":0},{"id":"input","maxDelta":0},{"id":"submit","maxDelta":0}],"textBounds":[{"id":"brand","maxDelta":1},{"id":"nav-0","maxDelta":1},{"id":"nav-1","maxDelta":1},{"id":"nav-2","maxDelta":1},{"id":"nav-3","maxDelta":1},{"id":"nav-4","maxDelta":1},{"id":"nav-5","maxDelta":1},{"id":"title","maxDelta":2},{"id":"subtitle","maxDelta":0.5},{"id":"section","maxDelta":1},{"id":"track","maxDelta":1},{"id":"artist","maxDelta":1}],"diffImage":"pixel/05-media-player-flutter-diff.png","referenceImage":"pixel/05-media-player-electron.png","comparisonImage":"pixel/05-media-player-flutter.png","class":"semantic visual reference"},{"fixture":"06-complex-modal","runtime":"tauri","reference":"electron","width":2560,"height":1600,"pixelDiffCount":1098,"pixelDiffPercent":0.026806640625,"threshold":0.1,"includeAA":false,"ssim":0.9965133462540786,"ssimSampling":"every fourth pixel, 640x400","geometry":[{"id":"sidebar","maxDelta":0},{"id":"brand","maxDelta":0},{"id":"nav-0","maxDelta":0},{"id":"nav-1","maxDelta":0},{"id":"nav-2","maxDelta":0},{"id":"nav-3","maxDelta":0},{"id":"nav-4","maxDelta":0},{"id":"nav-5","maxDelta":0},{"id":"title","maxDelta":0},{"id":"subtitle","maxDelta":0},{"id":"content","maxDelta":0},{"id":"icon","maxDelta":0},{"id":"section","maxDelta":0},{"id":"backdrop","maxDelta":0},{"id":"modal","maxDelta":0},{"id":"modal-title","maxDelta":0},{"id":"modal-body","maxDelta":0},{"id":"modal-submit","maxDelta":0},{"id":"input","maxDelta":0},{"id":"submit","maxDelta":0}],"textBounds":[{"id":"brand","maxDelta":0.004058837890625},{"id":"nav-0","maxDelta":0.2001953125},{"id":"nav-1","maxDelta":0.2001953125},{"id":"nav-2","maxDelta":0.2001953125},{"id":"nav-3","maxDelta":0.2001953125},{"id":"nav-4","maxDelta":0.2001953125},{"id":"nav-5","maxDelta":0.2001953125},{"id":"title","maxDelta":0.400390625},{"id":"subtitle","maxDelta":0.3001708984375},{"id":"section","maxDelta":0.004364013671875},{"id":"modal-title","maxDelta":0.2996826171875},{"id":"modal-body","maxDelta":0.2001953125},{"id":"modal-submit","maxDelta":0.39990234375},{"id":"submit","maxDelta":0.34991455078125}],"diffImage":"pixel/06-complex-modal-tauri-diff.png","referenceImage":"pixel/06-complex-modal-electron.png","comparisonImage":"pixel/06-complex-modal-tauri.png","class":"runtime-parity"},{"fixture":"06-complex-modal","runtime":"flutter","reference":"electron","width":2560,"height":1600,"pixelDiffCount":220034,"pixelDiffPercent":5.371923828125,"threshold":0.1,"includeAA":false,"ssim":0.9571558239334333,"ssimSampling":"every fourth pixel, 640x400","geometry":[{"id":"sidebar","maxDelta":0},{"id":"brand","maxDelta":0},{"id":"nav-0","maxDelta":0},{"id":"nav-1","maxDelta":0},{"id":"nav-2","maxDelta":0},{"id":"nav-3","maxDelta":0},{"id":"nav-4","maxDelta":0},{"id":"nav-5","maxDelta":0},{"id":"title","maxDelta":0},{"id":"subtitle","maxDelta":0},{"id":"content","maxDelta":0},{"id":"icon","maxDelta":0},{"id":"section","maxDelta":0},{"id":"backdrop","maxDelta":0},{"id":"modal","maxDelta":0},{"id":"modal-title","maxDelta":0},{"id":"modal-body","maxDelta":0},{"id":"modal-submit","maxDelta":0},{"id":"input","maxDelta":0},{"id":"submit","maxDelta":0}],"textBounds":[{"id":"brand","maxDelta":1},{"id":"nav-0","maxDelta":1},{"id":"nav-1","maxDelta":1},{"id":"nav-2","maxDelta":1},{"id":"nav-3","maxDelta":1},{"id":"nav-4","maxDelta":1},{"id":"nav-5","maxDelta":1},{"id":"title","maxDelta":2},{"id":"subtitle","maxDelta":0.5},{"id":"section","maxDelta":1},{"id":"modal-title","maxDelta":1.5},{"id":"modal-body","maxDelta":1}],"diffImage":"pixel/06-complex-modal-flutter-diff.png","referenceImage":"pixel/06-complex-modal-electron.png","comparisonImage":"pixel/06-complex-modal-flutter.png","class":"semantic visual reference"}],"expected3d":64,"coverageNotes":["CSS：32 种参数 × 3 壳；Flutter 为语义等价组，不用于浏览器 CSS API 排名。","3D：骨骼 50/100/250/500/1000、三角形 100K/500K/1M/5M/10M、贴图 1K/2K/4K/8K、角色 1/10/50/100/250/500。","2.1GB：复用此前六组完整 60Hz 数据，单独标识 prior-2.1GB 阶段及源码指纹，不混合旧诊断。","Storage：8 种大小 × 2 种块数据 × 4 操作；小文件 3 数量 × 3 大小 × 2 类型 × 3 操作；SQLite 6 操作，各壳共 124 组。","Pixel：6 fixtures × Electron/Tauri/Flutter，共 18 截图、12 对比；SSIM 在固定降采样图计算。","本机 60Hz：操作者已确认设置；120Hz 及其他操作系统尚未运行。","未支持：完整 Flutter native 3D、Tauri native wgpu；不会补造这些组的成绩。","CPU/RSS：Tauri OS WebView helper 覆盖不全，跨壳资源比较不成立。"]}
+</script>
+    <script>
+      const D = JSON.parse(document.querySelector("#data").textContent),
+        $ = (id) => document.getElementById(id),
+        esc = (s) =>
+          String(s ?? "").replace(
+            /[&<>"']/g,
+            (c) =>
+              ({
+                "&": "&amp;",
+                "<": "&lt;",
+                ">": "&gt;",
+                '"': "&quot;",
+                "'": "&#39;",
+              })[c],
+          ),
+        fmt = (v, n = 2) => (typeof v === "number" ? v.toFixed(n) : "—"),
+        med = (a) => {
+          const s = [...a].sort((a, b) => a - b);
+          return s.length ? s[Math.floor(s.length / 2)] : null;
+        },
+        runtime = (r) =>
+          r.runtime.startsWith("electron")
+            ? "Electron"
+            : r.runtime.startsWith("tauri")
+              ? "Tauri"
+              : "Flutter",
+        table = (headers, rows) =>
+          rows.length
+            ? `<table><thead><tr>${headers.map((h) => `<th>${esc(h)}</th>`).join("")}</tr></thead><tbody>${rows.map((row) => `<tr>${row.map((v) => `<td>${v}</td>`).join("")}</tr>`).join("")}</tbody></table>`
+            : '<div class="empty">此项尚无完整结果。报告仅展示已保存并校验的数据。</div>',
+        evidence = (r) => (r.raw ? `<a href="${esc(r.raw)}">JSON ↗</a>` : "—");
+      $("updated").textContent = new Date(D.updated).toLocaleString("zh-CN");
+      const done = D.jobs.filter((j) => j.status === "complete").length,
+        total = D.jobs.length;
+      const incomplete =
+        D.jobs.some(
+          (j) => !["complete", "failed", "skipped"].includes(j.status),
+        ) ||
+        D.storage.length < 372 ||
+        D.pixel.length < 12;
+      $("lead").textContent = incomplete
+        ? "报告正在采集完整矩阵。已完成结果与待运行项分别显示；刷新可读取最新保存的进度。"
+        : "本机完整矩阵已结束。以下结果仅适用于所列负载、协议与环境，不推导通用框架排名。";
+      const css = D.results.filter((r) => r.benchmark === "css-animation"),
+        three = D.results.filter((r) => r.benchmark === "skeletal-3d");
+      $("coverage").innerHTML = [
+        ["CSS", css.length, 96],
+        ["STORAGE", D.storage.length, 372],
+        ["3D", three.length, D.expected3d],
+        ["PIXEL", D.pixel.length, 12],
+      ]
+        .map(
+          ([name, a, b]) =>
+            `<div class="coverage"><div class="eyebrow">${name}</div><div class="number">${a}<span style="font-size:17px;color:#889280"> / ${b}</span></div><small>${a >= b ? "已完成" : "持续采集中"}</small><div class="progress"><i style="width:${Math.min(100, (100 * a) / b)}%"></i></div></div>`,
+        )
+        .join("");
+      $("finding").textContent = incomplete
+        ? `完整矩阵已完成 ${done} / ${total} 组。此前固定 60Hz 的 2.1GB 结果显示：Tauri 在几何和混合配方帧率分别高约 6.7% 与 9.6%，纹理配方两者均达到 60 FPS。CSS、存储和视觉结论需看各自已完成数据。`
+        : "完整数据已采集，按下面各类负载分别判断。没有把 Flutter 语义参考与浏览器 API 等价测试混为总排名。";
+      function drawCss() {
+        const nodes = Number($("nodes").value),
+          rs = css.filter(
+            (r) =>
+              r.parameters.nodes === nodes &&
+              ($("class").value !== "web" || runtime(r) !== "Flutter"),
+          );
+        const cases = [
+          "translate",
+          "scale-rotate",
+          "opacity",
+          "blur",
+          "backdrop-blur",
+          "nested-transform",
+          "scroll-animation",
+          "mixed",
+        ];
+        let svg =
+          '<svg class="chart" viewBox="0 0 1080 460" role="img" aria-label="各 workload 的五轮 FPS 中位数">';
+        for (let i = 0; i < cases.length; i++) {
+          const y = 30 + i * 52;
+          svg += `<text x="0" y="${y + 15}" font-size="13" fill="#18382d">${cases[i]}</text>`;
+          for (let k = 0; k < 3; k++) {
+            const name = ["Electron", "Tauri", "Flutter"][k],
+              r = rs.find((r) => r.case === cases[i] && runtime(r) === name),
+              fps = r?.summary.fpsAverage?.median;
+            svg += `<line x1="170" x2="1020" y1="${y + k * 14}" y2="${y + k * 14}" stroke="#e8eddf"/><rect x="170" y="${y + k * 14 - 5}" width="${typeof fps === "number" ? (Math.min(60, fps) / 60) * 800 : 0}" height="10" fill="${["#315d46", "#cb643e", "#627b9f"][k]}"/><text x="1030" y="${y + k * 14 + 4}" font-size="10" fill="#657369">${fmt(fps, 1)}</text>`;
+          }
+        }
+        svg += "</svg>";
+        $("css-chart").innerHTML = svg;
+        $("css-table").innerHTML = table(
+          [
+            "Case",
+            "Runtime",
+            "FPS 中位数",
+            "FPS 范围",
+            "p95(ms)",
+            "p99(ms)",
+            "Class",
+            "证据",
+          ],
+          rs.map((r) => [
+            esc(r.case),
+            runtime(r),
+            fmt(r.summary.fpsAverage?.median),
+            `${fmt(r.summary.fpsAverage?.min)}–${fmt(r.summary.fpsAverage?.max)}`,
+            fmt(r.summary.frameP95Ms?.median),
+            fmt(r.summary.frameP99Ms?.median),
+            r.comparisonClass === "runtime-parity" ? "运行时对比" : "语义参考",
+            evidence(r),
+          ]),
+        );
+      }
+      const operations = [
+        ...new Set(D.storage.map((r) => r.parameters.operation)),
+      ];
+      $("operation").innerHTML = operations
+        .map((o) => `<option>${esc(o)}</option>`)
+        .join("");
+      function drawStorage() {
+        const rs = D.storage.filter(
+          (r) =>
+            r.parameters.operation === $("operation").value &&
+            ($("entropy").value === "all" ||
+              r.parameters.entropy === $("entropy").value),
+        );
+        $("storage-table").innerHTML = table(
+          [
+            "操作",
+            "Runtime",
+            "数据",
+            "类型",
+            "时间中位数(ms)",
+            "min–max(ms)",
+            "MiB/s",
+            "SQLite",
+            "证据",
+          ],
+          rs.map((r) => {
+            const ts = r.runs.map((x) => x.elapsedMs),
+              p = r.parameters,
+              m = med(ts);
+            return [
+              esc(p.operation),
+              runtime(r),
+              p.bytes
+                ? esc((p.bytes / 1048576).toFixed(3) + " MiB")
+                : p.count
+                  ? esc(p.count + " × " + p.fileBytes + " B")
+                  : esc(p.rows + " rows"),
+              esc(p.entropy ?? "SQL"),
+              fmt(m, 3),
+              fmt(Math.min(...ts), 3) + "–" + fmt(Math.max(...ts), 3),
+              p.bytes
+                ? fmt(
+                    (p.operation.startsWith("random") ? 2048 * 4096 : p.bytes) /
+                      1048576 /
+                      (m / 1000),
+                  )
+                : "—",
+              esc(r.runs[0].sqliteVersion ?? "—"),
+              evidence(r),
+            ];
+          }),
+        );
+      }
+      function drawThree() {
+        const q = $("asset-filter").value.toLowerCase(),
+          rs = three.filter((r) =>
+            (r.asset + " " + r.case).toLowerCase().includes(q),
+          );
+        $("three-table").innerHTML = table(
+          [
+            "模型",
+            "Runtime",
+            "角色",
+            "FPS",
+            "min–max",
+            "p95(ms)",
+            "TTFM(s)",
+            "来源阶段",
+            "证据",
+          ],
+          rs.map((r) => [
+            esc(r.asset),
+            runtime(r),
+            esc(r.parameters.characterCount),
+            fmt(r.summary.fpsAverage?.median),
+            fmt(r.summary.fpsAverage?.min) +
+              "–" +
+              fmt(r.summary.fpsAverage?.max),
+            fmt(r.summary.frameP95Ms?.median),
+            fmt(r.loadSummary?.ttfmMs?.median / 1000),
+            esc(r.phase ?? "current"),
+            evidence(r),
+          ]),
+        );
+      }
+      $("fixture").innerHTML = [...new Set(D.pixel.map((p) => p.fixture))]
+        .map((f) => `<option>${esc(f)}</option>`)
+        .join("");
+      function drawPixel() {
+        const p = D.pixel.find(
+          (p) =>
+            p.fixture === $("fixture").value &&
+            p.runtime === $("pixel-runtime").value,
+        );
+        if (!p) {
+          $("pixel-view").innerHTML =
+            '<div class="empty">截图或对比尚未完成。</div>';
+          return;
+        }
+        $("pixel-view").innerHTML =
+          `<div class="pixel-grid panel"><figure><div class="diff-overlay"><img src="${esc(p.referenceImage)}" alt="Electron 参考截图"><img id="overlay" src="${esc(p.comparisonImage)}" alt="${esc(p.runtime)} 对比截图" style="opacity:${Number($("opacity").value) / 100}"></div><figcaption>真实截图叠加，使用滑块查看布局位置差异。</figcaption></figure><figure><img src="${esc(p.diffImage)}" alt="像素差异图"><figcaption>Pixel diff ${fmt(p.pixelDiffPercent)}% · SSIM ${fmt(p.ssim, 4)} · Geometry 最大偏差 ${fmt(Math.max(0, ...p.geometry.filter((x) => !x.missing).map((x) => x.maxDelta)))}px</figcaption></figure></div>`;
+        $("pixel-table").innerHTML = table(
+          [
+            "Fixture",
+            "Runtime",
+            "Pixel diff %",
+            "SSIM",
+            "Geometry max px",
+            "Text bbox max px",
+          ],
+          D.pixel.map((v) => [
+            esc(v.fixture),
+            esc(v.runtime),
+            fmt(v.pixelDiffPercent),
+            fmt(v.ssim, 4),
+            fmt(
+              Math.max(
+                0,
+                ...v.geometry.filter((x) => !x.missing).map((x) => x.maxDelta),
+              ),
+            ),
+            fmt(Math.max(0, ...v.textBounds.map((x) => x.maxDelta))),
+          ]),
+        );
+      }
+      $("status").innerHTML = D.coverageNotes
+        .map((n) => `<p>${esc(n)}</p>`)
+        .join("");
+      $("failures").innerHTML = table(
+        ["参数", "状态", "原因"],
+        D.jobs
+          .filter((j) => ["failed", "skipped"].includes(j.status))
+          .map((j) => [esc(j.key), esc(j.status), esc(j.reason ?? j.error)]),
+      );
+      $("source").textContent =
+        `${D.results.length} dynamic records · ${D.storage.length} storage records · ${D.pixel.length} image pairs`;
+      for (const id of ["nodes", "class"])
+        $(id).addEventListener("change", drawCss);
+      for (const id of ["operation", "entropy"])
+        $(id).addEventListener("change", drawStorage);
+      $("asset-filter").addEventListener("input", drawThree);
+      for (const id of ["fixture", "pixel-runtime"])
+        $(id).addEventListener("change", drawPixel);
+      $("opacity").addEventListener("input", () => {
+        if ($("overlay"))
+          $("overlay").style.opacity = Number($("opacity").value) / 100;
+      });
+      drawCss();
+      drawStorage();
+      drawThree();
+      drawPixel();
+    </script>
+  </body>
+</html>
