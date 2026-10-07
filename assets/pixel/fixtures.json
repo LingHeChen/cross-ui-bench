@@ -1,0 +1,1665 @@
+[
+  {
+    "id": "01-dashboard",
+    "name": "Dashboard",
+    "width": 1280,
+    "height": 800,
+    "background": "#f6f7f2",
+    "nodes": [
+      {
+        "id": "sidebar",
+        "x": 24,
+        "y": 24,
+        "width": 224,
+        "height": 752,
+        "type": "container",
+        "color": "#193a2c",
+        "radius": 16,
+        "children": [
+          {
+            "id": "brand",
+            "x": 20,
+            "y": 26,
+            "width": 180,
+            "height": 32,
+            "type": "text",
+            "text": "CROSSUI / LAB",
+            "fontSize": 20,
+            "color": "#ecf6e9"
+          },
+          {
+            "id": "nav-0",
+            "x": 20,
+            "y": 102,
+            "width": 180,
+            "height": 34,
+            "type": "text",
+            "text": "Overview",
+            "fontSize": 16,
+            "color": "#ecf6e9"
+          },
+          {
+            "id": "nav-1",
+            "x": 20,
+            "y": 156,
+            "width": 180,
+            "height": 34,
+            "type": "text",
+            "text": "Messages",
+            "fontSize": 16,
+            "color": "#ecf6e9"
+          },
+          {
+            "id": "nav-2",
+            "x": 20,
+            "y": 210,
+            "width": 180,
+            "height": 34,
+            "type": "text",
+            "text": "Editor",
+            "fontSize": 16,
+            "color": "#ecf6e9"
+          },
+          {
+            "id": "nav-3",
+            "x": 20,
+            "y": 264,
+            "width": 180,
+            "height": 34,
+            "type": "text",
+            "text": "Settings",
+            "fontSize": 16,
+            "color": "#ecf6e9"
+          },
+          {
+            "id": "nav-4",
+            "x": 20,
+            "y": 318,
+            "width": 180,
+            "height": 34,
+            "type": "text",
+            "text": "Media",
+            "fontSize": 16,
+            "color": "#ecf6e9"
+          },
+          {
+            "id": "nav-5",
+            "x": 20,
+            "y": 372,
+            "width": 180,
+            "height": 34,
+            "type": "text",
+            "text": "Reports",
+            "fontSize": 16,
+            "color": "#ecf6e9"
+          }
+        ]
+      },
+      {
+        "id": "title",
+        "x": 280,
+        "y": 34,
+        "width": 860,
+        "height": 50,
+        "type": "text",
+        "text": "Dashboard",
+        "fontSize": 32,
+        "color": "#193a2c"
+      },
+      {
+        "id": "subtitle",
+        "x": 280,
+        "y": 94,
+        "width": 860,
+        "height": 25,
+        "type": "text",
+        "text": "Fixed fixture / 1280 x 800 / IBM Plex / English / Light",
+        "fontSize": 14,
+        "color": "#68756a"
+      },
+      {
+        "id": "content",
+        "x": 280,
+        "y": 136,
+        "width": 940,
+        "height": 596,
+        "type": "container",
+        "color": "#ffffff",
+        "radius": 12,
+        "border": "#d7ddd5",
+        "children": [
+          {
+            "id": "icon",
+            "x": 28,
+            "y": 28,
+            "width": 32,
+            "height": 32,
+            "type": "icon",
+            "color": "#193a2c"
+          },
+          {
+            "id": "section",
+            "x": 76,
+            "y": 30,
+            "width": 700,
+            "height": 28,
+            "type": "text",
+            "text": "Activity overview",
+            "fontSize": 20,
+            "color": "#193a2c"
+          },
+          {
+            "id": "stat-0",
+            "x": 28,
+            "y": 88,
+            "width": 280,
+            "height": 120,
+            "type": "container",
+            "color": "#f1f4ef",
+            "radius": 8,
+            "children": [
+              {
+                "id": "label-0",
+                "x": 18,
+                "y": 18,
+                "width": 220,
+                "height": 20,
+                "type": "text",
+                "text": "Frames sampled",
+                "fontSize": 14
+              },
+              {
+                "id": "value-0",
+                "x": 18,
+                "y": 54,
+                "width": 220,
+                "height": 42,
+                "type": "text",
+                "text": "9,000",
+                "fontSize": 30
+              }
+            ]
+          },
+          {
+            "id": "stat-1",
+            "x": 328,
+            "y": 88,
+            "width": 280,
+            "height": 120,
+            "type": "container",
+            "color": "#e6f3d5",
+            "radius": 8,
+            "children": [
+              {
+                "id": "label-1",
+                "x": 18,
+                "y": 18,
+                "width": 220,
+                "height": 20,
+                "type": "text",
+                "text": "Median FPS",
+                "fontSize": 14
+              },
+              {
+                "id": "value-1",
+                "x": 18,
+                "y": 54,
+                "width": 220,
+                "height": 42,
+                "type": "text",
+                "text": "60.00",
+                "fontSize": 30
+              }
+            ]
+          },
+          {
+            "id": "stat-2",
+            "x": 628,
+            "y": 88,
+            "width": 280,
+            "height": 120,
+            "type": "container",
+            "color": "#f1f4ef",
+            "radius": 8,
+            "children": [
+              {
+                "id": "label-2",
+                "x": 18,
+                "y": 18,
+                "width": 220,
+                "height": 20,
+                "type": "text",
+                "text": "Complete runs",
+                "fontSize": 14
+              },
+              {
+                "id": "value-2",
+                "x": 18,
+                "y": 54,
+                "width": 220,
+                "height": 42,
+                "type": "text",
+                "text": "5 / 5",
+                "fontSize": 30
+              }
+            ]
+          },
+          {
+            "id": "visual-strip",
+            "x": 28,
+            "y": 470,
+            "width": 884,
+            "height": 44,
+            "type": "gradient",
+            "radius": 8
+          },
+          {
+            "id": "input",
+            "x": 28,
+            "y": 538,
+            "width": 656,
+            "height": 36,
+            "type": "input",
+            "text": "Type a message...",
+            "fontSize": 14,
+            "color": "#f1f4ef"
+          },
+          {
+            "id": "submit",
+            "x": 708,
+            "y": 538,
+            "width": 204,
+            "height": 36,
+            "type": "button",
+            "text": "Save fixture",
+            "fontSize": 14,
+            "color": "#193a2c",
+            "textColor": "#ffffff"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "02-chat",
+    "name": "Chat",
+    "width": 1280,
+    "height": 800,
+    "background": "#f6f7f2",
+    "nodes": [
+      {
+        "id": "sidebar",
+        "x": 24,
+        "y": 24,
+        "width": 224,
+        "height": 752,
+        "type": "container",
+        "color": "#193a2c",
+        "radius": 16,
+        "children": [
+          {
+            "id": "brand",
+            "x": 20,
+            "y": 26,
+            "width": 180,
+            "height": 32,
+            "type": "text",
+            "text": "CROSSUI / LAB",
+            "fontSize": 20,
+            "color": "#ecf6e9"
+          },
+          {
+            "id": "nav-0",
+            "x": 20,
+            "y": 102,
+            "width": 180,
+            "height": 34,
+            "type": "text",
+            "text": "Overview",
+            "fontSize": 16,
+            "color": "#ecf6e9"
+          },
+          {
+            "id": "nav-1",
+            "x": 20,
+            "y": 156,
+            "width": 180,
+            "height": 34,
+            "type": "text",
+            "text": "Messages",
+            "fontSize": 16,
+            "color": "#ecf6e9"
+          },
+          {
+            "id": "nav-2",
+            "x": 20,
+            "y": 210,
+            "width": 180,
+            "height": 34,
+            "type": "text",
+            "text": "Editor",
+            "fontSize": 16,
+            "color": "#ecf6e9"
+          },
+          {
+            "id": "nav-3",
+            "x": 20,
+            "y": 264,
+            "width": 180,
+            "height": 34,
+            "type": "text",
+            "text": "Settings",
+            "fontSize": 16,
+            "color": "#ecf6e9"
+          },
+          {
+            "id": "nav-4",
+            "x": 20,
+            "y": 318,
+            "width": 180,
+            "height": 34,
+            "type": "text",
+            "text": "Media",
+            "fontSize": 16,
+            "color": "#ecf6e9"
+          },
+          {
+            "id": "nav-5",
+            "x": 20,
+            "y": 372,
+            "width": 180,
+            "height": 34,
+            "type": "text",
+            "text": "Reports",
+            "fontSize": 16,
+            "color": "#ecf6e9"
+          }
+        ]
+      },
+      {
+        "id": "title",
+        "x": 280,
+        "y": 34,
+        "width": 860,
+        "height": 50,
+        "type": "text",
+        "text": "Chat",
+        "fontSize": 32,
+        "color": "#193a2c"
+      },
+      {
+        "id": "subtitle",
+        "x": 280,
+        "y": 94,
+        "width": 860,
+        "height": 25,
+        "type": "text",
+        "text": "Fixed fixture / 1280 x 800 / IBM Plex / English / Light",
+        "fontSize": 14,
+        "color": "#68756a"
+      },
+      {
+        "id": "content",
+        "x": 280,
+        "y": 136,
+        "width": 940,
+        "height": 596,
+        "type": "container",
+        "color": "#ffffff",
+        "radius": 12,
+        "border": "#d7ddd5",
+        "children": [
+          {
+            "id": "icon",
+            "x": 28,
+            "y": 28,
+            "width": 32,
+            "height": 32,
+            "type": "icon",
+            "color": "#193a2c"
+          },
+          {
+            "id": "section",
+            "x": 76,
+            "y": 30,
+            "width": 700,
+            "height": 28,
+            "type": "text",
+            "text": "Team conversation",
+            "fontSize": 20,
+            "color": "#193a2c"
+          },
+          {
+            "id": "message-0",
+            "x": 28,
+            "y": 88,
+            "width": 650,
+            "height": 48,
+            "type": "container",
+            "color": "#f1f4ef",
+            "radius": 8,
+            "children": [
+              {
+                "id": "message-text-0",
+                "x": 14,
+                "y": 12,
+                "width": 620,
+                "height": 24,
+                "type": "text",
+                "text": "Hello, the fixture is ready.",
+                "fontSize": 16
+              }
+            ]
+          },
+          {
+            "id": "message-1",
+            "x": 208,
+            "y": 152,
+            "width": 650,
+            "height": 48,
+            "type": "container",
+            "color": "#e6f3d5",
+            "radius": 8,
+            "children": [
+              {
+                "id": "message-text-1",
+                "x": 14,
+                "y": 12,
+                "width": 620,
+                "height": 24,
+                "type": "text",
+                "text": "Keep all runtimes at the same size.",
+                "fontSize": 16
+              }
+            ]
+          },
+          {
+            "id": "message-2",
+            "x": 28,
+            "y": 216,
+            "width": 650,
+            "height": 48,
+            "type": "container",
+            "color": "#f1f4ef",
+            "radius": 8,
+            "children": [
+              {
+                "id": "message-text-2",
+                "x": 14,
+                "y": 12,
+                "width": 620,
+                "height": 24,
+                "type": "text",
+                "text": "The font is bundled locally.",
+                "fontSize": 16
+              }
+            ]
+          },
+          {
+            "id": "message-3",
+            "x": 208,
+            "y": 280,
+            "width": 650,
+            "height": 48,
+            "type": "container",
+            "color": "#e6f3d5",
+            "radius": 8,
+            "children": [
+              {
+                "id": "message-text-3",
+                "x": 14,
+                "y": 12,
+                "width": 620,
+                "height": 24,
+                "type": "text",
+                "text": "Compare layout before pixels.",
+                "fontSize": 16
+              }
+            ]
+          },
+          {
+            "id": "message-4",
+            "x": 28,
+            "y": 344,
+            "width": 650,
+            "height": 48,
+            "type": "container",
+            "color": "#f1f4ef",
+            "radius": 8,
+            "children": [
+              {
+                "id": "message-text-4",
+                "x": 14,
+                "y": 12,
+                "width": 620,
+                "height": 24,
+                "type": "text",
+                "text": "Captured at a fixed state.",
+                "fontSize": 16
+              }
+            ]
+          },
+          {
+            "id": "visual-strip",
+            "x": 28,
+            "y": 470,
+            "width": 884,
+            "height": 44,
+            "type": "gradient",
+            "radius": 8
+          },
+          {
+            "id": "input",
+            "x": 28,
+            "y": 538,
+            "width": 656,
+            "height": 36,
+            "type": "input",
+            "text": "Type a message...",
+            "fontSize": 14,
+            "color": "#f1f4ef"
+          },
+          {
+            "id": "submit",
+            "x": 708,
+            "y": 538,
+            "width": 204,
+            "height": 36,
+            "type": "button",
+            "text": "Save fixture",
+            "fontSize": 14,
+            "color": "#193a2c",
+            "textColor": "#ffffff"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "03-code-editor",
+    "name": "Code Editor",
+    "width": 1280,
+    "height": 800,
+    "background": "#f6f7f2",
+    "nodes": [
+      {
+        "id": "sidebar",
+        "x": 24,
+        "y": 24,
+        "width": 224,
+        "height": 752,
+        "type": "container",
+        "color": "#193a2c",
+        "radius": 16,
+        "children": [
+          {
+            "id": "brand",
+            "x": 20,
+            "y": 26,
+            "width": 180,
+            "height": 32,
+            "type": "text",
+            "text": "CROSSUI / LAB",
+            "fontSize": 20,
+            "color": "#ecf6e9"
+          },
+          {
+            "id": "nav-0",
+            "x": 20,
+            "y": 102,
+            "width": 180,
+            "height": 34,
+            "type": "text",
+            "text": "Overview",
+            "fontSize": 16,
+            "color": "#ecf6e9"
+          },
+          {
+            "id": "nav-1",
+            "x": 20,
+            "y": 156,
+            "width": 180,
+            "height": 34,
+            "type": "text",
+            "text": "Messages",
+            "fontSize": 16,
+            "color": "#ecf6e9"
+          },
+          {
+            "id": "nav-2",
+            "x": 20,
+            "y": 210,
+            "width": 180,
+            "height": 34,
+            "type": "text",
+            "text": "Editor",
+            "fontSize": 16,
+            "color": "#ecf6e9"
+          },
+          {
+            "id": "nav-3",
+            "x": 20,
+            "y": 264,
+            "width": 180,
+            "height": 34,
+            "type": "text",
+            "text": "Settings",
+            "fontSize": 16,
+            "color": "#ecf6e9"
+          },
+          {
+            "id": "nav-4",
+            "x": 20,
+            "y": 318,
+            "width": 180,
+            "height": 34,
+            "type": "text",
+            "text": "Media",
+            "fontSize": 16,
+            "color": "#ecf6e9"
+          },
+          {
+            "id": "nav-5",
+            "x": 20,
+            "y": 372,
+            "width": 180,
+            "height": 34,
+            "type": "text",
+            "text": "Reports",
+            "fontSize": 16,
+            "color": "#ecf6e9"
+          }
+        ]
+      },
+      {
+        "id": "title",
+        "x": 280,
+        "y": 34,
+        "width": 860,
+        "height": 50,
+        "type": "text",
+        "text": "Code Editor",
+        "fontSize": 32,
+        "color": "#193a2c"
+      },
+      {
+        "id": "subtitle",
+        "x": 280,
+        "y": 94,
+        "width": 860,
+        "height": 25,
+        "type": "text",
+        "text": "Fixed fixture / 1280 x 800 / IBM Plex / English / Light",
+        "fontSize": 14,
+        "color": "#68756a"
+      },
+      {
+        "id": "content",
+        "x": 280,
+        "y": 136,
+        "width": 940,
+        "height": 596,
+        "type": "container",
+        "color": "#ffffff",
+        "radius": 12,
+        "border": "#d7ddd5",
+        "children": [
+          {
+            "id": "icon",
+            "x": 28,
+            "y": 28,
+            "width": 32,
+            "height": 32,
+            "type": "icon",
+            "color": "#193a2c"
+          },
+          {
+            "id": "section",
+            "x": 76,
+            "y": 30,
+            "width": 700,
+            "height": 28,
+            "type": "text",
+            "text": "Source workspace",
+            "fontSize": 20,
+            "color": "#193a2c"
+          },
+          {
+            "id": "editor",
+            "x": 28,
+            "y": 88,
+            "width": 884,
+            "height": 350,
+            "type": "container",
+            "color": "#193a2c",
+            "radius": 8,
+            "children": [
+              {
+                "id": "code-0",
+                "x": 18,
+                "y": 16,
+                "width": 840,
+                "height": 25,
+                "type": "text",
+                "mono": true,
+                "text": "01  const runtime = await createBench();",
+                "fontSize": 16,
+                "color": "#e6f3d5"
+              },
+              {
+                "id": "code-1",
+                "x": 18,
+                "y": 45,
+                "width": 840,
+                "height": 25,
+                "type": "text",
+                "mono": true,
+                "text": "02  const scene = loadFixture(\"editor\");",
+                "fontSize": 16,
+                "color": "#e6f3d5"
+              },
+              {
+                "id": "code-2",
+                "x": 18,
+                "y": 74,
+                "width": 840,
+                "height": 25,
+                "type": "text",
+                "mono": true,
+                "text": "03  await fonts.ready;",
+                "fontSize": 16,
+                "color": "#e6f3d5"
+              },
+              {
+                "id": "code-3",
+                "x": 18,
+                "y": 103,
+                "width": 840,
+                "height": 25,
+                "type": "text",
+                "mono": true,
+                "text": "04  render(scene);",
+                "fontSize": 16,
+                "color": "#e6f3d5"
+              },
+              {
+                "id": "code-4",
+                "x": 18,
+                "y": 132,
+                "width": 840,
+                "height": 25,
+                "type": "text",
+                "mono": true,
+                "text": "05  const metrics = sampleFrames();",
+                "fontSize": 16,
+                "color": "#e6f3d5"
+              },
+              {
+                "id": "code-5",
+                "x": 18,
+                "y": 161,
+                "width": 840,
+                "height": 25,
+                "type": "text",
+                "mono": true,
+                "text": "06  const runtime = await createBench();",
+                "fontSize": 16,
+                "color": "#e6f3d5"
+              },
+              {
+                "id": "code-6",
+                "x": 18,
+                "y": 190,
+                "width": 840,
+                "height": 25,
+                "type": "text",
+                "mono": true,
+                "text": "07  const scene = loadFixture(\"editor\");",
+                "fontSize": 16,
+                "color": "#e6f3d5"
+              },
+              {
+                "id": "code-7",
+                "x": 18,
+                "y": 219,
+                "width": 840,
+                "height": 25,
+                "type": "text",
+                "mono": true,
+                "text": "08  await fonts.ready;",
+                "fontSize": 16,
+                "color": "#e6f3d5"
+              },
+              {
+                "id": "code-8",
+                "x": 18,
+                "y": 248,
+                "width": 840,
+                "height": 25,
+                "type": "text",
+                "mono": true,
+                "text": "09  render(scene);",
+                "fontSize": 16,
+                "color": "#e6f3d5"
+              },
+              {
+                "id": "code-9",
+                "x": 18,
+                "y": 277,
+                "width": 840,
+                "height": 25,
+                "type": "text",
+                "mono": true,
+                "text": "10  const metrics = sampleFrames();",
+                "fontSize": 16,
+                "color": "#e6f3d5"
+              }
+            ]
+          },
+          {
+            "id": "visual-strip",
+            "x": 28,
+            "y": 470,
+            "width": 884,
+            "height": 44,
+            "type": "gradient",
+            "radius": 8
+          },
+          {
+            "id": "input",
+            "x": 28,
+            "y": 538,
+            "width": 656,
+            "height": 36,
+            "type": "input",
+            "text": "Type a message...",
+            "fontSize": 14,
+            "color": "#f1f4ef"
+          },
+          {
+            "id": "submit",
+            "x": 708,
+            "y": 538,
+            "width": 204,
+            "height": 36,
+            "type": "button",
+            "text": "Save fixture",
+            "fontSize": 14,
+            "color": "#193a2c",
+            "textColor": "#ffffff"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "04-settings",
+    "name": "Settings",
+    "width": 1280,
+    "height": 800,
+    "background": "#f6f7f2",
+    "nodes": [
+      {
+        "id": "sidebar",
+        "x": 24,
+        "y": 24,
+        "width": 224,
+        "height": 752,
+        "type": "container",
+        "color": "#193a2c",
+        "radius": 16,
+        "children": [
+          {
+            "id": "brand",
+            "x": 20,
+            "y": 26,
+            "width": 180,
+            "height": 32,
+            "type": "text",
+            "text": "CROSSUI / LAB",
+            "fontSize": 20,
+            "color": "#ecf6e9"
+          },
+          {
+            "id": "nav-0",
+            "x": 20,
+            "y": 102,
+            "width": 180,
+            "height": 34,
+            "type": "text",
+            "text": "Overview",
+            "fontSize": 16,
+            "color": "#ecf6e9"
+          },
+          {
+            "id": "nav-1",
+            "x": 20,
+            "y": 156,
+            "width": 180,
+            "height": 34,
+            "type": "text",
+            "text": "Messages",
+            "fontSize": 16,
+            "color": "#ecf6e9"
+          },
+          {
+            "id": "nav-2",
+            "x": 20,
+            "y": 210,
+            "width": 180,
+            "height": 34,
+            "type": "text",
+            "text": "Editor",
+            "fontSize": 16,
+            "color": "#ecf6e9"
+          },
+          {
+            "id": "nav-3",
+            "x": 20,
+            "y": 264,
+            "width": 180,
+            "height": 34,
+            "type": "text",
+            "text": "Settings",
+            "fontSize": 16,
+            "color": "#ecf6e9"
+          },
+          {
+            "id": "nav-4",
+            "x": 20,
+            "y": 318,
+            "width": 180,
+            "height": 34,
+            "type": "text",
+            "text": "Media",
+            "fontSize": 16,
+            "color": "#ecf6e9"
+          },
+          {
+            "id": "nav-5",
+            "x": 20,
+            "y": 372,
+            "width": 180,
+            "height": 34,
+            "type": "text",
+            "text": "Reports",
+            "fontSize": 16,
+            "color": "#ecf6e9"
+          }
+        ]
+      },
+      {
+        "id": "title",
+        "x": 280,
+        "y": 34,
+        "width": 860,
+        "height": 50,
+        "type": "text",
+        "text": "Settings",
+        "fontSize": 32,
+        "color": "#193a2c"
+      },
+      {
+        "id": "subtitle",
+        "x": 280,
+        "y": 94,
+        "width": 860,
+        "height": 25,
+        "type": "text",
+        "text": "Fixed fixture / 1280 x 800 / IBM Plex / English / Light",
+        "fontSize": 14,
+        "color": "#68756a"
+      },
+      {
+        "id": "content",
+        "x": 280,
+        "y": 136,
+        "width": 940,
+        "height": 596,
+        "type": "container",
+        "color": "#ffffff",
+        "radius": 12,
+        "border": "#d7ddd5",
+        "children": [
+          {
+            "id": "icon",
+            "x": 28,
+            "y": 28,
+            "width": 32,
+            "height": 32,
+            "type": "icon",
+            "color": "#193a2c"
+          },
+          {
+            "id": "section",
+            "x": 76,
+            "y": 30,
+            "width": 700,
+            "height": 28,
+            "type": "text",
+            "text": "Display preferences",
+            "fontSize": 20,
+            "color": "#193a2c"
+          },
+          {
+            "id": "setting-0",
+            "x": 28,
+            "y": 88,
+            "width": 884,
+            "height": 54,
+            "type": "container",
+            "color": "#f1f4ef",
+            "radius": 8,
+            "children": [
+              {
+                "id": "setting-label-0",
+                "x": 18,
+                "y": 16,
+                "width": 530,
+                "height": 24,
+                "type": "text",
+                "text": "Theme: Light",
+                "fontSize": 16
+              },
+              {
+                "id": "setting-button-0",
+                "x": 690,
+                "y": 10,
+                "width": 168,
+                "height": 34,
+                "type": "button",
+                "text": "Configure",
+                "color": "#e6f3d5",
+                "fontSize": 14
+              }
+            ]
+          },
+          {
+            "id": "setting-1",
+            "x": 28,
+            "y": 158,
+            "width": 884,
+            "height": 54,
+            "type": "container",
+            "color": "#f1f4ef",
+            "radius": 8,
+            "children": [
+              {
+                "id": "setting-label-1",
+                "x": 18,
+                "y": 16,
+                "width": 530,
+                "height": 24,
+                "type": "text",
+                "text": "Language: English",
+                "fontSize": 16
+              },
+              {
+                "id": "setting-button-1",
+                "x": 690,
+                "y": 10,
+                "width": 168,
+                "height": 34,
+                "type": "button",
+                "text": "Configure",
+                "color": "#e6f3d5",
+                "fontSize": 14
+              }
+            ]
+          },
+          {
+            "id": "setting-2",
+            "x": 28,
+            "y": 228,
+            "width": 884,
+            "height": 54,
+            "type": "container",
+            "color": "#f1f4ef",
+            "radius": 8,
+            "children": [
+              {
+                "id": "setting-label-2",
+                "x": 18,
+                "y": 16,
+                "width": 530,
+                "height": 24,
+                "type": "text",
+                "text": "Scale: 100%",
+                "fontSize": 16
+              },
+              {
+                "id": "setting-button-2",
+                "x": 690,
+                "y": 10,
+                "width": 168,
+                "height": 34,
+                "type": "button",
+                "text": "Configure",
+                "color": "#e6f3d5",
+                "fontSize": 14
+              }
+            ]
+          },
+          {
+            "id": "setting-3",
+            "x": 28,
+            "y": 298,
+            "width": 884,
+            "height": 54,
+            "type": "container",
+            "color": "#f1f4ef",
+            "radius": 8,
+            "children": [
+              {
+                "id": "setting-label-3",
+                "x": 18,
+                "y": 16,
+                "width": 530,
+                "height": 24,
+                "type": "text",
+                "text": "Motion state: Final frame",
+                "fontSize": 16
+              },
+              {
+                "id": "setting-button-3",
+                "x": 690,
+                "y": 10,
+                "width": 168,
+                "height": 34,
+                "type": "button",
+                "text": "Configure",
+                "color": "#e6f3d5",
+                "fontSize": 14
+              }
+            ]
+          },
+          {
+            "id": "visual-strip",
+            "x": 28,
+            "y": 470,
+            "width": 884,
+            "height": 44,
+            "type": "gradient",
+            "radius": 8
+          },
+          {
+            "id": "input",
+            "x": 28,
+            "y": 538,
+            "width": 656,
+            "height": 36,
+            "type": "input",
+            "text": "Type a message...",
+            "fontSize": 14,
+            "color": "#f1f4ef"
+          },
+          {
+            "id": "submit",
+            "x": 708,
+            "y": 538,
+            "width": 204,
+            "height": 36,
+            "type": "button",
+            "text": "Save fixture",
+            "fontSize": 14,
+            "color": "#193a2c",
+            "textColor": "#ffffff"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "05-media-player",
+    "name": "Media Player",
+    "width": 1280,
+    "height": 800,
+    "background": "#f6f7f2",
+    "nodes": [
+      {
+        "id": "sidebar",
+        "x": 24,
+        "y": 24,
+        "width": 224,
+        "height": 752,
+        "type": "container",
+        "color": "#193a2c",
+        "radius": 16,
+        "children": [
+          {
+            "id": "brand",
+            "x": 20,
+            "y": 26,
+            "width": 180,
+            "height": 32,
+            "type": "text",
+            "text": "CROSSUI / LAB",
+            "fontSize": 20,
+            "color": "#ecf6e9"
+          },
+          {
+            "id": "nav-0",
+            "x": 20,
+            "y": 102,
+            "width": 180,
+            "height": 34,
+            "type": "text",
+            "text": "Overview",
+            "fontSize": 16,
+            "color": "#ecf6e9"
+          },
+          {
+            "id": "nav-1",
+            "x": 20,
+            "y": 156,
+            "width": 180,
+            "height": 34,
+            "type": "text",
+            "text": "Messages",
+            "fontSize": 16,
+            "color": "#ecf6e9"
+          },
+          {
+            "id": "nav-2",
+            "x": 20,
+            "y": 210,
+            "width": 180,
+            "height": 34,
+            "type": "text",
+            "text": "Editor",
+            "fontSize": 16,
+            "color": "#ecf6e9"
+          },
+          {
+            "id": "nav-3",
+            "x": 20,
+            "y": 264,
+            "width": 180,
+            "height": 34,
+            "type": "text",
+            "text": "Settings",
+            "fontSize": 16,
+            "color": "#ecf6e9"
+          },
+          {
+            "id": "nav-4",
+            "x": 20,
+            "y": 318,
+            "width": 180,
+            "height": 34,
+            "type": "text",
+            "text": "Media",
+            "fontSize": 16,
+            "color": "#ecf6e9"
+          },
+          {
+            "id": "nav-5",
+            "x": 20,
+            "y": 372,
+            "width": 180,
+            "height": 34,
+            "type": "text",
+            "text": "Reports",
+            "fontSize": 16,
+            "color": "#ecf6e9"
+          }
+        ]
+      },
+      {
+        "id": "title",
+        "x": 280,
+        "y": 34,
+        "width": 860,
+        "height": 50,
+        "type": "text",
+        "text": "Media Player",
+        "fontSize": 32,
+        "color": "#193a2c"
+      },
+      {
+        "id": "subtitle",
+        "x": 280,
+        "y": 94,
+        "width": 860,
+        "height": 25,
+        "type": "text",
+        "text": "Fixed fixture / 1280 x 800 / IBM Plex / English / Light",
+        "fontSize": 14,
+        "color": "#68756a"
+      },
+      {
+        "id": "content",
+        "x": 280,
+        "y": 136,
+        "width": 940,
+        "height": 596,
+        "type": "container",
+        "color": "#ffffff",
+        "radius": 12,
+        "border": "#d7ddd5",
+        "children": [
+          {
+            "id": "icon",
+            "x": 28,
+            "y": 28,
+            "width": 32,
+            "height": 32,
+            "type": "icon",
+            "color": "#193a2c"
+          },
+          {
+            "id": "section",
+            "x": 76,
+            "y": 30,
+            "width": 700,
+            "height": 28,
+            "type": "text",
+            "text": "Now playing",
+            "fontSize": 20,
+            "color": "#193a2c"
+          },
+          {
+            "id": "cover",
+            "x": 28,
+            "y": 88,
+            "width": 350,
+            "height": 350,
+            "type": "image"
+          },
+          {
+            "id": "track",
+            "x": 410,
+            "y": 110,
+            "width": 440,
+            "height": 42,
+            "type": "text",
+            "text": "A quiet afternoon",
+            "fontSize": 28
+          },
+          {
+            "id": "artist",
+            "x": 410,
+            "y": 164,
+            "width": 440,
+            "height": 28,
+            "type": "text",
+            "text": "CrossUI audio fixture",
+            "fontSize": 16
+          },
+          {
+            "id": "progress",
+            "x": 410,
+            "y": 220,
+            "width": 440,
+            "height": 18,
+            "type": "gradient",
+            "radius": 9
+          },
+          {
+            "id": "play",
+            "x": 410,
+            "y": 270,
+            "width": 140,
+            "height": 48,
+            "type": "button",
+            "text": "Play",
+            "fontSize": 16,
+            "color": "#e6f3d5"
+          },
+          {
+            "id": "input",
+            "x": 28,
+            "y": 538,
+            "width": 656,
+            "height": 36,
+            "type": "input",
+            "text": "Type a message...",
+            "fontSize": 14,
+            "color": "#f1f4ef"
+          },
+          {
+            "id": "submit",
+            "x": 708,
+            "y": 538,
+            "width": 204,
+            "height": 36,
+            "type": "button",
+            "text": "Save fixture",
+            "fontSize": 14,
+            "color": "#193a2c",
+            "textColor": "#ffffff"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "06-complex-modal",
+    "name": "Complex Modal",
+    "width": 1280,
+    "height": 800,
+    "background": "#f6f7f2",
+    "nodes": [
+      {
+        "id": "sidebar",
+        "x": 24,
+        "y": 24,
+        "width": 224,
+        "height": 752,
+        "type": "container",
+        "color": "#193a2c",
+        "radius": 16,
+        "children": [
+          {
+            "id": "brand",
+            "x": 20,
+            "y": 26,
+            "width": 180,
+            "height": 32,
+            "type": "text",
+            "text": "CROSSUI / LAB",
+            "fontSize": 20,
+            "color": "#ecf6e9"
+          },
+          {
+            "id": "nav-0",
+            "x": 20,
+            "y": 102,
+            "width": 180,
+            "height": 34,
+            "type": "text",
+            "text": "Overview",
+            "fontSize": 16,
+            "color": "#ecf6e9"
+          },
+          {
+            "id": "nav-1",
+            "x": 20,
+            "y": 156,
+            "width": 180,
+            "height": 34,
+            "type": "text",
+            "text": "Messages",
+            "fontSize": 16,
+            "color": "#ecf6e9"
+          },
+          {
+            "id": "nav-2",
+            "x": 20,
+            "y": 210,
+            "width": 180,
+            "height": 34,
+            "type": "text",
+            "text": "Editor",
+            "fontSize": 16,
+            "color": "#ecf6e9"
+          },
+          {
+            "id": "nav-3",
+            "x": 20,
+            "y": 264,
+            "width": 180,
+            "height": 34,
+            "type": "text",
+            "text": "Settings",
+            "fontSize": 16,
+            "color": "#ecf6e9"
+          },
+          {
+            "id": "nav-4",
+            "x": 20,
+            "y": 318,
+            "width": 180,
+            "height": 34,
+            "type": "text",
+            "text": "Media",
+            "fontSize": 16,
+            "color": "#ecf6e9"
+          },
+          {
+            "id": "nav-5",
+            "x": 20,
+            "y": 372,
+            "width": 180,
+            "height": 34,
+            "type": "text",
+            "text": "Reports",
+            "fontSize": 16,
+            "color": "#ecf6e9"
+          }
+        ]
+      },
+      {
+        "id": "title",
+        "x": 280,
+        "y": 34,
+        "width": 860,
+        "height": 50,
+        "type": "text",
+        "text": "Complex Modal",
+        "fontSize": 32,
+        "color": "#193a2c"
+      },
+      {
+        "id": "subtitle",
+        "x": 280,
+        "y": 94,
+        "width": 860,
+        "height": 25,
+        "type": "text",
+        "text": "Fixed fixture / 1280 x 800 / IBM Plex / English / Light",
+        "fontSize": 14,
+        "color": "#68756a"
+      },
+      {
+        "id": "content",
+        "x": 280,
+        "y": 136,
+        "width": 940,
+        "height": 596,
+        "type": "container",
+        "color": "#ffffff",
+        "radius": 12,
+        "border": "#d7ddd5",
+        "children": [
+          {
+            "id": "icon",
+            "x": 28,
+            "y": 28,
+            "width": 32,
+            "height": 32,
+            "type": "icon",
+            "color": "#193a2c"
+          },
+          {
+            "id": "section",
+            "x": 76,
+            "y": 30,
+            "width": 700,
+            "height": 28,
+            "type": "text",
+            "text": "Publish review",
+            "fontSize": 20,
+            "color": "#193a2c"
+          },
+          {
+            "id": "backdrop",
+            "x": 28,
+            "y": 88,
+            "width": 884,
+            "height": 360,
+            "type": "gradient",
+            "radius": 10
+          },
+          {
+            "id": "modal",
+            "x": 210,
+            "y": 116,
+            "width": 520,
+            "height": 280,
+            "type": "blur",
+            "radius": 14,
+            "color": "#ffffffcc",
+            "shadow": true,
+            "children": [
+              {
+                "id": "modal-title",
+                "x": 24,
+                "y": 26,
+                "width": 470,
+                "height": 36,
+                "type": "text",
+                "text": "Ready to publish?",
+                "fontSize": 26
+              },
+              {
+                "id": "modal-body",
+                "x": 24,
+                "y": 92,
+                "width": 470,
+                "height": 66,
+                "type": "text",
+                "text": "This fixture includes nested layout, text, blur and shadow.",
+                "fontSize": 16
+              },
+              {
+                "id": "modal-submit",
+                "x": 24,
+                "y": 202,
+                "width": 180,
+                "height": 42,
+                "type": "button",
+                "text": "Confirm",
+                "fontSize": 16,
+                "color": "#e6f3d5"
+              }
+            ]
+          },
+          {
+            "id": "input",
+            "x": 28,
+            "y": 538,
+            "width": 656,
+            "height": 36,
+            "type": "input",
+            "text": "Type a message...",
+            "fontSize": 14,
+            "color": "#f1f4ef"
+          },
+          {
+            "id": "submit",
+            "x": 708,
+            "y": 538,
+            "width": 204,
+            "height": 36,
+            "type": "button",
+            "text": "Save fixture",
+            "fontSize": 14,
+            "color": "#193a2c",
+            "textColor": "#ffffff"
+          }
+        ]
+      }
+    ]
+  }
+]

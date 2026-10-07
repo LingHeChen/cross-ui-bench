@@ -1,0 +1,825 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>CrossUI · Benchmark Report</title>
+    <style>
+      @font-face {
+        font-family: Plex;
+        src: url(data:font/woff2;base64,__FONT__) format("woff2");
+      }
+      * {
+        box-sizing: border-box;
+      }
+      html {
+        scroll-behavior: smooth;
+      }
+      body {
+        margin: 0;
+        background: #f4f3ec;
+        color: #18382d;
+        font-family: Plex, "PingFang SC", sans-serif;
+        line-height: 1.6;
+      }
+      button,
+      select,
+      input {
+        font: inherit;
+      }
+      a {
+        color: inherit;
+        text-underline-offset: 4px;
+      }
+      header {
+        padding: 22px 5vw;
+        border-bottom: 1px solid #18382d30;
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+        align-items: center;
+      }
+      header strong {
+        letter-spacing: 0.18em;
+        font-size: 14px;
+      }
+      nav {
+        display: flex;
+        gap: 24px;
+        font-size: 13px;
+      }
+      main {
+        max-width: 1420px;
+        margin: auto;
+        padding: 0 5vw 80px;
+      }
+      .hero {
+        padding: 64px 0 48px;
+        border-bottom: 1px solid #18382d35;
+        display: grid;
+        grid-template-columns: 1.6fr 1fr;
+        gap: 70px;
+      }
+      .eyebrow {
+        font-size: 12px;
+        letter-spacing: 0.18em;
+        text-transform: uppercase;
+        color: #647369;
+      }
+      h1 {
+        font-size: clamp(48px, 7vw, 92px);
+        font-weight: 400;
+        line-height: 1.02;
+        letter-spacing: -0.06em;
+        margin: 20px 0 28px;
+      }
+      h1 em {
+        color: #b94d2d;
+        font-style: normal;
+      }
+      h2 {
+        font-weight: 400;
+        font-size: 34px;
+        line-height: 1.2;
+        margin: 8px 0 18px;
+      }
+      h3 {
+        font-size: 18px;
+        font-weight: 500;
+      }
+      .meta {
+        font-size: 14px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        align-self: end;
+        padding-bottom: 22px;
+      }
+      .meta span {
+        display: block;
+        color: #778378;
+        font-size: 12px;
+      }
+      .meta b {
+        font-weight: 500;
+      }
+      .lead {
+        max-width: 660px;
+        color: #5c6e61;
+        font-size: 17px;
+      }
+      .button {
+        border: 1px solid #18382d55;
+        border-radius: 0;
+        background: none;
+        padding: 8px 15px;
+        cursor: pointer;
+      }
+      .button:hover {
+        background: #e8ecdf;
+      }
+      .cover {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        margin: 34px 0;
+        gap: 0;
+        border: 1px solid #18382d30;
+      }
+      .coverage {
+        padding: 24px;
+        border-right: 1px solid #18382d30;
+      }
+      .coverage:last-child {
+        border: 0;
+      }
+      .number {
+        font-size: 36px;
+        line-height: 1.2;
+        letter-spacing: -0.03em;
+      }
+      .coverage small {
+        color: #718073;
+      }
+      section {
+        padding-top: 56px;
+        margin-top: 20px;
+        scroll-margin-top: 18px;
+      }
+      .section-top {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        gap: 28px;
+      }
+      .section-top p {
+        max-width: 620px;
+        font-size: 14px;
+        color: #637266;
+      }
+      .controls {
+        display: flex;
+        gap: 12px;
+        align-items: center;
+        flex-wrap: wrap;
+        font-size: 13px;
+      }
+      select,
+      input {
+        background: #fffef7;
+        border: 1px solid #bec8bb;
+        border-radius: 0;
+        padding: 9px;
+        max-width: 240px;
+      }
+      .legend {
+        display: flex;
+        gap: 22px;
+        font-size: 12px;
+        margin: 14px 0;
+      }
+      .legend i {
+        width: 10px;
+        height: 10px;
+        display: inline-block;
+        margin-right: 6px;
+      }
+      .e {
+        background: #315d46;
+      }
+      .t {
+        background: #cb643e;
+      }
+      .f {
+        background: #627b9f;
+      }
+      .panel {
+        background: #fffef8;
+        border: 1px solid #cbd3c6;
+        padding: 24px;
+        margin-top: 18px;
+      }
+      .chart {
+        width: 100%;
+        height: auto;
+        display: block;
+      }
+      .table-wrap {
+        overflow: auto;
+        margin-top: 22px;
+      }
+      table {
+        border-collapse: collapse;
+        width: 100%;
+        font-size: 13px;
+        white-space: nowrap;
+      }
+      th {
+        text-align: left;
+        padding: 13px 12px;
+        border-bottom: 2px solid #18382d;
+        font-weight: 500;
+        color: #657369;
+      }
+      td {
+        padding: 13px 12px;
+        border-bottom: 1px solid #d8dfd1;
+        font-variant-numeric: tabular-nums;
+      }
+      tr:hover td {
+        background: #edf2e6;
+      }
+      .tag {
+        font-size: 11px;
+        padding: 3px 7px;
+        background: #e5efda;
+        color: #315d46;
+      }
+      .tag.warn {
+        background: #f5e5d6;
+        color: #9e4f2e;
+      }
+      .empty {
+        border: 1px dashed #bdc8b8;
+        padding: 26px;
+        color: #718073;
+      }
+      .note {
+        font-size: 13px;
+        border-left: 3px solid #cb643e;
+        padding: 12px 18px;
+        background: #efece1;
+        margin: 20px 0;
+        color: #596958;
+      }
+      .status-list {
+        font-size: 13px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+      }
+      .status-list p {
+        margin: 0;
+        padding: 12px 0;
+        border-bottom: 1px solid #d1d9c9;
+      }
+      .pixel-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 18px;
+      }
+      .pixel-grid figure {
+        margin: 0;
+      }
+      .pixel-grid img {
+        width: 100%;
+        display: block;
+        border: 1px solid #bdc8b8;
+      }
+      .pixel-grid figcaption {
+        font-size: 12px;
+        margin: 8px 0;
+      }
+      .diff-overlay {
+        position: relative;
+      }
+      .diff-overlay img + img {
+        position: absolute;
+        inset: 0;
+        opacity: 0.5;
+      }
+      details {
+        margin: 16px 0;
+        font-size: 13px;
+      }
+      summary {
+        cursor: pointer;
+      }
+      footer {
+        border-top: 1px solid #becbb5;
+        padding-top: 28px;
+        margin-top: 60px;
+        color: #788476;
+        font-size: 12px;
+        display: flex;
+        justify-content: space-between;
+      }
+      .conclusion {
+        font-size: 19px;
+        line-height: 1.8;
+        padding: 28px 0;
+        border-top: 1px solid #bdc8b8;
+      }
+      .progress {
+        height: 4px;
+        background: #d9dfd2;
+        margin-top: 15px;
+      }
+      .progress > i {
+        display: block;
+        height: 100%;
+        background: #315d46;
+      }
+      .subtle {
+        font-size: 12px;
+        color: #7a887a;
+      }
+      @media (max-width: 800px) {
+        nav {
+          gap: 10px;
+        }
+        header {
+          align-items: flex-start;
+        }
+        .hero {
+          grid-template-columns: 1fr;
+          gap: 20px;
+          padding: 34px 0;
+        }
+        .cover {
+          grid-template-columns: 1fr 1fr;
+        }
+        .coverage {
+          border-bottom: 1px solid #18382d30;
+        }
+        .section-top {
+          display: block;
+        }
+        .pixel-grid,
+        .status-list {
+          grid-template-columns: 1fr;
+        }
+        h2 {
+          font-size: 28px;
+        }
+      }
+      @media print {
+        button,
+        .controls {
+          display: none;
+        }
+        body {
+          background: #fff;
+        }
+        section {
+          break-inside: avoid;
+        }
+        header {
+          position: static;
+        }
+        .hero {
+          padding-top: 20px;
+        }
+        h1 {
+          font-size: 56px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <strong>CROSSUI / FIELD REPORT</strong>
+      <nav>
+        <a href="#css">CSS</a><a href="#storage">STORAGE</a
+        ><a href="#three">3D</a><a href="#pixel">PIXEL</a>
+      </nav>
+    </header>
+    <main>
+      <div class="hero">
+        <div>
+          <div class="eyebrow">Performance study · Local release builds</div>
+          <h1>One machine.<br /><em>Four workloads.</em></h1>
+          <p class="lead" id="lead"></p>
+          <button class="button" onclick="location.reload()">
+            刷新当前报告 ↻
+          </button>
+        </div>
+        <div class="meta">
+          <div><span>DEVICE</span><b>Apple M4 · 32 GiB</b></div>
+          <div><span>DISPLAY</span><b>固定 60 Hz · DPR 2</b></div>
+          <div><span>RUNTIMES</span><b>Electron / Tauri / Flutter</b></div>
+          <div><span>UPDATED</span><b id="updated"></b></div>
+          <div><span>DYNAMIC PROTOCOL</span><b>10s / 30s / 5s × 5</b></div>
+          <div><span>CLASSIFICATION</span><b>运行时对比 / 语义参考</b></div>
+        </div>
+      </div>
+      <div class="cover" id="coverage"></div>
+      <div class="conclusion" id="finding"></div>
+      <section id="css">
+        <div class="section-top">
+          <div>
+            <div class="eyebrow">01 / CSS animation stress</div>
+            <h2>动画与合成压力</h2>
+          </div>
+          <p>
+            8 种 workload × 100 / 500 / 1000 / 5000 节点。Electron/Tauri
+            使用同一 Web 实现；Flutter 是语义等价参考，帧时间来自引擎，不能用于
+            CSS API 兼容性排名。
+          </p>
+        </div>
+        <div class="controls">
+          <label
+            >节点数
+            <select id="nodes">
+              <option>100</option>
+              <option>500</option>
+              <option>1000</option>
+              <option>5000</option>
+            </select></label
+          ><label
+            >显示
+            <select id="class">
+              <option value="all">含 Flutter 语义参考</option>
+              <option value="web">仅 Electron / Tauri</option>
+            </select></label
+          >
+        </div>
+        <div class="legend">
+          <span><i class="e"></i>Electron</span
+          ><span><i class="t"></i>Tauri</span
+          ><span><i class="f"></i>Flutter · semantic</span>
+        </div>
+        <div class="panel" id="css-chart"></div>
+        <div class="table-wrap" id="css-table"></div>
+      </section>
+      <section id="storage">
+        <div class="section-top">
+          <div>
+            <div class="eyebrow">02 / Local storage</div>
+            <h2>文件与 SQLite</h2>
+          </div>
+          <p>
+            Node fs / Rust std::fs / Dart io；各使用原生
+            SQLite。每项预热一次、测量五次。单文件写入包含
+            flush/fsync，小文件创建不逐文件同步。读取是页缓存未控制的暖读，不能等同磁盘冷读。
+          </p>
+        </div>
+        <div class="controls">
+          <label
+            >操作
+            <select id="operation"></select></label
+          ><label
+            >数据类型
+            <select id="entropy">
+              <option value="all">全部</option>
+              <option value="random">随机块</option>
+              <option value="compressible">可压缩块</option>
+            </select></label
+          >
+        </div>
+        <div class="table-wrap" id="storage-table"></div>
+        <div class="note">
+          存储计时在原生 API
+          内执行，初始化、内容/行数校验和清理不计时。随机数据是重复的固定种子
+          1MiB 高熵块；随机 IO 为 2048 次 4KiB 操作。SQLite
+          版本会单独显示，不把不同引擎版本当作完全相同实现。
+        </div>
+      </section>
+      <section id="three">
+        <div class="section-top">
+          <div>
+            <div class="eyebrow">03 / Mesh & skeletal animation</div>
+            <h2>从参数扩展到 2.1GB</h2>
+          </div>
+          <p>
+            骨骼、三角形、角色数量、贴图分辨率分别扩展。静态载入指标在每次准备阶段采集。TTFM
+            是 CPU 提交加下一次回调的代理，非 GPU 完成确认；GPU
+            上传/解码尚未独立计时。
+          </p>
+        </div>
+        <div class="controls">
+          <label
+            >筛选
+            <input id="asset-filter" placeholder="模型 / bone / scale / mixed"
+          /></label>
+        </div>
+        <div class="table-wrap" id="three-table"></div>
+        <div class="note">
+          Tauri 的进程树采集不完整覆盖系统 WebKit XPC 进程，CPU/RSS
+          不用于跨壳比较。系统缓存未控制，固定测试顺序不支持把载入时间差异全部归因于运行时。
+        </div>
+      </section>
+      <section id="pixel">
+        <div class="section-top">
+          <div>
+            <div class="eyebrow">04 / Pixel consistency</div>
+            <h2>先看布局，再看像素</h2>
+          </div>
+          <p>
+            六个固定 fixture，真实原生壳截图。统一
+            1280×800、DPR2、英文、浅色、固定状态、相同本地 IBM Plex TTF。Flutter
+            作为自绘语义视觉参考。
+          </p>
+        </div>
+        <div class="controls">
+          <label
+            >Fixture
+            <select id="fixture"></select></label
+          ><label
+            >对比
+            <select id="pixel-runtime">
+              <option value="tauri">Tauri</option>
+              <option value="flutter">Flutter</option>
+            </select></label
+          ><label
+            >叠加 <input type="range" id="opacity" min="0" max="100" value="50"
+          /></label>
+        </div>
+        <div id="pixel-view"></div>
+        <div class="table-wrap" id="pixel-table"></div>
+        <div class="note">
+          Pixel diff 阈值 0.1，忽略 AA 分类；SSIM 在固定 640×400
+          采样图计算。Geometry diff 比较实际渲染节点边界。文字边界由 Web Range
+          与 Flutter TextPainter 得到，其测量定义不同，不按 bit-identical
+          判定合格。
+        </div>
+      </section>
+      <section>
+        <div class="eyebrow">Coverage & evidence</div>
+        <h2>测试范围与未支持项</h2>
+        <div class="status-list" id="status"></div>
+        <details>
+          <summary>查看失败或跳过的参数</summary>
+          <div class="table-wrap" id="failures"></div>
+        </details>
+        <div class="note">
+          当前只有本机 macOS 60Hz。120Hz 需要操作者切换固定刷新率后另跑；Windows
+          / Linux 未测试。Flutter native 3D、Tauri native wgpu
+          后端尚未实现，报告不给它们补造成绩。冷启动、GPU utilization / GPU
+          memory / private memory 未提供独立可靠采样。
+        </div>
+      </section>
+      <footer>
+        <span>CROSSUI / Reproducible evidence, bounded conclusions.</span
+        ><span id="source"></span>
+      </footer>
+    </main>
+    <script id="data" type="application/json">
+      __DATA__
+    </script>
+    <script>
+      const D = JSON.parse(document.querySelector("#data").textContent),
+        $ = (id) => document.getElementById(id),
+        esc = (s) =>
+          String(s ?? "").replace(
+            /[&<>"']/g,
+            (c) =>
+              ({
+                "&": "&amp;",
+                "<": "&lt;",
+                ">": "&gt;",
+                '"': "&quot;",
+                "'": "&#39;",
+              })[c],
+          ),
+        fmt = (v, n = 2) => (typeof v === "number" ? v.toFixed(n) : "—"),
+        med = (a) => {
+          const s = [...a].sort((a, b) => a - b);
+          return s.length ? s[Math.floor(s.length / 2)] : null;
+        },
+        runtime = (r) =>
+          r.runtime.startsWith("electron")
+            ? "Electron"
+            : r.runtime.startsWith("tauri")
+              ? "Tauri"
+              : "Flutter",
+        table = (headers, rows) =>
+          rows.length
+            ? `<table><thead><tr>${headers.map((h) => `<th>${esc(h)}</th>`).join("")}</tr></thead><tbody>${rows.map((row) => `<tr>${row.map((v) => `<td>${v}</td>`).join("")}</tr>`).join("")}</tbody></table>`
+            : '<div class="empty">此项尚无完整结果。报告仅展示已保存并校验的数据。</div>',
+        evidence = (r) => (r.raw ? `<a href="${esc(r.raw)}">JSON ↗</a>` : "—");
+      $("updated").textContent = new Date(D.updated).toLocaleString("zh-CN");
+      const done = D.jobs.filter((j) => j.status === "complete").length,
+        total = D.jobs.length;
+      const incomplete =
+        D.jobs.some(
+          (j) => !["complete", "failed", "skipped"].includes(j.status),
+        ) ||
+        !total ||
+        D.pixel.length < 12;
+      $("lead").textContent = incomplete
+        ? "报告正在采集完整矩阵。已完成结果与待运行项分别显示；刷新可读取最新保存的进度。"
+        : "本机完整矩阵已结束。以下结果仅适用于所列负载、协议与环境，不推导通用框架排名。";
+      const css = D.results.filter((r) => r.benchmark === "css-animation"),
+        three = D.results.filter((r) => r.benchmark === "skeletal-3d");
+      $("coverage").innerHTML = [
+        ["CSS", css.length, 96],
+        ["STORAGE", D.storage.length, 372],
+        ["3D", three.length, D.expected3d],
+        ["PIXEL", D.pixel.length, 12],
+      ]
+        .map(
+          ([name, a, b]) =>
+            `<div class="coverage"><div class="eyebrow">${name}</div><div class="number">${a}<span style="font-size:17px;color:#889280"> / ${b}</span></div><small>${a >= b ? "已完成" : incomplete ? "持续采集中" : "见失败或阈值停止说明"}</small><div class="progress"><i style="width:${Math.min(100, (100 * a) / b)}%"></i></div></div>`,
+        )
+        .join("");
+      $("finding").textContent = incomplete
+        ? `完整矩阵已完成 ${done} / ${total} 组。此前固定 60Hz 的 2.1GB 结果显示：Tauri 在几何和混合配方帧率分别高约 6.7% 与 9.6%，纹理配方两者均达到 60 FPS。CSS、存储和视觉结论需看各自已完成数据。`
+        : `本轮矩阵已结束：成功 ${done} / ${total} 组；失败与达到阈值后停止的项目在覆盖说明中列出。按下面各类负载分别判断，Flutter 语义参考与浏览器 API 等价测试分别展示。`;
+      function drawCss() {
+        const nodes = Number($("nodes").value),
+          rs = css.filter(
+            (r) =>
+              r.parameters.nodes === nodes &&
+              ($("class").value !== "web" || runtime(r) !== "Flutter"),
+          );
+        const cases = [
+          "translate",
+          "scale-rotate",
+          "opacity",
+          "blur",
+          "backdrop-blur",
+          "nested-transform",
+          "scroll-animation",
+          "mixed",
+        ];
+        let svg =
+          '<svg class="chart" viewBox="0 0 1080 460" role="img" aria-label="各 workload 的五轮 FPS 中位数">';
+        for (let i = 0; i < cases.length; i++) {
+          const y = 30 + i * 52;
+          svg += `<text x="0" y="${y + 15}" font-size="13" fill="#18382d">${cases[i]}</text>`;
+          for (let k = 0; k < 3; k++) {
+            const name = ["Electron", "Tauri", "Flutter"][k],
+              r = rs.find((r) => r.case === cases[i] && runtime(r) === name),
+              fps = r?.summary.fpsAverage?.median;
+            svg += `<line x1="170" x2="1020" y1="${y + k * 14}" y2="${y + k * 14}" stroke="#e8eddf"/><rect x="170" y="${y + k * 14 - 5}" width="${typeof fps === "number" ? (Math.min(60, fps) / 60) * 800 : 0}" height="10" fill="${["#315d46", "#cb643e", "#627b9f"][k]}"/><text x="1030" y="${y + k * 14 + 4}" font-size="10" fill="#657369">${fmt(fps, 1)}</text>`;
+          }
+        }
+        svg += "</svg>";
+        $("css-chart").innerHTML = svg;
+        $("css-table").innerHTML = table(
+          [
+            "Case",
+            "Runtime",
+            "FPS 中位数",
+            "FPS 范围",
+            "p95(ms)",
+            "p99(ms)",
+            "Class",
+            "证据",
+          ],
+          rs.map((r) => [
+            esc(r.case),
+            runtime(r),
+            fmt(r.summary.fpsAverage?.median),
+            `${fmt(r.summary.fpsAverage?.min)}–${fmt(r.summary.fpsAverage?.max)}`,
+            fmt(r.summary.frameP95Ms?.median),
+            fmt(r.summary.frameP99Ms?.median),
+            r.comparisonClass === "runtime-parity" ? "运行时对比" : "语义参考",
+            evidence(r),
+          ]),
+        );
+      }
+      const operations = [
+        ...new Set(D.storage.map((r) => r.parameters.operation)),
+      ];
+      $("operation").innerHTML = operations
+        .map((o) => `<option>${esc(o)}</option>`)
+        .join("");
+      function drawStorage() {
+        const rs = D.storage.filter(
+          (r) =>
+            r.parameters.operation === $("operation").value &&
+            ($("entropy").value === "all" ||
+              r.parameters.entropy === $("entropy").value),
+        );
+        $("storage-table").innerHTML = table(
+          [
+            "操作",
+            "Runtime",
+            "数据",
+            "类型",
+            "时间中位数(ms)",
+            "min–max(ms)",
+            "MiB/s",
+            "SQLite",
+            "证据",
+          ],
+          rs.map((r) => {
+            const ts = r.runs.map((x) => x.elapsedMs),
+              p = r.parameters,
+              m = med(ts);
+            return [
+              esc(p.operation),
+              runtime(r),
+              p.bytes
+                ? esc((p.bytes / 1048576).toFixed(3) + " MiB")
+                : p.count
+                  ? esc(p.count + " × " + p.fileBytes + " B")
+                  : esc(p.rows + " rows"),
+              esc(p.entropy ?? "SQL"),
+              fmt(m, 3),
+              fmt(Math.min(...ts), 3) + "–" + fmt(Math.max(...ts), 3),
+              p.bytes
+                ? fmt(
+                    (p.operation.startsWith("random") ? 2048 * 4096 : p.bytes) /
+                      1048576 /
+                      (m / 1000),
+                  )
+                : "—",
+              esc(r.runs[0].sqliteVersion ?? "—"),
+              evidence(r),
+            ];
+          }),
+        );
+      }
+      function drawThree() {
+        const q = $("asset-filter").value.toLowerCase(),
+          rs = three.filter((r) =>
+            (r.asset + " " + r.case).toLowerCase().includes(q),
+          );
+        $("three-table").innerHTML = table(
+          [
+            "模型",
+            "Runtime",
+            "角色",
+            "FPS",
+            "min–max",
+            "p95(ms)",
+            "TTFM(s)",
+            "来源阶段",
+            "证据",
+          ],
+          rs.map((r) => [
+            esc(r.asset),
+            runtime(r),
+            esc(r.parameters.characterCount),
+            fmt(r.summary.fpsAverage?.median),
+            fmt(r.summary.fpsAverage?.min) +
+              "–" +
+              fmt(r.summary.fpsAverage?.max),
+            fmt(r.summary.frameP95Ms?.median),
+            fmt(r.loadSummary?.ttfmMs?.median / 1000),
+            esc(r.phase ?? "current"),
+            evidence(r),
+          ]),
+        );
+      }
+      $("fixture").innerHTML = [...new Set(D.pixel.map((p) => p.fixture))]
+        .map((f) => `<option>${esc(f)}</option>`)
+        .join("");
+      function drawPixel() {
+        const p = D.pixel.find(
+          (p) =>
+            p.fixture === $("fixture").value &&
+            p.runtime === $("pixel-runtime").value,
+        );
+        if (!p) {
+          $("pixel-view").innerHTML =
+            '<div class="empty">截图或对比尚未完成。</div>';
+          return;
+        }
+        $("pixel-view").innerHTML =
+          `<div class="pixel-grid panel"><figure><div class="diff-overlay"><img src="${esc(p.referenceImage)}" alt="Electron 参考截图"><img id="overlay" src="${esc(p.comparisonImage)}" alt="${esc(p.runtime)} 对比截图" style="opacity:${Number($("opacity").value) / 100}"></div><figcaption>真实截图叠加，使用滑块查看布局位置差异。</figcaption></figure><figure><img src="${esc(p.diffImage)}" alt="像素差异图"><figcaption>Pixel diff ${fmt(p.pixelDiffPercent)}% · SSIM ${fmt(p.ssim, 4)} · Geometry 最大偏差 ${fmt(Math.max(0, ...p.geometry.filter((x) => !x.missing).map((x) => x.maxDelta)))}px</figcaption></figure></div>`;
+        $("pixel-table").innerHTML = table(
+          [
+            "Fixture",
+            "Runtime",
+            "Pixel diff %",
+            "SSIM",
+            "Geometry max px",
+            "Text bbox max px",
+          ],
+          D.pixel.map((v) => [
+            esc(v.fixture),
+            esc(v.runtime),
+            fmt(v.pixelDiffPercent),
+            fmt(v.ssim, 4),
+            fmt(
+              Math.max(
+                0,
+                ...v.geometry.filter((x) => !x.missing).map((x) => x.maxDelta),
+              ),
+            ),
+            fmt(Math.max(0, ...v.textBounds.map((x) => x.maxDelta))),
+          ]),
+        );
+      }
+      $("status").innerHTML = D.coverageNotes
+        .map((n) => `<p>${esc(n)}</p>`)
+        .join("");
+      $("failures").innerHTML = table(
+        ["参数", "状态", "原因"],
+        D.jobs
+          .filter((j) => ["failed", "skipped"].includes(j.status))
+          .map((j) => [esc(j.key), esc(j.status), esc(j.reason ?? j.error)]),
+      );
+      $("source").textContent =
+        `${D.results.length} dynamic records · ${D.storage.length} storage records · ${D.pixel.length} image pairs`;
+      for (const id of ["nodes", "class"])
+        $(id).addEventListener("change", drawCss);
+      for (const id of ["operation", "entropy"])
+        $(id).addEventListener("change", drawStorage);
+      $("asset-filter").addEventListener("input", drawThree);
+      for (const id of ["fixture", "pixel-runtime"])
+        $(id).addEventListener("change", drawPixel);
+      $("opacity").addEventListener("input", () => {
+        if ($("overlay"))
+          $("overlay").style.opacity = Number($("opacity").value) / 100;
+      });
+      drawCss();
+      drawStorage();
+      drawThree();
+      drawPixel();
+    </script>
+  </body>
+</html>

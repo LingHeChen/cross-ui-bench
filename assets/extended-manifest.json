@@ -1,0 +1,23 @@
+[
+  {
+    "path": "fonts/IBMPlexSans-Regular.ttf",
+    "size_bytes": 200500,
+    "sha256": "975dcda37d80f038dcd143c22e33ca2d97a0cc5a929aace1c749153b0fe1afa5",
+    "license": "OFL-1.1",
+    "source": "https://github.com/IBM/plex"
+  },
+  {
+    "path": "fonts/IBMPlexMono-Regular.ttf",
+    "size_bytes": 173052,
+    "sha256": "7c6fbddca4b700be918f5f6183d9bd4464fa427fe435f0b480d77fe2bb8c5a43",
+    "license": "OFL-1.1",
+    "source": "https://github.com/IBM/plex"
+  },
+  {
+    "path": "3d/studio_small_09_1k.hdr",
+    "size_bytes": 1615248,
+    "sha256": "e7cfda5f4e98e623db12b8bfd0184e048488e4855d9c83e2751fb44a32e80c45",
+    "license": "CC0-1.0",
+    "source": "https://polyhaven.com/a/studio_small_09"
+  }
+]

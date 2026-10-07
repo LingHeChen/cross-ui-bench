@@ -1,0 +1,672 @@
+{
+  "jobs": [
+    {
+      "operation": "sequential-write",
+      "bytes": 4096,
+      "entropy": "random"
+    },
+    {
+      "operation": "sequential-read",
+      "bytes": 4096,
+      "entropy": "random"
+    },
+    {
+      "operation": "random-read",
+      "bytes": 4096,
+      "entropy": "random"
+    },
+    {
+      "operation": "random-write",
+      "bytes": 4096,
+      "entropy": "random"
+    },
+    {
+      "operation": "sequential-write",
+      "bytes": 4096,
+      "entropy": "compressible"
+    },
+    {
+      "operation": "sequential-read",
+      "bytes": 4096,
+      "entropy": "compressible"
+    },
+    {
+      "operation": "random-read",
+      "bytes": 4096,
+      "entropy": "compressible"
+    },
+    {
+      "operation": "random-write",
+      "bytes": 4096,
+      "entropy": "compressible"
+    },
+    {
+      "operation": "sequential-write",
+      "bytes": 65536,
+      "entropy": "random"
+    },
+    {
+      "operation": "sequential-read",
+      "bytes": 65536,
+      "entropy": "random"
+    },
+    {
+      "operation": "random-read",
+      "bytes": 65536,
+      "entropy": "random"
+    },
+    {
+      "operation": "random-write",
+      "bytes": 65536,
+      "entropy": "random"
+    },
+    {
+      "operation": "sequential-write",
+      "bytes": 65536,
+      "entropy": "compressible"
+    },
+    {
+      "operation": "sequential-read",
+      "bytes": 65536,
+      "entropy": "compressible"
+    },
+    {
+      "operation": "random-read",
+      "bytes": 65536,
+      "entropy": "compressible"
+    },
+    {
+      "operation": "random-write",
+      "bytes": 65536,
+      "entropy": "compressible"
+    },
+    {
+      "operation": "sequential-write",
+      "bytes": 1048576,
+      "entropy": "random"
+    },
+    {
+      "operation": "sequential-read",
+      "bytes": 1048576,
+      "entropy": "random"
+    },
+    {
+      "operation": "random-read",
+      "bytes": 1048576,
+      "entropy": "random"
+    },
+    {
+      "operation": "random-write",
+      "bytes": 1048576,
+      "entropy": "random"
+    },
+    {
+      "operation": "sequential-write",
+      "bytes": 1048576,
+      "entropy": "compressible"
+    },
+    {
+      "operation": "sequential-read",
+      "bytes": 1048576,
+      "entropy": "compressible"
+    },
+    {
+      "operation": "random-read",
+      "bytes": 1048576,
+      "entropy": "compressible"
+    },
+    {
+      "operation": "random-write",
+      "bytes": 1048576,
+      "entropy": "compressible"
+    },
+    {
+      "operation": "sequential-write",
+      "bytes": 104857600,
+      "entropy": "random"
+    },
+    {
+      "operation": "sequential-read",
+      "bytes": 104857600,
+      "entropy": "random"
+    },
+    {
+      "operation": "random-read",
+      "bytes": 104857600,
+      "entropy": "random"
+    },
+    {
+      "operation": "random-write",
+      "bytes": 104857600,
+      "entropy": "random"
+    },
+    {
+      "operation": "sequential-write",
+      "bytes": 104857600,
+      "entropy": "compressible"
+    },
+    {
+      "operation": "sequential-read",
+      "bytes": 104857600,
+      "entropy": "compressible"
+    },
+    {
+      "operation": "random-read",
+      "bytes": 104857600,
+      "entropy": "compressible"
+    },
+    {
+      "operation": "random-write",
+      "bytes": 104857600,
+      "entropy": "compressible"
+    },
+    {
+      "operation": "sequential-write",
+      "bytes": 524288000,
+      "entropy": "random"
+    },
+    {
+      "operation": "sequential-read",
+      "bytes": 524288000,
+      "entropy": "random"
+    },
+    {
+      "operation": "random-read",
+      "bytes": 524288000,
+      "entropy": "random"
+    },
+    {
+      "operation": "random-write",
+      "bytes": 524288000,
+      "entropy": "random"
+    },
+    {
+      "operation": "sequential-write",
+      "bytes": 524288000,
+      "entropy": "compressible"
+    },
+    {
+      "operation": "sequential-read",
+      "bytes": 524288000,
+      "entropy": "compressible"
+    },
+    {
+      "operation": "random-read",
+      "bytes": 524288000,
+      "entropy": "compressible"
+    },
+    {
+      "operation": "random-write",
+      "bytes": 524288000,
+      "entropy": "compressible"
+    },
+    {
+      "operation": "sequential-write",
+      "bytes": 1073741824,
+      "entropy": "random"
+    },
+    {
+      "operation": "sequential-read",
+      "bytes": 1073741824,
+      "entropy": "random"
+    },
+    {
+      "operation": "random-read",
+      "bytes": 1073741824,
+      "entropy": "random"
+    },
+    {
+      "operation": "random-write",
+      "bytes": 1073741824,
+      "entropy": "random"
+    },
+    {
+      "operation": "sequential-write",
+      "bytes": 1073741824,
+      "entropy": "compressible"
+    },
+    {
+      "operation": "sequential-read",
+      "bytes": 1073741824,
+      "entropy": "compressible"
+    },
+    {
+      "operation": "random-read",
+      "bytes": 1073741824,
+      "entropy": "compressible"
+    },
+    {
+      "operation": "random-write",
+      "bytes": 1073741824,
+      "entropy": "compressible"
+    },
+    {
+      "operation": "sequential-write",
+      "bytes": 5368709120,
+      "entropy": "random"
+    },
+    {
+      "operation": "sequential-read",
+      "bytes": 5368709120,
+      "entropy": "random"
+    },
+    {
+      "operation": "random-read",
+      "bytes": 5368709120,
+      "entropy": "random"
+    },
+    {
+      "operation": "random-write",
+      "bytes": 5368709120,
+      "entropy": "random"
+    },
+    {
+      "operation": "sequential-write",
+      "bytes": 5368709120,
+      "entropy": "compressible"
+    },
+    {
+      "operation": "sequential-read",
+      "bytes": 5368709120,
+      "entropy": "compressible"
+    },
+    {
+      "operation": "random-read",
+      "bytes": 5368709120,
+      "entropy": "compressible"
+    },
+    {
+      "operation": "random-write",
+      "bytes": 5368709120,
+      "entropy": "compressible"
+    },
+    {
+      "operation": "sequential-write",
+      "bytes": 10737418240,
+      "entropy": "random"
+    },
+    {
+      "operation": "sequential-read",
+      "bytes": 10737418240,
+      "entropy": "random"
+    },
+    {
+      "operation": "random-read",
+      "bytes": 10737418240,
+      "entropy": "random"
+    },
+    {
+      "operation": "random-write",
+      "bytes": 10737418240,
+      "entropy": "random"
+    },
+    {
+      "operation": "sequential-write",
+      "bytes": 10737418240,
+      "entropy": "compressible"
+    },
+    {
+      "operation": "sequential-read",
+      "bytes": 10737418240,
+      "entropy": "compressible"
+    },
+    {
+      "operation": "random-read",
+      "bytes": 10737418240,
+      "entropy": "compressible"
+    },
+    {
+      "operation": "random-write",
+      "bytes": 10737418240,
+      "entropy": "compressible"
+    },
+    {
+      "operation": "file-create",
+      "count": 1000,
+      "fileBytes": 4096,
+      "entropy": "random"
+    },
+    {
+      "operation": "file-delete",
+      "count": 1000,
+      "fileBytes": 4096,
+      "entropy": "random"
+    },
+    {
+      "operation": "directory-scan",
+      "count": 1000,
+      "fileBytes": 4096,
+      "entropy": "random"
+    },
+    {
+      "operation": "file-create",
+      "count": 1000,
+      "fileBytes": 4096,
+      "entropy": "compressible"
+    },
+    {
+      "operation": "file-delete",
+      "count": 1000,
+      "fileBytes": 4096,
+      "entropy": "compressible"
+    },
+    {
+      "operation": "directory-scan",
+      "count": 1000,
+      "fileBytes": 4096,
+      "entropy": "compressible"
+    },
+    {
+      "operation": "file-create",
+      "count": 1000,
+      "fileBytes": 16384,
+      "entropy": "random"
+    },
+    {
+      "operation": "file-delete",
+      "count": 1000,
+      "fileBytes": 16384,
+      "entropy": "random"
+    },
+    {
+      "operation": "directory-scan",
+      "count": 1000,
+      "fileBytes": 16384,
+      "entropy": "random"
+    },
+    {
+      "operation": "file-create",
+      "count": 1000,
+      "fileBytes": 16384,
+      "entropy": "compressible"
+    },
+    {
+      "operation": "file-delete",
+      "count": 1000,
+      "fileBytes": 16384,
+      "entropy": "compressible"
+    },
+    {
+      "operation": "directory-scan",
+      "count": 1000,
+      "fileBytes": 16384,
+      "entropy": "compressible"
+    },
+    {
+      "operation": "file-create",
+      "count": 1000,
+      "fileBytes": 65536,
+      "entropy": "random"
+    },
+    {
+      "operation": "file-delete",
+      "count": 1000,
+      "fileBytes": 65536,
+      "entropy": "random"
+    },
+    {
+      "operation": "directory-scan",
+      "count": 1000,
+      "fileBytes": 65536,
+      "entropy": "random"
+    },
+    {
+      "operation": "file-create",
+      "count": 1000,
+      "fileBytes": 65536,
+      "entropy": "compressible"
+    },
+    {
+      "operation": "file-delete",
+      "count": 1000,
+      "fileBytes": 65536,
+      "entropy": "compressible"
+    },
+    {
+      "operation": "directory-scan",
+      "count": 1000,
+      "fileBytes": 65536,
+      "entropy": "compressible"
+    },
+    {
+      "operation": "file-create",
+      "count": 10000,
+      "fileBytes": 4096,
+      "entropy": "random"
+    },
+    {
+      "operation": "file-delete",
+      "count": 10000,
+      "fileBytes": 4096,
+      "entropy": "random"
+    },
+    {
+      "operation": "directory-scan",
+      "count": 10000,
+      "fileBytes": 4096,
+      "entropy": "random"
+    },
+    {
+      "operation": "file-create",
+      "count": 10000,
+      "fileBytes": 4096,
+      "entropy": "compressible"
+    },
+    {
+      "operation": "file-delete",
+      "count": 10000,
+      "fileBytes": 4096,
+      "entropy": "compressible"
+    },
+    {
+      "operation": "directory-scan",
+      "count": 10000,
+      "fileBytes": 4096,
+      "entropy": "compressible"
+    },
+    {
+      "operation": "file-create",
+      "count": 10000,
+      "fileBytes": 16384,
+      "entropy": "random"
+    },
+    {
+      "operation": "file-delete",
+      "count": 10000,
+      "fileBytes": 16384,
+      "entropy": "random"
+    },
+    {
+      "operation": "directory-scan",
+      "count": 10000,
+      "fileBytes": 16384,
+      "entropy": "random"
+    },
+    {
+      "operation": "file-create",
+      "count": 10000,
+      "fileBytes": 16384,
+      "entropy": "compressible"
+    },
+    {
+      "operation": "file-delete",
+      "count": 10000,
+      "fileBytes": 16384,
+      "entropy": "compressible"
+    },
+    {
+      "operation": "directory-scan",
+      "count": 10000,
+      "fileBytes": 16384,
+      "entropy": "compressible"
+    },
+    {
+      "operation": "file-create",
+      "count": 10000,
+      "fileBytes": 65536,
+      "entropy": "random"
+    },
+    {
+      "operation": "file-delete",
+      "count": 10000,
+      "fileBytes": 65536,
+      "entropy": "random"
+    },
+    {
+      "operation": "directory-scan",
+      "count": 10000,
+      "fileBytes": 65536,
+      "entropy": "random"
+    },
+    {
+      "operation": "file-create",
+      "count": 10000,
+      "fileBytes": 65536,
+      "entropy": "compressible"
+    },
+    {
+      "operation": "file-delete",
+      "count": 10000,
+      "fileBytes": 65536,
+      "entropy": "compressible"
+    },
+    {
+      "operation": "directory-scan",
+      "count": 10000,
+      "fileBytes": 65536,
+      "entropy": "compressible"
+    },
+    {
+      "operation": "file-create",
+      "count": 100000,
+      "fileBytes": 4096,
+      "entropy": "random"
+    },
+    {
+      "operation": "file-delete",
+      "count": 100000,
+      "fileBytes": 4096,
+      "entropy": "random"
+    },
+    {
+      "operation": "directory-scan",
+      "count": 100000,
+      "fileBytes": 4096,
+      "entropy": "random"
+    },
+    {
+      "operation": "file-create",
+      "count": 100000,
+      "fileBytes": 4096,
+      "entropy": "compressible"
+    },
+    {
+      "operation": "file-delete",
+      "count": 100000,
+      "fileBytes": 4096,
+      "entropy": "compressible"
+    },
+    {
+      "operation": "directory-scan",
+      "count": 100000,
+      "fileBytes": 4096,
+      "entropy": "compressible"
+    },
+    {
+      "operation": "file-create",
+      "count": 100000,
+      "fileBytes": 16384,
+      "entropy": "random"
+    },
+    {
+      "operation": "file-delete",
+      "count": 100000,
+      "fileBytes": 16384,
+      "entropy": "random"
+    },
+    {
+      "operation": "directory-scan",
+      "count": 100000,
+      "fileBytes": 16384,
+      "entropy": "random"
+    },
+    {
+      "operation": "file-create",
+      "count": 100000,
+      "fileBytes": 16384,
+      "entropy": "compressible"
+    },
+    {
+      "operation": "file-delete",
+      "count": 100000,
+      "fileBytes": 16384,
+      "entropy": "compressible"
+    },
+    {
+      "operation": "directory-scan",
+      "count": 100000,
+      "fileBytes": 16384,
+      "entropy": "compressible"
+    },
+    {
+      "operation": "file-create",
+      "count": 100000,
+      "fileBytes": 65536,
+      "entropy": "random"
+    },
+    {
+      "operation": "file-delete",
+      "count": 100000,
+      "fileBytes": 65536,
+      "entropy": "random"
+    },
+    {
+      "operation": "directory-scan",
+      "count": 100000,
+      "fileBytes": 65536,
+      "entropy": "random"
+    },
+    {
+      "operation": "file-create",
+      "count": 100000,
+      "fileBytes": 65536,
+      "entropy": "compressible"
+    },
+    {
+      "operation": "file-delete",
+      "count": 100000,
+      "fileBytes": 65536,
+      "entropy": "compressible"
+    },
+    {
+      "operation": "directory-scan",
+      "count": 100000,
+      "fileBytes": 65536,
+      "entropy": "compressible"
+    },
+    {
+      "operation": "sqlite-insert",
+      "rows": 10000
+    },
+    {
+      "operation": "sqlite-batch-insert",
+      "rows": 10000
+    },
+    {
+      "operation": "sqlite-indexed-query",
+      "rows": 10000
+    },
+    {
+      "operation": "sqlite-random-update",
+      "rows": 10000
+    },
+    {
+      "operation": "sqlite-transaction",
+      "rows": 10000
+    },
+    {
+      "operation": "sqlite-vacuum",
+      "rows": 10000
+    }
+  ]
+}

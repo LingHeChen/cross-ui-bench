@@ -1,0 +1,76 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "required": [
+    "os",
+    "os_version",
+    "cpu",
+    "cpu_arch",
+    "cpu_cores",
+    "ram",
+    "gpu",
+    "gpu_driver",
+    "display_resolution",
+    "display_scale",
+    "refresh_rate",
+    "runtime",
+    "runtime_version",
+    "webview_version",
+    "framework",
+    "framework_version",
+    "build_mode"
+  ],
+  "properties": {
+    "os": {
+      "type": "string"
+    },
+    "os_version": {
+      "type": ["string", "null"]
+    },
+    "cpu": {
+      "type": ["string", "null"]
+    },
+    "cpu_arch": {
+      "type": ["string", "null"]
+    },
+    "cpu_cores": {
+      "type": ["number", "null"]
+    },
+    "ram": {
+      "type": ["number", "null"]
+    },
+    "gpu": {
+      "type": ["string", "null"]
+    },
+    "gpu_driver": {
+      "type": ["string", "null"]
+    },
+    "display_resolution": {
+      "type": ["string", "null"]
+    },
+    "display_scale": {
+      "type": ["number", "null"]
+    },
+    "refresh_rate": {
+      "type": ["number", "null"]
+    },
+    "runtime": {
+      "type": "string"
+    },
+    "runtime_version": {
+      "type": ["string", "null"]
+    },
+    "webview_version": {
+      "type": ["string", "null"]
+    },
+    "framework": {
+      "type": ["string", "null"]
+    },
+    "framework_version": {
+      "type": ["string", "null"]
+    },
+    "build_mode": {
+      "enum": ["release", "debug", "unknown"]
+    }
+  }
+}

@@ -1,0 +1,256 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://crossui.dev/schemas/result-1.json",
+  "type": "object",
+  "required": [
+    "schemaVersion",
+    "id",
+    "benchmark",
+    "case",
+    "runtime",
+    "implementation",
+    "comparisonClass",
+    "metadata",
+    "protocol",
+    "qualification",
+    "runs",
+    "summary",
+    "limitations"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "const": "1.0.0"
+    },
+    "id": {
+      "type": "string"
+    },
+    "benchmark": {
+      "enum": ["css-animation", "skeletal-3d"]
+    },
+    "case": {
+      "type": "string"
+    },
+    "runtime": {
+      "type": "string"
+    },
+    "implementation": {
+      "type": "string"
+    },
+    "comparisonClass": {
+      "enum": ["runtime-parity", "framework-best-practice"]
+    },
+    "metadata": {
+      "$ref": "#/definitions/metadata"
+    },
+    "protocol": {
+      "type": "object",
+      "required": [
+        "warmupMs",
+        "measureMs",
+        "cooldownMs",
+        "runs",
+        "refreshRateHz",
+        "seed"
+      ],
+      "properties": {
+        "warmupMs": {
+          "type": "number",
+          "minimum": 0
+        },
+        "measureMs": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        },
+        "cooldownMs": {
+          "type": "number",
+          "minimum": 0
+        },
+        "runs": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "refreshRateHz": {
+          "enum": [60, 120]
+        },
+        "seed": {
+          "type": "integer"
+        }
+      }
+    },
+    "qualification": {
+      "type": "object",
+      "required": ["eligible", "reasons"],
+      "properties": {
+        "eligible": {
+          "type": "boolean"
+        },
+        "reasons": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "parameters": {
+      "type": "object"
+    },
+    "asset": {
+      "type": ["string", "null"]
+    },
+    "assetSha256": {
+      "type": ["string", "null"]
+    },
+    "startedAt": {
+      "type": "string"
+    },
+    "completedAt": {
+      "type": "string"
+    },
+    "runs": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["index", "frames", "resources", "metrics"],
+        "properties": {
+          "index": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "frames": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "object",
+              "required": ["tMs", "dtMs"],
+              "properties": {
+                "tMs": {
+                  "type": "number",
+                  "minimum": 0
+                },
+                "dtMs": {
+                  "type": "number",
+                  "exclusiveMinimum": 0
+                }
+              }
+            }
+          },
+          "resources": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["tMs", "cpuPercent", "rssMb"],
+              "properties": {
+                "tMs": {
+                  "type": "number"
+                },
+                "cpuPercent": {
+                  "type": ["number", "null"],
+                  "minimum": 0
+                },
+                "rssMb": {
+                  "type": ["number", "null"],
+                  "minimum": 0
+                },
+                "processCount": {
+                  "type": "integer",
+                  "minimum": 1
+                }
+              }
+            }
+          },
+          "metrics": {
+            "type": "object"
+          }
+        }
+      }
+    },
+    "summary": {
+      "type": "object"
+    },
+    "limitations": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "definitions": {
+    "metadata": {
+      "type": "object",
+      "required": [
+        "os",
+        "os_version",
+        "cpu",
+        "cpu_arch",
+        "cpu_cores",
+        "ram",
+        "gpu",
+        "gpu_driver",
+        "display_resolution",
+        "display_scale",
+        "refresh_rate",
+        "runtime",
+        "runtime_version",
+        "webview_version",
+        "framework",
+        "framework_version",
+        "build_mode"
+      ],
+      "properties": {
+        "os": {
+          "type": "string"
+        },
+        "os_version": {
+          "type": ["string", "null"]
+        },
+        "cpu": {
+          "type": ["string", "null"]
+        },
+        "cpu_arch": {
+          "type": ["string", "null"]
+        },
+        "cpu_cores": {
+          "type": ["number", "null"]
+        },
+        "ram": {
+          "type": ["number", "null"]
+        },
+        "gpu": {
+          "type": ["string", "null"]
+        },
+        "gpu_driver": {
+          "type": ["string", "null"]
+        },
+        "display_resolution": {
+          "type": ["string", "null"]
+        },
+        "display_scale": {
+          "type": ["number", "null"]
+        },
+        "refresh_rate": {
+          "type": ["number", "null"]
+        },
+        "runtime": {
+          "type": "string"
+        },
+        "runtime_version": {
+          "type": ["string", "null"]
+        },
+        "webview_version": {
+          "type": ["string", "null"]
+        },
+        "framework": {
+          "type": ["string", "null"]
+        },
+        "framework_version": {
+          "type": ["string", "null"]
+        },
+        "build_mode": {
+          "enum": ["release", "debug", "unknown"]
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "required": [
+    "id",
+    "name",
+    "source",
+    "license",
+    "license_url",
+    "redistributable",
+    "format",
+    "size_bytes",
+    "sha256"
+  ],
+  "properties": {
+    "id": { "type": "string" },
+    "name": { "type": "string" },
+    "source": { "type": "string" },
+    "license": { "type": "string" },
+    "license_url": { "type": "string" },
+    "redistributable": { "type": "boolean" },
+    "format": { "type": "string" },
+    "size_bytes": { "type": "integer", "minimum": 0 },
+    "sha256": { "type": "string", "pattern": "^[a-f0-9]{64}$" },
+    "triangles": { "type": ["integer", "null"] },
+    "vertices": { "type": ["integer", "null"] },
+    "bones": { "type": ["integer", "null"] },
+    "effective_skinning_bones": { "type": ["integer", "null"] },
+    "animations": { "type": "array" },
+    "morph_targets": { "type": ["integer", "null"] },
+    "texture_resolution": { "type": ["integer", "null"] },
+    "generated_from": { "type": ["string", "null"] },
+    "generator_version": { "type": ["string", "null"] },
+    "generation_parameters": { "type": ["object", "null"] }
+  }
+}

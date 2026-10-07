@@ -1,0 +1,59 @@
+{
+  "name": "crossui-bench",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "build": "vite build",
+    "preview": "vite preview --host 127.0.0.1",
+    "electron": "npm run build && electron apps/electron/main.cjs",
+    "electron:dev": "electron apps/electron/main.cjs --dev",
+    "tauri": "tauri",
+    "tauri:dev": "cd apps/tauri && tauri dev",
+    "tauri:build": "cd apps/tauri && tauri build --no-bundle",
+    "test": "node --test tests/*.test.mjs",
+    "test:web": "node tools/screenshot-runner/smoke.mjs",
+    "assets:fetch": "node tools/asset-generator/fetch.mjs",
+    "assets:generate": "node tools/asset-generator/generate.mjs",
+    "report": "node tools/result-aggregator/index.mjs",
+    "hardware": "node tools/metrics-collector/hardware.mjs",
+    "bench:electron": "npm run build && electron apps/electron/main.cjs --auto",
+    "bench:tauri": "node tools/run-tauri.mjs",
+    "bench:flutter": "node tools/run-flutter.mjs",
+    "bench:suite": "node tools/bench-suite.mjs",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "assets:manifest": "node tools/asset-generator/manifest.mjs",
+    "flutter": "node tools/run-flutter.mjs --interactive",
+    "assets:stress": "node tools/asset-generator/stress.mjs",
+    "assets:stress:verify": "node tools/asset-generator/verify-stress.mjs",
+    "assets:stress:serve": "node tools/asset-generator/serve-stress.mjs",
+    "bench:stress": "npm run tauri:build && node tools/bench-stress.mjs",
+    "report:html": "node tools/result-aggregator/html.mjs",
+    "bench:all": "node tools/full-matrix.mjs",
+    "bench:pixel": "node tools/run-pixel.mjs",
+    "assets:matrix": "node tools/prepare-matrix-assets.mjs"
+  },
+  "dependencies": {
+    "@fontsource/ibm-plex-mono": "^5.2.6",
+    "@fontsource/ibm-plex-sans": "^5.2.6",
+    "@tauri-apps/api": "^2.8.0",
+    "three": "^0.180.0"
+  },
+  "devDependencies": {
+    "@tauri-apps/cli": "^2.8.0",
+    "ajv": "^8.17.1",
+    "electron": "^38.0.0",
+    "gltf-validator": "^2.0.0-dev.3.10",
+    "pixelmatch": "^8.0.0",
+    "playwright": "^1.55.0",
+    "pngjs": "^7.0.0",
+    "prettier": "^3.9.9",
+    "ssim.js": "^3.5.0",
+    "vite": "^7.1.0"
+  },
+  "engines": {
+    "node": ">=22.12.0"
+  }
+}

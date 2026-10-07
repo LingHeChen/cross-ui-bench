@@ -1,0 +1,13 @@
+node_modules
+dist
+apps/tauri/target
+apps/flutter
+apps/tauri/icons
+assets/licenses
+assets/3d
+assets/generated
+results
+package-lock.json
+docs/design.md
+apps/tauri/gen
+artifacts

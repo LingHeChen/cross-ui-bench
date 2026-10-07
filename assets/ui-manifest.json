@@ -1,0 +1,51 @@
+[
+  {
+    "id": "ibm-plex-sans",
+    "name": "ibm-plex-sans",
+    "source": "https://github.com/IBM/plex (via @fontsource/ibm-plex-sans@5.3.0)",
+    "license": "OFL-1.1",
+    "license_url": "https://github.com/IBM/plex/blob/master/LICENSE.txt",
+    "redistributable": true,
+    "format": "WOFF2",
+    "size_bytes": 22588,
+    "sha256": "3b646991d30055a93a4ecc499713d4347953a74a947ecab435ab72070cbdab0e",
+    "triangles": null,
+    "vertices": null,
+    "bones": null,
+    "effective_skinning_bones": null,
+    "animations": [],
+    "morph_targets": null,
+    "texture_resolution": null,
+    "notes": "Locally bundled Latin UI font. Sans regular/medium/semibold are pinned by package-lock.json."
+  },
+  {
+    "id": "ibm-plex-mono",
+    "name": "ibm-plex-mono",
+    "source": "https://github.com/IBM/plex (via @fontsource/ibm-plex-mono@5.3.0)",
+    "license": "OFL-1.1",
+    "license_url": "https://github.com/IBM/plex/blob/master/LICENSE.txt",
+    "redistributable": true,
+    "format": "WOFF2",
+    "size_bytes": 14708,
+    "sha256": "08949f728dc52d528e69b1667d15c89a5686a4ee9a296ff90983985f99c380f7",
+    "triangles": null,
+    "vertices": null,
+    "bones": null,
+    "effective_skinning_bones": null,
+    "animations": [],
+    "morph_targets": null,
+    "texture_resolution": null,
+    "notes": "Locally bundled Latin UI font. Sans regular/medium/semibold are pinned by package-lock.json."
+  },
+  {
+    "id": "crossui-icon",
+    "name": "CrossUI icon",
+    "source": "assets/ui/icon.svg",
+    "license": "MIT",
+    "license_url": "LICENSE",
+    "redistributable": true,
+    "format": "SVG",
+    "size_bytes": 291,
+    "sha256": "a26f89492d55f159ad14ba8a259039f44349ed554a6177ab48fd368711db6012"
+  }
+]

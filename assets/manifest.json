@@ -1,0 +1,40 @@
+[
+  {
+    "id": "RiggedSimple",
+    "name": "RiggedSimple",
+    "source": "https://github.com/KhronosGroup/glTF-Sample-Assets/tree/edc7c9e67c639d230715049ee31f9a96a6babbbe/Models/RiggedSimple",
+    "license": "CC-BY-4.0",
+    "license_url": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/edc7c9e67c639d230715049ee31f9a96a6babbbe/Models/RiggedSimple/README.md",
+    "redistributable": true,
+    "format": "GLB",
+    "size_bytes": 15104,
+    "sha256": "3a79dabb67bb0cd598a18d08b954d9d357c27c30672f82ef5d3f4e7fe6ca3401",
+    "triangles": 188,
+    "vertices": 160,
+    "bones": 2,
+    "effective_skinning_bones": null,
+    "animations": ["animation-0"],
+    "morph_targets": 0,
+    "texture_resolution": null,
+    "notes": "Correctness baseline. Individual license preserved in assets/licenses. Effective bone count not yet extracted."
+  },
+  {
+    "id": "RiggedFigure",
+    "name": "RiggedFigure",
+    "source": "https://github.com/KhronosGroup/glTF-Sample-Assets/tree/edc7c9e67c639d230715049ee31f9a96a6babbbe/Models/RiggedFigure",
+    "license": "CC-BY-4.0",
+    "license_url": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/edc7c9e67c639d230715049ee31f9a96a6babbbe/Models/RiggedFigure/README.md",
+    "redistributable": true,
+    "format": "GLB",
+    "size_bytes": 50116,
+    "sha256": "d6be85417d3e256861ee733eea6916093a7af7c79c16366181fd8abcaeb38cf5",
+    "triangles": 256,
+    "vertices": 370,
+    "bones": 19,
+    "effective_skinning_bones": null,
+    "animations": ["animation-0"],
+    "morph_targets": 0,
+    "texture_resolution": null,
+    "notes": "Correctness baseline. Individual license preserved in assets/licenses. Effective bone count not yet extracted."
+  }
+]
