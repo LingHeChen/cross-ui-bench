@@ -1,9 +1,9 @@
 {
-  "publishedSnapshotAt": "2026-10-07T12:38:54.446Z",
-  "reportUpdatedAt": "2026-10-07T12:02:09.447Z",
-  "sourceCommit": "a9e29eb357a983183cd9d44353c68ac8749ebc8f",
+  "publishedSnapshotAt": "2026-10-07T14:57:26.476Z",
+  "reportUpdatedAt": "2026-10-07T14:57:21.552Z",
+  "sourceCommit": "6a969f0efd32f9bda2baab52948d7ecb8c9089ca",
   "results": 6,
-  "storage": 0,
+  "storage": 372,
   "pixel": 12,
   "status": "Snapshot; ongoing local measurements are not automatically uploaded",
   "privacy": "Local macOS home directory names redacted in JSON evidence"
