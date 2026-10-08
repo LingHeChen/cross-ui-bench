@@ -29,3 +29,14 @@ node tools/result-aggregator/html.mjs results/full-benchmark
 120Hz 需要操作者再次设置固定刷新率后另跑。Windows/Linux、Flutter native 3D 与 Tauri native wgpu 未实现/未验证；不为这些组编造数据。Tauri OS WebKit XPC helpers 采集不完整，CPU/RSS 不支持跨壳比较。冷启动及独立 GPU 时段/utilization 尚未可靠采样。
 
 新 checkout 自动读取 `shared/protocols/storage-plan.json`；可在输出目录提供同名文件覆盖配置。HTML 会复用本机已有的历史 2.1GB 成绩，首次运行没有历史数据时不会生成该阶段的成绩。素材生成及完整矩阵需要大量可用磁盘空间，运行前须根据存储计划和模型大小确认空间。
+
+## 中断后续跑
+
+确认显示器仍为固定 60Hz、AC 电源已接通且没有其他跑分进程后：
+
+```sh
+node tools/resume-matrix.mjs results/full-benchmark
+launchctl print gui/$(id -u)/com.linghechen.crossui-bench.matrix
+```
+
+运行器读取原有状态，跳过已完成存储和动态组，重跑中断组。续跑通过当前 GUI 登录会话的 launchd 任务执行，独立于启动它的终端；不安装自动登录启动项，不会在重启后未经环境确认自动跑分。stdout/stderr 保存到输出目录的 `logs/matrix-launchd.*.log`。保持登录、屏幕可见和电源接通。
